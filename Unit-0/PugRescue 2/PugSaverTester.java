@@ -1,5 +1,7 @@
 import java.util.ArrayList;
 
+import com.apple.laf.resources.aqua;
+
 public class PugSaverTester {
     public static void main(String[] args) {
         Dog A = new Dog("German Shepard");
@@ -7,6 +9,6 @@ public class PugSaverTester {
         Dog C = new Dog("Corgi");
         Dog D = new Dog("Border Collie");
         Dog E = new Dog("Golden Doodle");
-        ArrayList<Dog> list1 = {}
+        ArrayList<Dog> list1 = new ArrayList<>();
     }
 }
