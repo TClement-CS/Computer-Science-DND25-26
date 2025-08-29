@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 
-import com.apple.laf.resources.aqua;
-
 public class PugSaverTester {
     public static void main(String[] args) {
         Dog A = new Dog("German Shepard");
