@@ -69,23 +69,41 @@ public class MyArrayList<E> {
 	 */
 	public boolean contains(E obj) {
 		/* ---- YOUR CODE HERE ---- */
+		for (int i = 0; i < objectCount; i++) {
+			if (internalArray[i] == obj) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	/* Insert an object at index */
 	@SuppressWarnings("unchecked")
 	public void add(int index, E obj) {
 		/* ---- YOUR CODE HERE ---- */
+		internalArray[index] = obj;
+		if (index >= objectCount) {
+			objectCount = index + 1;
+		}
 	}
 
 	/* Add an object to the end of the list; returns true */
 	@SuppressWarnings("unchecked")
 	public boolean add(E obj) {
 		/* ---- YOUR CODE HERE ---- */
+		objectCount++;
+		internalArray[objectCount] = obj;
+		return true;
 	}
 
 	/* Remove the object at index and shift. Returns removed object. */
 	public E remove(int index) {
 		/* ---- YOUR CODE HERE ---- */
+		for (int i = index; i < objectCount - 1; i++) {
+			internalArray[i] = internalArray[i + 1];
+		}
+		internalArray[objectCount] = null;
+		return internalArray[index];
 	}
 
 	/*
@@ -96,6 +114,7 @@ public class MyArrayList<E> {
 	 * Returns true if this list contained the specified element (or equivalently,
 	 * if this list changed as a result of the call).
 	 */
+	// to-do:
 	public boolean remove(E obj) {
 		/* ---- YOUR CODE HERE ---- */
 	}
@@ -107,6 +126,7 @@ public class MyArrayList<E> {
 	 * etc.
 	 * Elements are separated by a comma and a space.
 	 */
+	// to-do:
 	public String toString() {
 		/* ---- YOUR CODE HERE ---- */
 	}
