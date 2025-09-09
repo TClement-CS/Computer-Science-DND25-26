@@ -116,7 +116,12 @@ public class MyArrayList<E> {
 	 */
 	// to-do:
 	public boolean remove(E obj) {
-		/* ---- YOUR CODE HERE ---- */
+		for (int i = 0; i < objectCount; i++) {
+			if (internalArray[i] == obj) {
+				remove(i);
+			}
+		}
+		return true;
 	}
 
 	/*
@@ -128,7 +133,16 @@ public class MyArrayList<E> {
 	 */
 	// to-do:
 	public String toString() {
-		/* ---- YOUR CODE HERE ---- */
+		StringBuilder test = new StringBuilder();
+		test.append("[");
+		for (int i = 0; i < size(); i++) {
+			if (i > 0) {
+				test.append(", ");
+			}
+			test.append((String) get(i));
+		}
+		test.append("]");
+		return test.toString();
 	}
 
 }
