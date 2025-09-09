@@ -78,17 +78,17 @@ public class MyArrayList<E> {
 	}
 
 	/* Insert an object at index */
-	@SuppressWarnings("unchecked")
 	public void add(int index, E obj) {
-		/* ---- YOUR CODE HERE ---- */
-		internalArray[index] = obj;
-		if (index >= objectCount) {
-			objectCount = index + 1;
+		if(index < 0 || index > internalArray.length) {
+			throw new IndexOutOfBoundsException();
 		}
+		internalArray[index] = obj;
+		objectCount++;
+		for(int i = 0; i < objectCount; i ++)
+		internalArray[index + 1] = internalArray[index + 2];
 	}
 
 	/* Add an object to the end of the list; returns true */
-	@SuppressWarnings("unchecked")
 	public boolean add(E obj) {
 		/* ---- YOUR CODE HERE ---- */
 		objectCount++;
@@ -98,12 +98,12 @@ public class MyArrayList<E> {
 
 	/* Remove the object at index and shift. Returns removed object. */
 	public E remove(int index) {
-		/* ---- YOUR CODE HERE ---- */
+		E temp = internalArray[index];
 		for (int i = index; i < objectCount - 1; i++) {
 			internalArray[i] = internalArray[i + 1];
 		}
 		internalArray[objectCount] = null;
-		return internalArray[index];
+		return temp;
 	}
 
 	/*
@@ -114,10 +114,9 @@ public class MyArrayList<E> {
 	 * Returns true if this list contained the specified element (or equivalently,
 	 * if this list changed as a result of the call).
 	 */
-	// to-do:
 	public boolean remove(E obj) {
 		for (int i = 0; i < objectCount; i++) {
-			if (internalArray[i] == obj) {
+			if (internalArray[i].equals(obj)) {
 				remove(i);
 			}
 		}
