@@ -131,7 +131,6 @@ public class MyArrayList<E> {
 	 * etc.
 	 * Elements are separated by a comma and a space.
 	 */
-	// to-do:
 	public String toString() {
 		StringBuilder test = new StringBuilder();
 		test.append("[");
