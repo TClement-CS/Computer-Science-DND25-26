@@ -85,7 +85,7 @@ public class MyArrayList<E> {
 		internalArray[index] = obj;
 		objectCount++;
 		for(int i = 0; i < objectCount; i ++)
-		internalArray[index + 1] = internalArray[index + 2];
+		internalArray[index + 1] = internalArray[index + 2]; 
 	}
 
 	/* Add an object to the end of the list; returns true */
