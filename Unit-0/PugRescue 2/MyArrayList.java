@@ -54,11 +54,17 @@ public class MyArrayList<E> {
 
 	/* Get the index-th object in the list. */
 	public E get(int index) {
+		if (index >= objectCount || index < 0) {
+			throw new IndexOutOfBoundsException();
+		}
 		return internalArray[index];
 	}
 
 	/* Replace the object at index with obj. returns object that was replaced. */
 	public E set(int index, E obj) {
+		if (index >= objectCount || index < 0) {
+			throw new IndexOutOfBoundsException();
+		}
 		internalArray[index] = obj;
 		return internalArray[index];
 	}
@@ -70,7 +76,7 @@ public class MyArrayList<E> {
 	public boolean contains(E obj) {
 		/* ---- YOUR CODE HERE ---- */
 		for (int i = 0; i < objectCount; i++) {
-			if (internalArray[i] == obj) {
+			if (internalArray[i].equals(obj)) {
 				return true;
 			}
 		}
@@ -79,30 +85,49 @@ public class MyArrayList<E> {
 
 	/* Insert an object at index */
 	public void add(int index, E obj) {
-		if(index < 0 || index > internalArray.length) {
+		if (index < 0 || index > internalArray.length) {
 			throw new IndexOutOfBoundsException();
+		}
+		if (objectCount >= internalArray.length) {
+			E[] nArray = (E[]) new Object[objectCount * 2];
+			for (int i = 0; i < objectCount; i++) {
+				nArray[i] = internalArray[i];
+			}
+			internalArray = nArray;
+		}
+		for (int i = objectCount; i > objectCount; i--) {
+			internalArray[i] = internalArray[i - 1];
 		}
 		internalArray[index] = obj;
 		objectCount++;
-		for(int i = 0; i < objectCount; i ++)
-		internalArray[index + 1] = internalArray[index + 2]; 
 	}
 
 	/* Add an object to the end of the list; returns true */
 	public boolean add(E obj) {
 		/* ---- YOUR CODE HERE ---- */
-		objectCount++;
+		if (objectCount >= internalArray.length) {
+			E[] nArray = (E[]) new Object[objectCount * 2];
+			for (int i = 0; i < objectCount; i++) {
+				nArray[i] = internalArray[i];
+			}
+			internalArray = nArray;
+		}
 		internalArray[objectCount] = obj;
+		objectCount++;
 		return true;
 	}
 
 	/* Remove the object at index and shift. Returns removed object. */
 	public E remove(int index) {
+		if (index >= objectCount || index < 0) {
+			throw new IndexOutOfBoundsException();
+		}
 		E temp = internalArray[index];
+
 		for (int i = index; i < objectCount - 1; i++) {
 			internalArray[i] = internalArray[i + 1];
 		}
-		internalArray[objectCount] = null;
+		objectCount--;
 		return temp;
 	}
 
@@ -120,7 +145,7 @@ public class MyArrayList<E> {
 				remove(i);
 			}
 		}
-		return true;
+		return false;
 	}
 
 	/*
