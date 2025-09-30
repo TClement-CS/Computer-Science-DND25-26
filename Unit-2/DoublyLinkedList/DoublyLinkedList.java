@@ -15,31 +15,43 @@ public class DoublyLinkedList {
 	public DoublyLinkedList(Nucleotide[] values) {
 
 	}
-	
+
 	public ListNode2<Nucleotide> getSentinel() {
 		return SENTINEL;
 	}
-	
+
 	public ListNode2<Nucleotide> getHead() {
 		return SENTINEL.getNext();
 	}
-	
+
 	public ListNode2<Nucleotide> getTail() {
 		return SENTINEL.getPrevious();
 	}
 
-
 	// Returns true if this list is empty; otherwise returns false.
 	public boolean isEmpty() {
+		if (nodeCount == 0) {
+			return true;
+		}
+		return false;
 	}
 
 	// Returns the number of elements in this list.
 	public int size() {
+		return nodeCount;
 	}
 
 	// Returns true if this list contains an element equal to obj;
 	// otherwise returns false.
 	public boolean contains(Nucleotide obj) {
+		ListNode2<E> newNode = SENTINEL.getValue();
+		for(int i = 0; i < nodeCount; i++) {
+			if(newNode = obj) {
+				return true;
+			}
+			newNode = newNode.getNext()
+		}
+		return false;
 	}
 
 	// Returns the index of the first element in equal to obj;
@@ -47,7 +59,7 @@ public class DoublyLinkedList {
 	public int indexOf(Nucleotide obj) {
 	}
 
-	// Adds obj to this collection.  Returns true if successful;
+	// Adds obj to this collection. Returns true if successful;
 	// otherwise returns false.
 	public boolean add(Nucleotide obj) {
 	}
@@ -57,7 +69,7 @@ public class DoublyLinkedList {
 	public boolean remove(Nucleotide obj) {
 	}
 
-	// Returns the i-th element.               
+	// Returns the i-th element.
 	public Nucleotide get(int i) {
 	}
 
@@ -75,44 +87,44 @@ public class DoublyLinkedList {
 	public Nucleotide remove(int i) {
 	}
 
-	// Returns a string representation of this list exactly like that for MyArrayList.
+	// Returns a string representation of this list exactly like that for
+	// MyArrayList.
 	public String toString() {
 
-
 	}
-	
+
 	// Like question 7 on the SinglyLinkedList test:
 	// Add a "segment" (another list) onto the end of this list
 	public void addSegmentToEnd(DoublyLinkedList seg) {
-		
+
 	}
-	
+
 	// Like question 8 on the SinglyLinkedList test:
 	// You are to remove the next 16 nodes from the list, after the node nodeBefore.
 	// (on the test these nodes were assumed to contain CCCCCCCCGGGGGGGG, but here
 	// you do not need to assume or check for that)
 	public void removeCCCCCCCCGGGGGGGG(ListNode2<Nucleotide> nodeBefore) {
-		
+
 	}
-	
+
 	// Like question 9 on the SinglyLinkedList test:
 	// You are to find and delete the first instance of seg in the list.
 	// If seg is not in the list, return false, otherwise return true.
 	public boolean deleteSegment(DoublyLinkedList seg) {
-		
+
 	}
-	
+
 	// Like question 10 on the SinglyLinkedList test:
 	// Delete the last three nodes in the list
 	// If there are not enough nodes, return false
 	public boolean deleteLastThree() {
-		
+
 	}
 
 	// Like question 11 on the SinglyLinkedList test:
 	// Replaces every node containing "A" with three nodes containing "T" "A" "C"
 	public void replaceEveryAWithTAC() {
-		
+
 	}
 
 }

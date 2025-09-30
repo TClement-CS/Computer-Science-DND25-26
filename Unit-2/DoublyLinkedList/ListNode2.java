@@ -5,7 +5,6 @@ public class ListNode2<E> {
 	private ListNode2<E> previous;
 	private ListNode2<E> next;
 
-
 	public ListNode2(E v) {
 		value = v;
 		previous = null;
@@ -18,13 +17,27 @@ public class ListNode2<E> {
 		next = nx;
 	}
 
-	public E getValue() { return value; }
-	public ListNode2<E> getPrevious() { return previous; }
-	public ListNode2<E> getNext() { return next; }
+	public E getValue() {
+		return value;
+	}
 
-	public void setValue(E v) { value = v; }
-	public void setPrevious(ListNode2<E> previous) { this.previous = previous; }
-	public void setNext(ListNode2<E> nx) { next = nx; }
+	public ListNode2<E> getPrevious() {
+		return previous;
+	}
+
+	public ListNode2<E> getNext() {
+		return next;
+	}
+
+	public void setValue(E v) {
+		value = v;
+	}
+
+	public void setPrevious(ListNode2<E> previous) {
+		this.previous = previous;
+	}
+
+	public void setNext(ListNode2<E> nx) {
+		next = nx;
+	}
 }
-
-
