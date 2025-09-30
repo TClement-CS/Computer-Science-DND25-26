@@ -75,21 +75,39 @@ public class SinglyLinkedList<E> {
 	public boolean add(E obj) {
 		ListNode temp = new ListNode<E>(obj);
 		tail.setNext(temp);
+		tail = temp;
+		return true;
 
 	}
 
 	// Removes the first element that is equal to obj, if any.
 	// Returns true if successful; otherwise returns false.
 	public boolean remove(E obj) {
-
+		if()
+		for (ListNode i = head; i != tail; i = i.getNext()) {
+			if (i.getValue() == obj) {
+				return true;
+			}
+		}
 	}
 
 	// Returns the i-th element.
 	public E get(int i) {
+		if (i > nodeCount || i < 0) {
+			throw new IndexOutOfBoundsException();
+		}
+		ListNode<E> next = head;
+		for (int j = 0; j < i; j++) {
+			next = next.getNext();
+		}
+		return next.getValue();
+
 	}
 
 	// Replaces the i-th element with obj and returns the old value.
 	public E set(int i, Object obj) {
+
+		E 
 
 	}
 
