@@ -106,8 +106,8 @@ public class SinglyLinkedList<E> {
 
 	// Replaces the i-th element with obj and returns the old value.
 	public E set(int i, Object obj) {
-
-		E 
+		
+		E
 
 	}
 
@@ -119,7 +119,24 @@ public class SinglyLinkedList<E> {
 	// Removes the i-th element and returns its value.
 	// Decrements the size of the list by one.
 	public E remove(int i) {
-
+		E removedValue = head.getValue();
+		if (i == 0) {
+			head = head.getNext();
+			if (head == null)
+				tail = null;
+		} else {
+			ListNode<E> prev = head;
+			for (int j = 0; j < i - 1; j++) {
+				prev = prev.getNext();
+			}
+			ListNode<E> toRemove = prev.getNext();
+			removedValue = toRemove.getValue();
+			prev.setNext(toRemove.getNext());
+			if (toRemove == tail)
+				tail = prev;
+		}
+		nodeCount--;
+		return removedValue;
 	}
 
 	// Returns a string representation of this list exactly like that for
