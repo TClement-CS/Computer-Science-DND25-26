@@ -114,6 +114,27 @@ public class SinglyLinkedList<E> {
 	// Inserts obj to become the i-th element. Increments the size
 	// of the list by one.
 	public void add(int i, Object obj) {
+		if (i < 0 || i > nodeCount) {
+			throw new IndexOutOfBoundsException("Index: " + i);
+		}
+
+		ListNode<E> newNode = new ListNode<>(obj);
+
+		if (i == 0) {
+			newNode.setNext(head);
+			head = newNode;
+		} else {
+			ListNode<E> prev = head;
+			for (int j = 0; j < i - 1; j++) {
+				prev = prev.getNext();
+			}
+			newNode.setNext(prev.getNext());
+			prev.setNext(newNode);
+			if (newNode.getNext() == null)
+				tail = newNode;
+		}
+
+		nodeCount++;
 	}
 
 	// Removes the i-th element and returns its value.
