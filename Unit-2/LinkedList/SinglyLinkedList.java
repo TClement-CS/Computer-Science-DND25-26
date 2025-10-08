@@ -40,7 +40,7 @@ public class SinglyLinkedList<E> {
 
 	// Returns true if this list is empty; otherwise returns false.
 	public boolean isEmpty() {
-		if (nodeCount == 0) {
+		if (head == null) {
 			return true;
 		}
 		return false;
@@ -126,11 +126,11 @@ public class SinglyLinkedList<E> {
 		if (i >= nodeCount || i < 0) {
 			throw new IndexOutOfBoundsException();
 		}
-		ListNode<E> next = head;
+		ListNode<E> temp = head;
 		for (int j = 0; j < i; j++) {
-			next = next.getNext();
+			temp = temp.getNext();
 		}
-		return next.getValue();
+		return temp.getValue();
 
 	}
 
@@ -205,13 +205,20 @@ public class SinglyLinkedList<E> {
 	// Returns a string representation of this list exactly like that for
 	// MyArrayList.
 	public String toString() {
-		StringBuilder tostring = new StringBuilder();
+		if (head == null) {
+			return "[]";
+		}
+		StringBuilder sb = new StringBuilder("[");
 		ListNode<E> temp = head;
-		for (int i = 0; i < nodeCount; i++) {
-			tostring.append(head.getValue());
+		while (temp != null) {
+			sb.append(temp.getValue());
+			if (temp.getNext() != null) {
+				sb.append(", ");
+			}
 			temp = temp.getNext();
 		}
-		return tostring.toString();
+		sb.append("]");
+		return sb.toString();
 	}
 
 }
