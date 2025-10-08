@@ -82,6 +82,7 @@ public class SinglyLinkedList<E> {
 		if (head == null) {
 			head = temp;
 			tail = temp;
+			nodeCount++;
 			return true;
 		}
 		tail.setNext(temp);
@@ -123,7 +124,7 @@ public class SinglyLinkedList<E> {
 
 	// Returns the i-th element.
 	public E get(int i) {
-		if (i >= nodeCount || i < 0) {
+		if (i < 0 || i >= nodeCount) {
 			throw new IndexOutOfBoundsException();
 		}
 		ListNode<E> temp = head;
