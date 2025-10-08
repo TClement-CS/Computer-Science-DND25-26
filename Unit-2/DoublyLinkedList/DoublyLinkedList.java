@@ -132,12 +132,10 @@ public class DoublyLinkedList {
 		ListNode2<Nucleotide> returnValue = null;
 		ListNode2<Nucleotide> newNode = SENTINEL.getNext();
 		for (int j = 0; j < i; j++) {
-			if (newNode.getValue().equals(obj)) {
-				returnValue = newNode;
-				newNode.setValue(obj);
-			}
 			newNode = newNode.getNext();
 		}
+		returnValue = newNode;
+		newNode.setValue(obj);
 		return returnValue.getValue();
 	}
 
@@ -150,13 +148,13 @@ public class DoublyLinkedList {
 		ListNode2<Nucleotide> newNode = SENTINEL.getNext();
 		ListNode2<Nucleotide> insertedNode = new ListNode2<>(obj);
 		for (int j = 0; j < i; j++) {
-			if (j == i - 1) {
-				newNode.getPrevious().setNext(insertedNode);
-				newNode.setPrevious(insertedNode);
-				nodeCount++;
-			}
 			newNode = newNode.getNext();
 		}
+		insertedNode.setNext(newNode);
+		insertedNode.setPrevious(newNode.getPrevious());
+		newNode.getPrevious().setNext(insertedNode);
+		newNode.setPrevious(insertedNode);
+		nodeCount++;
 	}
 
 	// Removes the i-th element and returns its value.
@@ -166,17 +164,13 @@ public class DoublyLinkedList {
 			throw new IndexOutOfBoundsException();
 		}
 		ListNode2<Nucleotide> newNode = SENTINEL.getNext();
-		ListNode2<Nucleotide> returnValue = null;
 		for (int j = 0; j < i; j++) {
-			if (j == i - 1) {
-				returnValue = newNode;
-				newNode.getPrevious().setNext(newNode.getNext());
-				newNode.getNext().setPrevious(newNode.getPrevious());
-				nodeCount--;
-			}
 			newNode = newNode.getNext();
 		}
-		return returnValue.getValue();
+		newNode.getPrevious().setNext(newNode.getNext());
+		newNode.getNext().setPrevious(newNode.getPrevious());
+		nodeCount--;
+		return newNode.getValue();
 	}
 
 	// Returns a string representation of this list exactly like that for
