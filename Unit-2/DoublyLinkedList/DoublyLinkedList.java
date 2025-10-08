@@ -200,27 +200,94 @@ public class DoublyLinkedList {
 	// (on the test these nodes were assumed to contain CCCCCCCCGGGGGGGG, but here
 	// you do not need to assume or check for that)
 	public void removeCCCCCCCCGGGGGGGG(ListNode2<Nucleotide> nodeBefore) {
-
+		if (nodeBefore == null)
+			return;
+		ListNode2<Nucleotide> current = nodeBefore;
+		for (int i = 0; i < 16 && current.getNext() != SENTINEL; i++) {
+			current = current.getNext();
+		}
+		nodeBefore.setNext(current.getNext());
+		current.getNext().setPrevious(nodeBefore);
+		nodeCount -= 16;
 	}
 
 	// Like question 9 on the SinglyLinkedList test:
 	// You are to find and delete the first instance of seg in the list.
 	// If seg is not in the list, return false, otherwise return true.
 	public boolean deleteSegment(DoublyLinkedList seg) {
+		if (seg.isEmpty()) {
+			return false;
+		}
+		ListNode2<Nucleotide> current = SENTINEL.getNext();
+		int segSize = seg.size();
+		while (current != SENTINEL) {
+			ListNode2<Nucleotide> temp = current;
+			boolean match = true;
+			for (int i = 0; i < segSize; i++) {
+				if (temp == SENTINEL || temp.getValue() != seg.get(i)) {
+					match = false;
+					break;
+				}
+				temp = temp.getNext();
+			}
+			if (match) {
+				ListNode2<Nucleotide> before = current.getPrevious();
+				ListNode2<Nucleotide> after = temp;
 
+				before.setNext(after);
+				after.setPrevious(before);
+				nodeCount -= segSize;
+				return true;
+			}
+			current = current.getNext();
+		}
+		return false;
 	}
 
 	// Like question 10 on the SinglyLinkedList test:
 	// Delete the last three nodes in the list
 	// If there are not enough nodes, return false
 	public boolean deleteLastThree() {
-
+		if (nodeCount < 3) {
+			return false;
+		}
+		ListNode2<Nucleotide> last = SENTINEL.getPrevious();
+		ListNode2<Nucleotide> beforeLast = last.getPrevious().getPrevious().getPrevious();
+		beforeLast.setNext(SENTINEL);
+		SENTINEL.setPrevious(beforeLast);
+		nodeCount -= 3;
+		return true;
 	}
 
 	// Like question 11 on the SinglyLinkedList test:
 	// Replaces every node containing "A" with three nodes containing "T" "A" "C"
 	public void replaceEveryAWithTAC() {
+		ListNode2<Nucleotide> current = SENTINEL.getNext();
 
+		while (current != SENTINEL) {
+			if (current.getValue() != null && current.getValue().equals(Nucleotide.A)) {
+				ListNode2<Nucleotide> nextNode = current.getNext();
+
+				ListNode2<Nucleotide> t = new ListNode2<>(Nucleotide.T);
+				ListNode2<Nucleotide> a = new ListNode2<>(Nucleotide.A);
+				ListNode2<Nucleotide> c = new ListNode2<>(Nucleotide.C);
+
+				ListNode2<Nucleotide> prev = current.getPrevious();
+				prev.setNext(t);
+				t.setPrevious(prev);
+				t.setNext(a);
+				a.setPrevious(t);
+				a.setNext(c);
+				c.setPrevious(a);
+				c.setNext(nextNode);
+				nextNode.setPrevious(c);
+
+				nodeCount += 2;
+				current = c.getNext();
+			} else {
+				current = current.getNext();
+			}
+		}
 	}
 
 }
