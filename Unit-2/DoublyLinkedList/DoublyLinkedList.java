@@ -15,7 +15,14 @@ public class DoublyLinkedList {
 	// Constructor: creates a list that contains
 	// all elements from the array values, in the same order
 	public DoublyLinkedList(Nucleotide[] values) {
-
+		nodeCount = 0;
+		SENTINEL.setNext(SENTINEL);
+		SENTINEL.setPrevious(SENTINEL);
+		if (values != null) {
+			for (Nucleotide val : values) {
+				add(val);
+			}
+		}
 	}
 
 	public ListNode2<Nucleotide> getSentinel() {
@@ -87,7 +94,7 @@ public class DoublyLinkedList {
 	// Returns true if successful; otherwise returns false.
 	public boolean remove(Nucleotide obj) {
 		if (obj == null) {
-			return false;
+			throw new NullPointerException();
 		}
 		ListNode2<Nucleotide> newNode = SENTINEL.getNext();
 		for (int i = 0; i < nodeCount; i++) {
@@ -118,6 +125,9 @@ public class DoublyLinkedList {
 	public Nucleotide set(int i, Nucleotide obj) {
 		if (i < 0 || i >= nodeCount) {
 			throw new IndexOutOfBoundsException();
+		}
+		if (obj == null) {
+			throw new NullPointerException();
 		}
 		ListNode2<Nucleotide> returnValue = null;
 		ListNode2<Nucleotide> newNode = SENTINEL.getNext();
