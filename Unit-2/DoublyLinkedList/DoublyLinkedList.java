@@ -129,14 +129,14 @@ public class DoublyLinkedList {
 		if (obj == null) {
 			throw new NullPointerException();
 		}
-		ListNode2<Nucleotide> returnValue = null;
+		Nucleotide returnValue = null;
 		ListNode2<Nucleotide> newNode = SENTINEL.getNext();
 		for (int j = 0; j < i; j++) {
 			newNode = newNode.getNext();
 		}
-		returnValue = newNode;
+		returnValue = newNode.getValue();
 		newNode.setValue(obj);
-		return returnValue.getValue();
+		return returnValue;
 	}
 
 	// Inserts obj to become the i-th element. Increments the size
