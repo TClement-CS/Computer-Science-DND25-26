@@ -24,24 +24,21 @@ public class Recursion {
 	// Trying to infect outside the confines of the grid also has no effect
 	// Precondition: grid has no null entries
 	public static void infect(String[][] grid, int r, int c) {
-		if(r < 0 || r > grid.length) {
+		if (r < 0 || r >= grid.length) {
 			return;
 		}
-		if(c < 0 || c > grid[0].length) {
+		if (c < 0 || c >= grid[0].length) {
 			return;
 		}
 
-		if (grid[r][c] == "vaccinated") {
+		if (grid[r][c].equals("vaccinated") || grid[r][c].equals("infected")) {
 			return;
 		} else {
 			grid[r][c] = "infected";
-			grid[r-1][c] = "infected";
-			if(grid[r-1][c])
-			if(grid[r-1][c] == "vaccinated") {
-				if(grid[r-1][c] == "infected") {
-
-				}
-			}
+			infect(grid, r - 1, c);
+			infect(grid, r + 1, c);
+			infect(grid, r, c - 1);
+			infect(grid, r, c + 1);
 		}
 
 	}

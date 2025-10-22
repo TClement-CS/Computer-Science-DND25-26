@@ -15,5 +15,10 @@ public class RecursiveListTester {
         f.setNext(g);
         g.setNext(null);
         Recursion.printListInReverse(a);
+
+        String[][] grid = {{"vaccinated", "safe",             "safe","safe"}, 
+                           {"safe", "safe", "safe",  "safe"},
+                           {"safe", "safe",       "safe",      "safe"}};
+        Recursion.infect(grid, 1, 3);
     }
 }
