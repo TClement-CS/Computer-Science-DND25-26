@@ -16,9 +16,11 @@ public class RecursiveListTester {
         g.setNext(null);
         Recursion.printListInReverse(a);
 
-        String[][] grid = {{"vaccinated", "safe",             "safe","safe"}, 
-                           {"safe", "safe", "safe",  "safe"},
-                           {"safe", "safe",       "safe",      "safe"}};
+        String[][] grid = { { "vaccinated", "safe", "safe", "safe" },
+                { "safe", "safe", "safe", "safe" },
+                { "safe", "safe", "safe", "safe" } };
         Recursion.infect(grid, 1, 3);
+
+        System.out.println(Recursion.countNonConsecutiveSubsets(5));
     }
 }

@@ -51,7 +51,16 @@ public class Recursion {
 	// {1,2}, {2,3}, {3,4}, {1,2,3}, {1,2,4}, {1,3,4}, {1,2,3,4}
 	// Precondition: n > 0
 	public static long countNonConsecutiveSubsets(int n) {
+		long count = 0;
+		if (n == 2) {
+			return 3;
+		} else if (n == 1) {
+			return 2;
+		}
 
+		count = countNonConsecutiveSubsets(n - 1) + countNonConsecutiveSubsets(n - 2);
+
+		return count;
 	}
 
 	// A kid at the bottom of the stairs can jump up 1, 2, or 3 stairs at a time.
