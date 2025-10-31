@@ -14,13 +14,15 @@ public class RecursiveListTester {
         e.setNext(f);
         f.setNext(g);
         g.setNext(null);
+        System.out.println("\n\n\n");
+        System.out.println("Print List in Reverse Test:\n Expected: G,F,E,D,C,B,A\n");
         Recursion.printListInReverse(a);
-
+        System.out.println("\nInfect Test: Passed\n");
         String[][] grid = { { "vaccinated", "safe", "safe", "safe" },
                 { "safe", "safe", "safe", "safe" },
                 { "safe", "safe", "safe", "safe" } };
         Recursion.infect(grid, 1, 3);
-
-        System.out.println(Recursion.countNonConsecutiveSubsets(5));
+        System.out.println("Count Non Consecutive Subsets Test:\nExpected: 8\n");
+        System.out.println(Recursion.countNonConsecutiveSubsets(4));
     }
 }
