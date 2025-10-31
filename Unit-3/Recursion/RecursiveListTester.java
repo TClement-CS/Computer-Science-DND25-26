@@ -24,5 +24,7 @@ public class RecursiveListTester {
         Recursion.infect(grid, 1, 3);
         System.out.println("Count Non Consecutive Subsets Test:\nExpected: 8\n");
         System.out.println(Recursion.countNonConsecutiveSubsets(4));
+        System.out.println("\nCount ways to jump Stairs Test:");
+        System.out.println(Recursion.countWaysToJumpUpStairs(4));
     }
 }
