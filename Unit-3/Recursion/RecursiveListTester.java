@@ -26,5 +26,8 @@ public class RecursiveListTester {
         System.out.println(Recursion.countNonConsecutiveSubsets(4));
         System.out.println("\nCount ways to jump Stairs Test:");
         System.out.println(Recursion.countWaysToJumpUpStairs(4));
+
+
+        Recursion.solveHanoi(8);
     }
 }

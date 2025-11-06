@@ -133,7 +133,22 @@ public class Recursion {
 	// the form "1 -> 2", meaning "take the top disk of tower 1 and
 	// put it on tower 2" etc.
 	public static void solveHanoi(int startingDisks) {
+		int startpole = 0;
+		int transferpole = 1;
+		int endpole = 2;
+		diskSorter(startingDisks, startpole, transferpole, endpole);
+	}
 
+	public static void diskSorter(int startingDisks, int startpole, int transferpole, int endpole) {
+		if (startingDisks == 0) {
+			return;
+		}
+
+		diskSorter(startingDisks - 1, startpole, endpole, transferpole);
+
+		System.out.println(startpole + " -> " + endpole);
+		diskSorter(startingDisks - 1, transferpole, startpole, endpole);
+	
 	}
 
 	// You are partaking in a scavenger hunt!
