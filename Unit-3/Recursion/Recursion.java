@@ -110,7 +110,20 @@ public class Recursion {
 	// "cab", "cba"
 	// Order is your choice
 	public static void printPermutations(String str) {
+		if (str == null) {
+			System.out.println("null");
+		}
 
+	}
+
+	public static void findPermutations(String str, String remaining) {
+		if (remaining.length() == 0) {
+			System.out.println(str);
+			return;
+		}
+		for (int i = 0; i < remaining.length(); i++) {
+			
+		}
 	}
 
 	// Performs a mergeSort on the given array of ints
@@ -148,7 +161,7 @@ public class Recursion {
 
 		System.out.println(startpole + " -> " + endpole);
 		diskSorter(startingDisks - 1, transferpole, startpole, endpole);
-	
+
 	}
 
 	// You are partaking in a scavenger hunt!
@@ -171,6 +184,13 @@ public class Recursion {
 	// time 9
 	// for a total of 20 points, so it would return 20.
 	public static int scavHunt(int[] times, int[] points) {
+
+	}
+
+	public static int maxReward(int[] times, int[] points, int index) {
+		if (index == times.length) {
+			return 0;
+		}
 
 	}
 
