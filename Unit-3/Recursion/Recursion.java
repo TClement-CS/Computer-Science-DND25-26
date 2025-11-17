@@ -122,21 +122,48 @@ public class Recursion {
 			return;
 		}
 		for (int i = 0; i < remaining.length(); i++) {
-			
+
 		}
 	}
 
 	// Performs a mergeSort on the given array of ints
 	// Precondition: you may assume there are NO duplicates!!!
 	public static void mergeSort(int[] ints) {
+		if (ints.length < 2) {
+			return;
+		}
+	}
+
+	public static void merger() {
 
 	}
 
 	// Performs a quickSort on the given array of ints
 	// Use the middle element (index n/2) as the pivot
 	// Precondition: you may assume there are NO duplicates!!!
-	public static void quickSort(int[] ints) {
+	public static void quickSort(int[] arr, int low, int high) {
+		if (low < high) {
+			int cutspot = cutter(arr, low, high);
+			quickSort(arr, low, cutspot - 1);
+			quickSort(arr, cutspot + 1, high);
+		}
+	}
 
+	private static int cutter(int[] arr, int low, int high) {
+		int pivot = arr[high];
+		int i = low - 1;
+		for (int j = low; j < high; j++) {
+			if (arr[j] <= pivot) {
+				i++;
+				int t = arr[i];
+				arr[i] = arr[j];
+				arr[j] = t;
+			}
+		}
+		int t = arr[i + 1];
+		arr[i + 1] = arr[high];
+		arr[high] = t;
+		return i + 1;
 	}
 
 	// Prints a sequence of moves (one on each line)
