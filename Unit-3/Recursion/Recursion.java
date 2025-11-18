@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 public class Recursion {
 
 	// Prints the value of every node in the singly linked list with the given head,
@@ -11,7 +9,7 @@ public class Recursion {
 			return;
 		}
 		printListInReverse(head.getNext());
-		System.err.println(head.getValue());
+		System.out.println(head.getValue());
 
 	}
 
@@ -68,10 +66,14 @@ public class Recursion {
 	// Jumping 1-1-2 is considered different than jumping 1-2-1
 	// Precondition: n > 0
 	public static long countWaysToJumpUpStairs(int n) {
-		if (n < 3) {
+		if (n == 0) {
+			return 1;
+		}
+		if (n <= 2) {
 			return n;
 		}
-		long waysToJump = n - 1 + countWaysToJumpUpStairs(n - 1);
+		long waysToJump = countWaysToJumpUpStairs(n - 1) + countWaysToJumpUpStairs(n - 2)
+				+ countWaysToJumpUpStairs(n - 3);
 		return waysToJump;
 	}
 
@@ -88,18 +90,20 @@ public class Recursion {
 	// "bc", "abc"
 	// Order is your choice
 	public static void printSubsets(String str) {
-		if (str.length() < 3) {
-			subsetPrinter(str);
+		if (str == null) {
+			throw new IllegalArgumentException();
 		}
-		printSubsets(str.substring(0, str.length() - 1));
+		subsetPrinter(str, 0, "");
 	}
 
-	public static void subsetPrinter(String str) {
-		int starti = 0;
-		int endi = 0;
-		for (int i = 0; i < 10; i++) {
-			System.out.println(str.substring(starti, endi));
+	public static void subsetPrinter(String str, int index, String current) {
+		if (index == str.length()) {
+			System.out.println(current);
+			return;
 		}
+
+		subsetPrinter(str, index + 1, current + str.charAt(index));
+		subsetPrinter(str, index + 1, current);
 
 	}
 
@@ -113,6 +117,7 @@ public class Recursion {
 		if (str == null) {
 			System.out.println("null");
 		}
+		findPermutations("", str);
 
 	}
 
@@ -122,25 +127,66 @@ public class Recursion {
 			return;
 		}
 		for (int i = 0; i < remaining.length(); i++) {
-
+			char c = remaining.charAt(i);
+			String nextRemaining = remaining.substring(0, remaining.indexOf(c))
+					+ remaining.substring(remaining.indexOf(c) + 1);
+			findPermutations(str + c, nextRemaining);
 		}
 	}
 
 	// Performs a mergeSort on the given array of ints
 	// Precondition: you may assume there are NO duplicates!!!
-	public static void mergeSort(int[] ints) {
-		if (ints.length < 2) {
-			return;
+	public static void mergeSort(int[] arr) {
+		mergeSort(arr, 0, arr.length - 1);
+	}
+
+	public static void mergeSort(int[] arr, int left, int right) {
+		if (left < right) {
+			int mid = (left + right) / 2;
+			mergeSort(arr, left, mid);
+			mergeSort(arr, mid + 1, right);
+			merger(arr, left, mid, right);
 		}
 	}
 
-	public static void merger() {
-
+	private static void merger(int[] arr, int left, int mid, int right) {
+		int[] tmp = new int[right - left + 1];
+		int i = left;
+		int j = mid + 1;
+		int k = 0;
+		while (i <= mid && j <= right) {
+			if (arr[i] <= arr[j]) {
+				tmp[k] = arr[i];
+				i++;
+				k++;
+			} else {
+				tmp[k] = arr[j];
+				j++;
+				k++;
+			}
+		}
+		while (i <= mid) {
+			tmp[k] = arr[i];
+			i++;
+			k++;
+		}
+		while (j <= right) {
+			tmp[k] = arr[j];
+			j++;
+			k++;
+		}
+		for (int a = 0; a < tmp.length; a++) {
+			arr[left + a] = tmp[a];
+		}
 	}
 
 	// Performs a quickSort on the given array of ints
 	// Use the middle element (index n/2) as the pivot
 	// Precondition: you may assume there are NO duplicates!!!
+	public static void quickSort(int[] arr) {
+		quickSort(arr, 0, arr.length - 1);
+	}
+
 	public static void quickSort(int[] arr, int low, int high) {
 		if (low < high) {
 			int cutspot = cutter(arr, low, high);
@@ -211,14 +257,14 @@ public class Recursion {
 	// time 9
 	// for a total of 20 points, so it would return 20.
 	public static int scavHunt(int[] times, int[] points) {
-
+		return 0;
 	}
 
 	public static int maxReward(int[] times, int[] points, int index) {
 		if (index == times.length) {
 			return 0;
 		}
-
+		return 0;
 	}
 
 }
