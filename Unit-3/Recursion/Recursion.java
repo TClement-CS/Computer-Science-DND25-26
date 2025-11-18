@@ -257,14 +257,30 @@ public class Recursion {
 	// time 9
 	// for a total of 20 points, so it would return 20.
 	public static int scavHunt(int[] times, int[] points) {
-		return 0;
+		return maxReward(times, points, 0);
 	}
 
 	public static int maxReward(int[] times, int[] points, int index) {
-		if (index == times.length) {
+		System.out.println("Index: " + index);
+		if (index >= times.length) {
 			return 0;
 		}
-		return 0;
+		int tempIndex = -1;
+		int maximum = maxReward(times, points, index + 1);
+		int maxpoints = 0;
+		int pointsofindex = points[index];
+		for (int i = index + 1; i < times.length; i++) {
+			if (times[i] >= 5 + times[index]) {
+				System.out.println("Considering item at index " + i + " (time: " + times[i] + ")");
+				tempIndex = i;
+				break;
+			}
+		}
+		if (tempIndex != -1) {
+			pointsofindex += maxReward(times, points, tempIndex);
+		}
+		System.out.println("Max points at index " + index + ": " + maxpoints);
+		return Math.max(maximum, pointsofindex);
 	}
 
 }
