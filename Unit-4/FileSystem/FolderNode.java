@@ -106,14 +106,24 @@ public class FolderNode extends FileSystemNode {
         }
         int maxCount = 0;
         for (FileSystemNode child : children) {
-
+            int count = 0;
+            if (child.isFolder()) {
+                count += heightHelper(child);
+            }
+            if (count > maxCount) {
+                maxCount = count;
+            }
         }
+        return maxCount;
     }
 
     @Override
     public int getSize() {
-        // TODO: sum the sizes of all files contained in this directory and its
-        // descendants
+        return sizeHelper(this);
+    }
+
+    public int sizeHelper(FileSystemNode temp) {
+        
         return 0;
     }
 

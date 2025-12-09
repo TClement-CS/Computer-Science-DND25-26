@@ -84,7 +84,7 @@ public class Navigator {
      * Prints the absolute path of the current directory, from the root to this node.
      */
     private void pwd(String[] args) {
-        // TODO: use currentDirectory.toString() or similar path builder
+        System.out.println(currentDirectory.toString());
     }
 
     /**
