@@ -123,13 +123,35 @@ public class FolderNode extends FileSystemNode {
     }
 
     public int sizeHelper(FileSystemNode temp) {
-        
-        return 0;
+        int totalSize = 0;
+
+        if (!temp.isFolder()) {
+            totalSize += temp.getSize();
+        } else {
+            FolderNode folder = (FolderNode) temp;
+            for (FileSystemNode child : folder.getChildren()) {
+                totalSize += sizeHelper(child);
+            }
+        }
+
+        return totalSize;
     }
 
     @Override
     public int getTotalNodeCount() {
-        // TODO: count this directory plus all descendant files and folders
-        return 0;
+        return nodeCountHelper(this);
+    }
+
+    public int nodeCountHelper(FileSystemNode temp) {
+        int count = 1;
+
+        if (temp.isFolder()) {
+            FolderNode folder = (FolderNode) temp;
+            for (FileSystemNode child : folder.getChildren()) {
+                count += nodeCountHelper(child);
+            }
+        }
+
+        return count;
     }
 }
