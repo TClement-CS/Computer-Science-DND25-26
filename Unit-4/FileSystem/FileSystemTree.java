@@ -18,7 +18,6 @@ public class FileSystemTree {
      * Provides the root of the directory tree so callers can navigate from the top.
      */
     public FolderNode getRoot() {
-        // TODO: return the root directory
-        return null;
+        return root;
     }
 }
