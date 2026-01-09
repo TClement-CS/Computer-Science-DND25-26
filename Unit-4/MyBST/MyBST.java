@@ -19,26 +19,31 @@ public class MyBST<E extends Comparable<E>> {
 
 	// Returns true if this BST contains value; otherwise returns false.
 	public boolean contains(E value) {
-		BinaryNode<E> val = new BinaryNode<E>(value);
-		BinaryNode<E> temp = root;
-		if (value.compareTo(root.getValue()) > 0) {
-			if (!temp.hasRight()) {
-				root.setRight(val);
-			}
+		return containsHelper(root, value);
+	}
+
+	public boolean containsHelper(BinaryNode<E> temp, E value) {
+		if (temp == null) {
+			return false;
 		}
-		if (value.compareTo(root.getValue()) < 0) {
-			if (!temp.hasLeft()) {
-				root.setLeft(val);
-			}
+		if (value.compareTo(temp.getValue()) == 0) {
+			return true;
 		}
-		
-		return false;
+		if (value.compareTo(temp.getValue()) < 0) {
+			return containsHelper(temp.getLeft(), value);
+		} else {
+			return containsHelper(temp.getRight(), value);
+		}
 	}
 
 	// Adds value to this BST, unless this tree already holds value.
 	// Returns true if value has been added; otherwise returns false.
 	public boolean add(E value) {
-		return false;
+		if (this.contains(value)) {
+			return false;
+		}
+
+		return true;
 	}
 
 	// Removes value from this BST. Returns true if value has been
@@ -90,7 +95,9 @@ public class MyBST<E extends Comparable<E>> {
 			toStringHelper(node.getLeft(), sb);
 		}
 
-		sb.append(node.getValue() + ", ");
+		if (node != this.max()) {
+			sb.append(node.getValue() + ", ");
+		}
 
 		if (node.hasRight()) {
 			toStringHelper(node.getRight(), sb);
