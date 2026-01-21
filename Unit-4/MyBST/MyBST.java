@@ -42,8 +42,26 @@ public class MyBST<E extends Comparable<E>> {
 		if (this.contains(value)) {
 			return false;
 		}
+		return add(value, root);
+	}
 
-		return true;
+	public boolean add(E value, BinaryNode<E> root) {
+		BinaryNode<E> next = new BinaryNode<E>(value);
+		if (root.hasLeft() == false && value.compareTo(root.getValue()) < 0) {
+			root.setLeft(next);
+			return true;
+		}
+		if (root.hasRight() == false && value.compareTo(root.getValue()) > 0) {
+			root.setRight(next);
+			return true;
+		}
+		if (value.compareTo(root.getValue()) < 0) {
+			return add(value, root.getLeft());
+		}
+		if (value.compareTo(root.getValue()) > 0) {
+			return add(value, root.getRight());
+		}
+		return false;
 	}
 
 	// Removes value from this BST. Returns true if value has been
@@ -51,14 +69,60 @@ public class MyBST<E extends Comparable<E>> {
 	// If removing a node with two children: replace it with the
 	// largest node in the right subtree
 	public boolean remove(E value) {
-		return false;
+		if (root == null) {
+			return false;
+		}
+		return removeHelper(root, value);
+	}
+
+	private boolean removeHelper(BinaryNode<E> node, E value) {
+		if (node == null) {
+			return false;
+		}
+		int val = value.compareTo(node.getValue());
+		if (val < 0) {
+			return removeHelper(node.getLeft(), value);
+		} else if (val > 0) {
+			return removeHelper(node.getRight(), value);
+		} else {
+			if (node.isLeaf()) {
+				replaceNode(node, null);
+				return true;
+			}
+			if (node.hasLeft() && !node.hasRight()) {
+				replaceNode(node, node.getLeft());
+				return true;
+			}
+			if (!node.hasLeft() && node.hasRight()) {
+				replaceNode(node, node.getRight());
+				return true;
+			}
+			BinaryNode<E> largest = node.getRight();
+			while (largest.getRight() != null) {
+				largest = largest.getRight();
+			}
+			node.setValue(largest.getValue());
+			return removeHelper(largest, largest.getValue());
+		}
+	}
+
+	private void replaceNode(BinaryNode<E> node, BinaryNode<E> replacement) {
+		if (node.getParent() == null) {
+			root = replacement;
+		} else if (node.getParent().getLeft() == node) {
+			node.getParent().setLeft(replacement);
+		} else {
+			node.getParent().setRight(replacement);
+		}
+		if (replacement != null) {
+			replacement.setParent(node.getParent());
+		}
 	}
 
 	// Returns the minimum in the tree
 	public E min() {
 		return minHelp(root);
 	}
-
 	public E minHelp(BinaryNode<E> node) {
 		if (node.hasLeft()) {
 			minHelp(node.getLeft());
