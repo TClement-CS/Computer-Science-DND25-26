@@ -1,9 +1,7 @@
+import java.util.EmptyStackException;
+
 public class MyStack<E> {
-
-    protected int objectCount;
-
     protected E[] internalArray;
-
     private int size = 0;
 
     @SuppressWarnings("unchecked")
@@ -17,13 +15,7 @@ public class MyStack<E> {
     }
 
     public int size() {
-        int count = 0;
-        for (int i = 0; i < internalArray.length; i++) {
-            if (internalArray[i] != null) {
-                count++;
-            }
-        }
-        return count;
+        return size;
     }
 
     public boolean push(E obj) {
@@ -33,13 +25,20 @@ public class MyStack<E> {
     }
 
     public E pop() {
-        E temp = internalArray[size];
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
         size--;
+        E temp = internalArray[size];
+        internalArray[size] = null;
         return temp;
     }
 
     public E peek() {
-        return internalArray[size];
+        if (isEmpty()) {
+            throw new EmptyStackException();
+        }
+        return internalArray[size - 1];
     }
 
     public boolean isEmpty() {
