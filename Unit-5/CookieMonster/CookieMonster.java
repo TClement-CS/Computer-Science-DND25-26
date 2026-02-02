@@ -1,4 +1,5 @@
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.*;
 
 // You are allowed (and expected!) to use either Java's ArrayDeque or LinkedList class to make stacks and queues
@@ -85,9 +86,25 @@ public class CookieMonster {
 	 * down
 	 */
 	public int queueCookies() {
-		// CODE THIS
-		
-		return 0;
+		ArrayDeque<OrphanScout> orphans = new ArrayDeque<>();
+		int max = 0;
+		orphans.add(new OrphanScout(0, 0, cookieGrid[0][0]));
+		while (!orphans.isEmpty()) {
+			OrphanScout expendable = orphans.remove();
+			max = Math.max(max, expendable.getCookiesDiscovered());
+			if (validPoint(expendable.getEndingRow(), expendable.getEndingCol() + 1)) {
+				orphans.add(new OrphanScout(expendable.getEndingRow(), expendable.getEndingCol() + 1,
+						cookieGrid[expendable.getEndingRow()][expendable.getEndingCol() + 1]
+								+ expendable.getCookiesDiscovered()));
+			}
+			if (validPoint(expendable.getEndingRow() + 1, expendable.getEndingCol())) {
+				orphans.add(new OrphanScout(expendable.getEndingRow() + 1,
+						expendable.getEndingCol(),
+						cookieGrid[expendable.getEndingRow() + 1][expendable.getEndingCol()]
+								+ expendable.getCookiesDiscovered()));
+			}
+		}
+		return max;
 	}
 
 	/*
@@ -99,8 +116,25 @@ public class CookieMonster {
 	 * down
 	 */
 	public int stackCookies() {
-		// CODE THIS
-		return 0;
+		Stack<OrphanScout> orphans = new Stack<>();
+		int max = 0;
+		orphans.add(new OrphanScout(0, 0, cookieGrid[0][0]));
+		while (!orphans.isEmpty()) {
+			OrphanScout expendable = orphans.pop();
+			max = Math.max(max, expendable.getCookiesDiscovered());
+			if (validPoint(expendable.getEndingRow(), expendable.getEndingCol() + 1)) {
+				orphans.push(new OrphanScout(expendable.getEndingRow(), expendable.getEndingCol() + 1,
+						cookieGrid[expendable.getEndingRow()][expendable.getEndingCol() + 1]
+								+ expendable.getCookiesDiscovered()));
+			}
+			if (validPoint(expendable.getEndingRow() + 1, expendable.getEndingCol())) {
+				orphans.push(new OrphanScout(expendable.getEndingRow() + 1,
+						expendable.getEndingCol(),
+						cookieGrid[expendable.getEndingRow() + 1][expendable.getEndingCol()]
+								+ expendable.getCookiesDiscovered()));
+			}
+		}
+		return max;
 	}
 
 }
