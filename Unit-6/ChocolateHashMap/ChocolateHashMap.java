@@ -1,3 +1,5 @@
+import java.util.LinkedList;
+
 /**
  * ChocolateHashMap<K,V>
  *
@@ -53,8 +55,12 @@ public class ChocolateHashMap<K, V> {
     // NOTE: Math.abs(Integer.MIN_VALUE) is still negative. Consider masking the
     // sign bit.
     private int whichBucket(K key) {
-        // TODO: implement
-        throw new UnsupportedOperationException("TODO: implement whichBucket");
+        int hash = key.hashCode();
+        int index = hash % buckets.length;
+        if (index < 0) {
+            index += buckets.length;
+        }
+        return index;
     }
 
     // Returns the current load factor (objCount / buckets)
@@ -77,7 +83,21 @@ public class ChocolateHashMap<K, V> {
     // Use the .equals method to check equality.
     public boolean containsValue(V value) {
         for (int i = 0; i < buckets.length; i++) {
-            for(int j = 0: j < buckets[i].get)
+            BatchNode<ChocolateEntry<K, V>> sentinel = buckets[i];
+            BatchNode<ChocolateEntry<K, V>> current = sentinel.getNext();
+            while (!current.isSentinel()) {
+                V currentValue = current.getEntry().getValue();
+                if (value == null) {
+                    if (currentValue == null) {
+                        return true;
+                    }
+                } else {
+                    if (value.equals(currentValue)) {
+                        return true;
+                    }
+                }
+                current = current.getNext();
+            }
         }
         return false;
     }
@@ -92,22 +112,24 @@ public class ChocolateHashMap<K, V> {
         if (key == null) {
             throw new IllegalArgumentException("Key cannot be null");
         }
-
-        int index = Math.abs(key.hashCode()) % buckets.length;
-        LinkedList<Entry<K, V>> bucket = //buckets.getindex;
-
-        // Check if key already exists
-        for (ChocolateEntry<K, V> entry : bucket) {
-            if (entry.getKey().equals(key)) {
-                return false; // Key already exists
+        int index = whichBucket(key);
+        BatchNode<ChocolateEntry<K, V>> sentinel = buckets[index];
+        BatchNode<ChocolateEntry<K, V>> current = sentinel.getNext();
+        while (!current.isSentinel()) {
+            if (current.getEntry().getKey().equals(key)) {
+                return false;
             }
+            current = current.getNext();
         }
-        bucket.addLast(new ChocolateEntry<>(key, value));
+        ChocolateEntry<K, V> newEntry = new ChocolateEntry<>(key, value);
+        BatchNode<ChocolateEntry<K, V>> newNode = new BatchNode<>(newEntry);
+        sentinel.insertBefore(newNode);
         objectCount++;
-        double loadFactor = (double) //
+        double loadFactor = (double) objectCount / buckets.length;
         if (loadFactor > loadFactorLimit) {
-            rehash(buckets.size() * 2);
+            rehash(buckets.length * 2);
         }
+
         return true;
 
     }
@@ -134,8 +156,24 @@ public class ChocolateHashMap<K, V> {
     // first,
     // followed by Z, then K.
     public void rehash(int newBucketCount) {
-        // TODO: implement
-        throw new UnsupportedOperationException("TODO: implement rehash");
+        BatchNode<ChocolateEntry<K, V>>[] newBuckets = new BatchNode[newBucketCount];
+        for (int i = 0; i < newBucketCount; i++) {
+            newBuckets[i] = new BatchNode<>();
+        }
+        for (int i = 0; i < buckets.length; i++) {
+            BatchNode<ChocolateEntry<K, V>> sentinel = buckets[i];
+            BatchNode<ChocolateEntry<K, V>> current = sentinel.getNext();
+            while (!current.isSentinel()) {
+                BatchNode<ChocolateEntry<K, V>> nextNode = current.getNext();
+                current.unlink();
+                int index = current.getEntry().getKey().hashCode() % newBucketCount;
+                if (index < 0)
+                    index += newBucketCount;
+                newBuckets[index].insertBefore(current);
+                current = nextNode;
+            }
+        }
+        buckets = newBuckets;
     }
 
     // The output should be in the following format:
