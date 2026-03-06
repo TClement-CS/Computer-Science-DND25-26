@@ -74,7 +74,7 @@ public class HeapPQ<E extends Comparable<E>> implements MyPriorityQueue<E> {
 	// Bubbles the element at index i upwards until the heap properties hold again.
 	private void bubbleUp(int i) {
 		while (i > 0) {
-			if (heap[i].compareTo(heap[parent(i)]) > 0) {
+			if (heap[i].compareTo(heap[parent(i)]) < 0) {
 				swap(i, parent(i));
 				i = parent(i);
 			} else {
@@ -91,11 +91,11 @@ public class HeapPQ<E extends Comparable<E>> implements MyPriorityQueue<E> {
 			int right = 2 * i + 2;
 			int largest = i;
 			if (left < objectCount &&
-					heap[left].compareTo(heap[largest]) > 0) {
+					heap[left].compareTo(heap[largest]) < 0) {
 				largest = left;
 			}
 			if (right < objectCount &&
-					heap[right].compareTo(heap[largest]) > 0) {
+					heap[right].compareTo(heap[largest]) < 0) {
 				largest = right;
 			}
 			if (largest != i) {
