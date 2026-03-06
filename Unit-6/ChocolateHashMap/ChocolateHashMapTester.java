@@ -50,8 +50,6 @@ public class ChocolateHashMapTester {
         System.out.println(chocolateMap.containsValue("DARK")); // true
         System.out.println(chocolateMap.containsValue("MILK")); // false (after removal)
 
-        // Explicitly trigger rehashing and ensure data is preserved and rehashed
-        // correctly.
         System.out.println("Explicitly triggering rehash by adding more entries...");
         chocolateMap.put("CHOC-300", "MILK");
         chocolateMap.put("CHOC-400", "DARK");
@@ -71,7 +69,7 @@ public class ChocolateHashMapTester {
 
         // Test toString() after rehashing
         System.out.println("Map after rehashing: ");
-        System.out.println(chocolateMap);
+        System.out.println(chocolateMap.toString());
 
         // Additional tests (like emptying the map)
         System.out.println("Removing all items...");

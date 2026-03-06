@@ -48,12 +48,12 @@ public class HeapPQ<E extends Comparable<E>> implements MyPriorityQueue<E> {
 		for (int i = 0; i < objectCount; i++) {
 			newHeap[i] = heap[i];
 		}
-
+		heap = newHeap;
 	}
 
 	// Returns the index of the "parent" of index i
 	private int parent(int i) {
-		return (i + 1) / 2 - 1;
+		return (i - 1) / 2;
 	}
 
 	// Returns the index of the *smaller child* of index i
@@ -114,8 +114,8 @@ public class HeapPQ<E extends Comparable<E>> implements MyPriorityQueue<E> {
 		}
 
 		heap[objectCount] = obj;
-		bubbleUp(objectCount);
 		objectCount++;
+		bubbleUp(objectCount - 1);
 	}
 
 	@Override
