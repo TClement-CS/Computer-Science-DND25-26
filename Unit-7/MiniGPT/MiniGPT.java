@@ -1,7 +1,9 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.HashMap;
@@ -20,8 +22,10 @@ public class MiniGPT {
 			while ((charAsInt = reader.read()) != -1) {
 				// Cast the integer value to a character
 				char character = (char) charAsInt;
+				chainOdor = chainOrder;
 				if (stringChain.size() == chainOrder + 1) {
-					String key = stringChain.toString().substring(0, stringChain.toString().length() - 1);
+					String keyString = stringChain.toString().replaceAll(", ", "");
+					String key = keyString.substring(1, chainOrder + 1);
 					Character next = stringChain.get(chainOrder);
 					if (hmap.containsKey(key)) {
 						hmap.get(key).add(next);
@@ -44,7 +48,20 @@ public class MiniGPT {
 
 	public void generateText(String outputFileName, int numChars) {
 		StringBuilder output = new StringBuilder();
-		output.append((String) keys.get((int) Math.floor(Math.random() * keys.size()))); // random string from key array
+		String start = (String) keys.get((int) Math.floor(Math.random() * keys.size())); // random string from key array
+		output.append(start);
+		for (int i = output.length(); i < numChars; i++) {
+			String currentKey = output.substring(i - chainOdor, i);
+			int random = (int) Math.floor(Math.random() * hmap.get(currentKey).size());
+			output.append(hmap.get(currentKey).get(random));
+		}
+		try {
+			BufferedWriter writer = new BufferedWriter(new FileWriter(outputFileName));
+			writer.write(output.toString());
+			writer.close();
+		} catch (IOException e) {
+			System.err.println("An I/O error occurred: " + e.getMessage());
+		}
 
 	}
 }
