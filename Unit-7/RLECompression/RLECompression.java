@@ -46,6 +46,11 @@ public class RLECompression {
                 count = 1;
             }
         }
+        if (count > 1) {
+            pw.write("" + previousChar + previousChar + (char) (count + '0'));
+        } else {
+            pw.write(previousChar);
+        }
         br.close();
         pw.close();
     }
