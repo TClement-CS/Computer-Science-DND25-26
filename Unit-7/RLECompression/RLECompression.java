@@ -67,34 +67,19 @@ public class RLECompression {
             // TO-DO
             // Now here: do things with the char you just read, dependent on the char you
             // just read
-            if (c == previousChar) {
-                StringBuilder num = new StringBuilder();
-                while (br.ready()) {
-                    br.mark(1);
-                    char next = (char) br.read();
-                    if (Character.isDigit(next)) {
-                        num.append(next);
-                    } else {
-                        br.reset();
-                        break;
-                    }
-                }
-                if (num.length() > 0) {
-                    int count = Integer.parseInt(num.toString());
-                    for (int i = 0; i < count; i++) {
-                        pw.write(previousChar);
-                    }
-
-                    if (br.ready()) {
-                        previousChar = (char) br.read();
-                    }
+            StringBuilder num = new StringBuilder();
+            while (br.ready()) {
+                br.mark(1);
+                char next = (char) br.read();
+                if (Character.isDigit(next)) {
+                    num.append(next);
                 } else {
-                    pw.write(previousChar);
-                    previousChar = c;
+                    break;
                 }
-            } else {
-                pw.write(previousChar);
-                previousChar = c;
+            }
+            int count = num.length() == 0 ? 1 : Integer.parseInt(num.toString());
+            for (int i = 0; i < count; i++) {
+                pw.write(c);
             }
         }
         br.close();
@@ -161,12 +146,15 @@ public class RLECompression {
         }
         String result = "";
         for (int i = 0; i < n; i++) {
-            if (table[i].charAt(table[i].length() - 1) == '\0') {
+            if (table[i].indexOf('\0') != -1) {
                 result = table[i];
                 break;
             }
         }
-        result = result.substring(1);
+        int idx = result.indexOf('\0');
+        if (idx != -1) {
+            result = result.substring(0, idx) + result.substring(idx + 1);
+        }
 
         // TO-DO
         // And write the appropriate reconstruction into the file, without the null char
