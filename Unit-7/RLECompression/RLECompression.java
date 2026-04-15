@@ -47,7 +47,7 @@ public class RLECompression {
             }
         }
         if (count > 1) {
-            pw.write("" + previousChar + previousChar + (char) (count + '0'));
+            pw.write("" + previousChar + previousChar + count);
         } else {
             pw.write(previousChar);
         }
@@ -67,13 +67,36 @@ public class RLECompression {
             // TO-DO
             // Now here: do things with the char you just read, dependent on the char you
             // just read
-            if (c < 58 && c >= 48) {
-                for (int i = 0; i < (int) c; i++) {
-
+            if (c == previousChar) {
+                StringBuilder num = new StringBuilder();
+                while (br.ready()) {
+                    br.mark(1);
+                    char next = (char) br.read();
+                    if (Character.isDigit(next)) {
+                        num.append(next);
+                    } else {
+                        br.reset();
+                        break;
+                    }
                 }
+                if (num.length() > 0) {
+                    int count = Integer.parseInt(num.toString());
+                    for (int i = 0; i < count; i++) {
+                        pw.write(previousChar);
+                    }
+
+                    if (br.ready()) {
+                        previousChar = (char) br.read();
+                    }
+                } else {
+                    pw.write(previousChar);
+                    previousChar = c;
+                }
+            } else {
+                pw.write(previousChar);
+                previousChar = c;
             }
         }
-
         br.close();
         pw.close();
     }
@@ -95,9 +118,16 @@ public class RLECompression {
         rotations[0] = originalText.toString();
         // TO-DO
         // Now do the Burrows-Wheeler Transform
-
-        // And then write the transformation into a file
+        for (int i = 1; i < rotations.length; i++) {
+            rotations[i] = originalText.substring(i) + originalText.substring(0, i);
+        }
+        Arrays.sort(rotations);
+        StringBuilder bwt = new StringBuilder();
+        for (String s : rotations) {
+            bwt.append(s.charAt(s.length() - 1));
+        }
         PrintWriter pw = new PrintWriter(fileName + ".bw");
+        pw.write(bwt.toString());
         pw.close();
     }
 
@@ -118,10 +148,30 @@ public class RLECompression {
         }
         // TO-DO
         // Now undo the Burrows-Wheeler transform
+        int n = originalText.length();
+        String[] table = new String[n];
+        for (int i = 0; i < n; i++) {
+            table[i] = "";
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                table[j] = originalText.charAt(j) + table[j];
+            }
+            Arrays.sort(table);
+        }
+        String result = "";
+        for (int i = 0; i < n; i++) {
+            if (table[i].charAt(table[i].length() - 1) == '\0') {
+                result = table[i];
+                break;
+            }
+        }
+        result = result.substring(1);
 
         // TO-DO
         // And write the appropriate reconstruction into the file, without the null char
         PrintWriter pw = new PrintWriter(fileName.substring(0, fileName.length() - 3));
+        pw.write(result);
         pw.close();
     }
 }
