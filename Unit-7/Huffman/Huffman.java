@@ -5,7 +5,7 @@ import java.io.BufferedReader;
 
 public class Huffman {
 
-    public HashMap<Character, Integer> frequencyFinder(String strFile) throws IOException {
+    public HashMap<Character, Integer> getFrequency(String strFile) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(strFile));
         HashMap<Character, Integer> frequencyTable = new HashMap<>();
         while (br.ready()) {
@@ -19,6 +19,7 @@ public class Huffman {
             }
         }
         return frequencyTable;
-
     }
+
+    public 
 }
