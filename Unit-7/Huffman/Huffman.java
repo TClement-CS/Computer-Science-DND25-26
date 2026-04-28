@@ -2,6 +2,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.io.FileReader;
 import java.io.BufferedReader;
+import java.util.PriorityQueue;
+import java.util.Map;
 
 public class Huffman {
 
@@ -21,5 +23,21 @@ public class Huffman {
         return frequencyTable;
     }
 
-    public 
+    public HuffmanNode treeBuilder(HashMap<Character, Integer> frequencyTable) {
+        PriorityQueue<HuffmanNode> pq = new PriorityQueue<>();
+        for (Map.Entry<Character, Integer> entry : frequencyTable.entrySet()) {
+            pq.add(new HuffmanNode(entry.getKey(), entry.getValue()));
+        }
+        while (pq.size() > 1) {
+            HuffmanNode left = pq.poll();
+            HuffmanNode right = pq.poll();
+            HuffmanNode parent = new HuffmanNode(
+                    left.frequency + right.frequency,
+                    left,
+                    right);
+
+            pq.add(parent);
+        }
+        return pq.poll();
+    }
 }
