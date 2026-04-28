@@ -9,6 +9,7 @@ import java.io.PrintWriter;
 import java.util.HashMap;
 import java.util.ArrayList;
 
+
 public class MiniGPT {
 	private HashMap<String, ArrayList<Character>> hmap = new HashMap<>(); // hashmap
 	private ArrayList<String> keys = new ArrayList<String>(); // key array for selecting start of book
