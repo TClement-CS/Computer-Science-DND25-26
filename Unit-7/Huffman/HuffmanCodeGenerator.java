@@ -8,35 +8,47 @@ import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class Huffman {
+public class HuffmanCodeGenerator {
 
-    private HashMap<Character, String> dictionary;
+    private HashMap<Character, String> dictionary = new HashMap<>();
+    private HashMap<Character, Integer> frequencyTable = new HashMap<>();
 
-    public Huffman(String fileName) throws IOException {
-        HashMap<Character, Integer> freq = getFrequency(fileName);
-        HuffmanNode root = treeBuilder(freq);
+    public HuffmanCodeGenerator(String frequencyFile) throws IOException {
+        frequencyTable = getFrequency(frequencyFile);
+        HuffmanNode root = treeBuilder(frequencyTable);
 
         dictionary = new HashMap<>();
-        buildDictionary(root, "");
+        if (root != null) {
+            buildDictionary(root, "");
+        }
+
+    }
+
+    public int getFrequency(char c) {
+        if (frequencyTable.containsKey(c)) {
+            return frequencyTable.get(c);
+        } else {
+            return 0;
+        }
     }
 
     public HashMap<Character, Integer> getFrequency(String strFile) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(strFile));
-        HashMap<Character, Integer> frequencyTable = new HashMap<>();
-        while (br.ready()) {
-            char c = (char) br.read();
-            if (frequencyTable.containsKey(c)) {
-                int frequency = frequencyTable.get(c);
-                frequency++;
-                frequencyTable.put(c, frequency);
-            } else {
-                frequencyTable.put(c, 1);
-            }
+        HashMap<Character, Integer> freqTable = new HashMap<>();
+        int ch;
+        while ((ch = br.read()) != -1) {
+            char c = (char) ch;
+            freqTable.put(c, freqTable.getOrDefault(c, 0) + 1);
         }
-        return frequencyTable;
+        br.close();
+        freqTable.put((char) 26, 1); // end o file
+        return freqTable;
     }
 
     public HuffmanNode treeBuilder(HashMap<Character, Integer> frequencyTable) {
+        if (frequencyTable.isEmpty()) {
+            return null;
+        }
         PriorityQueue<HuffmanNode> pq = new PriorityQueue<>();
         for (Map.Entry<Character, Integer> entry : frequencyTable.entrySet()) {
             pq.add(new HuffmanNode(entry.getKey(), entry.getValue()));
@@ -55,9 +67,8 @@ public class Huffman {
     }
 
     private void buildDictionary(HuffmanNode node, String code) {
-        if (node == null) {
+        if (node == null)
             return;
-        }
         if (node.left == null && node.right == null) {
             dictionary.put(node.character, code);
             return;
@@ -67,21 +78,21 @@ public class Huffman {
     }
 
     public String getCode(char c) {
-        if (dictionary.containsKey(c)) {
-            return dictionary.get(c);
-        } else {
-            return "";
-        }
+        return dictionary.getOrDefault(c, "");
     }
 
-    public void makecode(String codeFile) {
-        try {
-            BufferedWriter writer = new BufferedWriter(new FileWriter(codeFile));
-            for (char c : dictionary.keySet()) {
-                writer.write(c + ":" + dictionary.get(c));
-                writer.newLine();
+    public void makeCodeFile(String codeFile) {
+        if (dictionary == null || dictionary.isEmpty()) {
+            return;
+        }
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(codeFile))) {
+            for (Map.Entry<Character, String> entry : dictionary.entrySet()) {
+                if (entry.getValue() != null && !entry.getValue().isEmpty()) {
+                    writer.write(entry.getKey() + ":" + entry.getValue());
+                    writer.newLine();
+                }
             }
-            writer.close();
         } catch (IOException e) {
             System.err.println("An I/O error occurred: " + e.getMessage());
         }
