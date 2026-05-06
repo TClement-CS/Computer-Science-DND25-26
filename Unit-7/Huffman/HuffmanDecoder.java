@@ -63,4 +63,7 @@ public class HuffmanDecoder {
         }
     }
 
+
+    //make a new method for day 6 that is more concise
+    
 }

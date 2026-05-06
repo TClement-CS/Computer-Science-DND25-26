@@ -89,7 +89,7 @@ public class HuffmanCodeGenerator {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(codeFile))) {
             for (Map.Entry<Character, String> entry : dictionary.entrySet()) {
                 if (entry.getValue() != null && !entry.getValue().isEmpty()) {
-                    writer.write(entry.getKey() + ":" + entry.getValue());
+                    writer.write((int) entry.getKey() + ":" + entry.getValue());
                     writer.newLine();
                 }
             }

@@ -12,10 +12,15 @@ public class HuffmanEncoder {
 
     public HuffmanEncoder(String codeFile) {
         try (BufferedReader reader = new BufferedReader(new FileReader(codeFile))) {
-            for (int i = 0; i < 128; i++) {
-                String line = reader.readLine();
-                if (line != null && !line.isEmpty()) {
-                    codeMap.put((char) i, line);
+            String line = "";
+            while ((line = reader.readLine()) != null) { // before lines 15-22 were storing encoded values as "a:110", now it stores it as "110"
+                if (!line.isEmpty()) {
+                    String[] parts = line.split(":", 2);
+                    if (parts.length == 2) {
+                        char c = parts[0].charAt(0);
+                        String code = parts[1];
+                        codeMap.put(c, code);
+                    }
                 }
             }
         } catch (IOException e) {
@@ -52,7 +57,7 @@ public class HuffmanEncoder {
         File outputFile = new File(studentOutput);
         try {
             if (!outputFile.exists()) {
-                outputFile.createNewFile(); 
+                outputFile.createNewFile();
             }
         } catch (IOException e) {
             System.err.println("Error creating output file: " + e.getMessage());
@@ -66,4 +71,6 @@ public class HuffmanEncoder {
         }
     }
 
+
+    //make a new method for day 6 that is more concise
 }
