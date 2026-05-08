@@ -64,6 +64,55 @@ public class HuffmanDecoder {
     }
 
 
-    //make a new method for day 6 that is more concise
-    
+    public void decodeFile(String encodedFile) {
+
+    if (!encodedFile.endsWith(".huf")) {
+        throw new IllegalArgumentException("File must end with .huf");
+    }
+
+    String outputFile =
+            encodedFile.substring(0, encodedFile.length() - 4); // file name w/out .huf
+
+    try (
+        BufferedReader reader = new BufferedReader(new FileReader(encodedFile));
+        BufferedWriter writer = new BufferedWriter(new FileWriter(outputFile))
+    ) {
+
+        StringBuilder bits = new StringBuilder();
+
+        int temp;
+
+        while ((temp = reader.read()) != -1) {
+
+            char c = (char) temp;
+            String binary =
+                    String.format("%8s",
+                    Integer.toBinaryString(c))
+                    .replace(' ', '0');
+
+            bits.append(binary);
+        }
+
+        StringBuilder currentCode = new StringBuilder();
+
+        for (int i = 0; i < bits.length(); i++) {
+
+            currentCode.append(bits.charAt(i));
+
+            if (isCode(currentCode.toString())) {
+
+                char decoded = decodeChar(currentCode.toString());
+                if ((int) decoded == 26) {
+                    break;
+                }
+                writer.write(decoded);
+
+                currentCode.setLength(0);
+            }
+        }
+
+    } catch (IOException e) {
+        System.err.println("I/O error: " + e.getMessage());
+    }
+}
 }
