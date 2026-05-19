@@ -60,12 +60,7 @@ public class DynamicProgramming {
         int tempIndex = -1;
         int maximum = 0;
 
-        if (stored.containsKey(index + 1)) {
-            maximum = stored.get(index + 1);
-        } else {
-            maximum = maxReward(times, points, index + 1, stored);
-            stored.put(index + 1, maximum);
-        }
+        maximum = maxReward(times, points, index + 1, stored);
 
         int maxpoints = 0;
         int pointsofindex = points[index];
@@ -79,8 +74,11 @@ public class DynamicProgramming {
         if (tempIndex != -1) {
             pointsofindex += maxReward(times, points, tempIndex, stored);
         }
-        System.out.println("Max points at index " + index + ": " + maxpoints);
-        return Math.max(maximum, pointsofindex);
+        int result = Math.max(maximum, pointsofindex);
+        stored.put(index, result);
+        System.out.println("Max points at index " + index + ": " + result);
+
+        return result;
     }
 
     /*
@@ -103,28 +101,18 @@ public class DynamicProgramming {
         }
         int down = 0;
         int right = 0;
-        String keyRight = "" + row + " " + (col + 1);
-        String keyDown = "" + (row + 1) + " " + col;
-        if (hmap.containsKey(keyRight)) {
-            right = hmap.get(keyRight);
-        } else {
-            right = recursiveCookies(row, col + 1, cookieGrid, hmap);
-            hmap.put(keyRight, right);
-        }
-        if (hmap.containsKey(keyDown)) {
-            down = hmap.get(keyDown);
-        } else {
-            down = recursiveCookies(row + 1, col, cookieGrid, hmap);
-            hmap.put(keyDown, down);
+        String key = row + " " + col;
+        if (hmap.containsKey(key)) {
+            return hmap.get(key);
         }
 
-        down = recursiveCookies(row, col + 1, cookieGrid, hmap);
-        right = recursiveCookies(row + 1, col, cookieGrid, hmap);
+        right = recursiveCookies(row, col + 1, cookieGrid, hmap);
+        down = recursiveCookies(row + 1, col, cookieGrid, hmap);
         int maximum = Math.max(down, right);
-        if (maximum == -1) {
-            return 0;
-        }
-        return cookieGrid[row][col] + maximum;
+        int result = cookieGrid[row][col] + maximum;
+        hmap.put(key, result);
+
+        return result;
     }
 
     private static boolean validPoint(int row, int col, int numCols, int numRows, int[][] cookieGrid) {
