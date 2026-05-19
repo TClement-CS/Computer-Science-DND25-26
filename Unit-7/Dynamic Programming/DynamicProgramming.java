@@ -15,7 +15,22 @@ public class DynamicProgramming {
 
     // You can assume lowPayouts.length == highPayouts.length
     public static int hiLoStress(int[] lowPayouts, int[] highPayouts) {
-        
+        HashMap<Integer, Integer> memo = new HashMap<>();
+        return hiLoHelper(0, lowPayouts, highPayouts, memo);
+    }
+
+    public static int hiLoHelper(int day, int[] lowPayouts, int[] highPayouts, HashMap<Integer, Integer> memo) {
+        if (day >= lowPayouts.length) {
+            return 0;
+        }
+        if (memo.containsKey(day)) {
+            return memo.get(day);
+        }
+        int takeLow = lowPayouts[day] + hiLoHelper(day + 1, lowPayouts, highPayouts, memo);
+        int takeHigh = highPayouts[day] + hiLoHelper(day + 2, lowPayouts, highPayouts, memo);
+        int maxPayout = Math.max(takeLow, takeHigh);
+        memo.put(day, maxPayout);
+        return maxPayout;
     }
 
     // You are partaking in a scavenger hunt!
