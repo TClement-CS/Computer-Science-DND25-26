@@ -1,0 +1,2564 @@
+UNIVERSITY OF CALIFORNIA,
+IRVINE
+Ventilatory airflow patterns and control of respiratory gas exchange in insects
+DISSERTATION
+submitted in partial satisfaction of the requirements
+for the degree of
+DOCTOR OF PHILOSOPHY
+In Ecology & Evolutionary Biology
+by
+Erica Christine Heinrich
+Dissertation Committee:
+Professor Timothy J. Bradley, Chair
+Professor Matthew J. McHenry
+Professor Adriana D. Briscoe
+2015
+Chapter 1 © 2013 adapted from The Journal of Experimental Biology
+Chapter 2 © 2014 adapted from The Journal of Experimental Biology
+All else © 2015 Erica Christine Heinrich
+ii
+DEDICATION
+To my family for their love and support,
+to Alex,
+and to all of my colleagues and friends
+who have been instrumental in
+my development as a scientist.
+“Insects live and feed, move, grow and multiply like other animals; but
+they are so varied in form, so rich in species, and adapted to such
+diverse conditions of life that they afford unrivalled opportunities for
+physiological study.”
+-V. B. Wigglesworth
+iii
+TABLE OF CONTENTS
+Page
+LIST OF FIGURES iv
+LIST OF TABLES vi
+ACKNOWLEDGMENTS vii
+CURRICULUM VITAE viii
+ABSTRACT OF THE DISSERTATION xiii
+INTRODUCTION 1
+The insect respiratory system 1
+Ventilation 4
+Control of the spiracles 6
+Respiratory gas exchange patterns 7
+CHAPTER 1: Coordinated ventilation and spiracle activity produce 12
+unidirectional airflow in the Madagascar hissing cockroach,
+Gromphadorhina portentosa
+CHAPTER 2: Temperature-dependent variation in gas exchange pattern 40
+and spiracular control in Rhodnius prolixus
+CHAPTER 3: The effect of respiratory pattern on oxidative damage in 70
+Drosophila melanogaster
+CONCLUSION 92
+REFERENCES 95
+iv
+LIST OF FIGURES
+Page
+Figure 1 Schematic of the insect tracheal system 2
+Figure 2 Mechanisms of spiracle valve function 4
+Figure 3 Defined respiratory gas exchange patterns in insects 8
+Figure 4 Discontinuous gas exchange in a Manduca sexta pupa 9
+Figure 1.1 Directional airflow test methods 16
+Figure 1.2 Discontinuous gas exchange in G. portentosa 23
+Figure 1.3 Coordinated CO2 release, spiracle activity, and ventilation 24
+Figure 1.4 Spiracle morphology 26
+Figure 1.5 Spiracle coordination data from video recordings 27
+Figure 1.6 Movement of tracer gas from thoracic chamber 30
+Figure 1.7 Movement of tracer gas from abdominal chamber 31
+Figure 1.8 Tracer gas movement and pressure differences 32
+Figure 1.9 Spiracle activity and ventilatory movements 33
+Figure 1.10 Schematic diagram of unidirectional airflow through the 37
+tracheal system during ventilation
+Figure 2.1 Metabolic variation in temperature and feeding trials. 51
+Figure 2.2 Respiratory patterns in fed and unfed Rhodnius prolixus 52
+Figure 2.3 Activity and CO2 release patterns 53
+Figure 2.4 Effects of feeding on respiratory pattern 55
+Figure 2.5 Methods of respiratory pattern analysis 56
+Figure 2.6 Effects of temperature on respiratory pattern 58
+v
+Page
+Figure 2.7 Effects of oxygen availability and feeding on respiratory pattern 60
+Figure 3.1 Water release rates in hypercapnia and hyperoxia 83
+Figure 3.2 Lipid peroxidation in D. melanogaster 85
+Figure 3.3 Protein carbonyl formation in D. melanogaster (calorimetric) 85
+Figure 3.4 Protein carbonyl formation in D. melanogaster (ELISA method) 86
+Figure 3.5 Superoxide dismutase activity in D. melanogaster 86
+vi
+LIST OF TABLES
+Page
+Table 1 Summary of hypotheses regarding the function of
+discontinuous gas exchange 10
+Table 1.1 Chi-squared results for independence of spiracle position 28
+Table 2.1 Respiratory pattern characteristics in oxygen treatments 59
+vii
+ACKNOWLEDGMENTS
+Financial support for this research was provided by the National Science Foundation [IOS-
+0920683 to Timothy J. Bradley], the US Department of Education (GAANN Fellowship), The
+Society for Integrative and Comparative Biology, and Sigma Xi.
+Chapter 1 and 2 of this dissertation are reprinted with permission from The Journal of
+Experimental Biology.
+I would like to thank Dr. Timothy J. Bradley for his mentorship and support. His
+encouragement allowed me to tackle difficult questions while ensuring that I never lost
+sight of the bigger picture.
+I would also like to thank my committee members, Dr. Adriana D. Briscoe and Dr. Matthew
+J. McHenry for their guidance, and for providing feedback on this dissertation. Dr. Samuel
+E. Schriner and Dr. Donovan P. German provided direction and assistance with much of the
+biochemical work described in Chapter 3. I thank Dr. German for the kind use of his lab
+space. James N. Kezos and the Rose Laboratory at UC Irvine provided invaluable assistance
+with the rearing and collection of Drosophila for the experiments in Chapter 3. I would also
+like to thank Dr. Jon F. Harrison and Dr. Thomas Förster for sharing their ideas and
+feedback on this work, and Dr. John R. B. Lighton for his technical assistance with our
+respirometry systems.
+I would especially like to thank the UC Irvine Comparative Physiology Group for playing a
+key role in the development of the work described in this dissertation as well as my own
+professional development. I am grateful to have shared each Friday with such an
+exceptional group of scientists.
+viii
+CURRICULUM VITAE
+Erica Christine Heinrich
+EDUCATION
+University of California, Irvine, CA
+Ph.D. in Ecology and Evolutionary Biology, 2015
+Dissertation: Ventilatory airflow patterns and control of respiratory gas exchange in insects
+Advisor: Dr. Timothy J. Bradley
+Arizona State University, Tempe, AZ
+B. S. in Molecular Biosciences and Biotechnology, 2010
+B. A. in History, 2010
+FELLOWSHIPS
+2012-2014 Graduate Aid in Areas of National Need (GAANN) Fellowship, US Dept. of Education
+2009-2010 School of Life Sciences Undergraduate Research Fellowship, Arizona State
+University
+2008-2009 Beckman Scholar Fellowship, Arnold and Mabel Beckman Foundation
+2007 School of Life Sciences Undergraduate Research Fellowship, Arizona State
+University
+RESEARCH AND TRAVEL GRANTS
+2014 Sigma Xi Grant in Aid of Research
+2012 Society for Integrative and Comparative Biology (SICB) GIAR
+2011-2014 UCI Department of Ecology and Evolutionary Biology Travel Award
+2011-2014 UCI Biological Sciences Dean’s Office Travel Award
+2010 The American Physiological Society Research Recognition Travel Award
+HONORS AND AWARDS
+2013 Grover C. Stephens Memorial Fellowship Award, UC Irvine
+2011-2013 Charlotte Mangum Student Support Award, SICB
+2012 SICB Best Student Poster Award, Division of Comparative Physiology and
+Biochemistry
+2010 Jonathan Wade Psoras Award, Arizona State University
+2010 Ametek-Edax Best Poster Award, Arizona Imaging and Microanalysis Society
+2006-2010 Provost’s Scholarship, Arizona State University
+PUBLICATIONS
+[4] Contreras, H. L., Heinrich, E. C., and Bradley, T. J. (2014) Hypotheses regarding the
+Discontinuous Gas Exchange Cycle (DGC) of insects. Current Opinion in Insect Science
+4: 48-53.
+[3] Heinrich, E. C. and Bradley, T. J. (2014) Temperature dependent variation in gas
+exchange patterns and spiracular control in Rhodnius prolixus. The Journal of
+Experimental Biology 217: 2752-2760.
+ix
+(publications continued)
+[2] Heinrich, E. C., McHenry, M. J., and Bradley, T. J. (2013) Coordinated ventilation and
+spiracular activity produce unidirectional airflow in the hissing cockroach,
+Gromphadorhina portentosa. The Journal of Experimental Biology. 216: 4473-4482.
+[1] Heinrich, E. C., Farzin, M., Klok, C.J., McKinley, B., Harrison, J.F. (2011) The effect of
+developmental stage on the sensitivity of cell and body size to hypoxia in Drosophila
+melanogaster. The Journal of Experimental Biology 214: 1419-1427.
+IN PREPARATION
+[1] Heinrich, E. C., Fragata, I. Kezos, J. N., Rose, M. R., Matos, M., Bradley, T. J., Mueller,
+L.D., and Santos, M. Confounding factors in thermal ramping assays: An empirical
+test of mechanistic models.
+[2] Heinrich, E. C., Gray, E. M., Vorhees, A. S., Meigher, S., Schriner, S. E., Grun, F., and
+Bradley, T. J. Studies of Insects Provide Insights into the Thermal Death of
+Mitochondria. (submitted)
+[3] Heinrich, E. C., German, D. P., and Bradley, T. J. The effect of respiratory pattern on
+oxidative damage in insects.
+PUBLISHED ABSTRACTS
+[8] Heinrich, E. C. and Bradley, T. J. (2015) Oxidative stress during disruption of gas
+exchange patterns in insects. Integrative and Comparative Biology. 55: e76.
+[7] Heinrich, E. C., Gray, E. M., Vorhees, A., Bradley, T. J. (2014) Post-mortal CO2 release
+in insects after death at high temperature. FASEB J. 28: 1101.14.
+[6] Heinrich, E. C. and Bradley, T. J. (2014) Post-mortal CO2 release by insects at high
+temperatures. Integrative and Comparative Biology. 54: e88.
+[5] Heinrich, E. C. and Bradley, T. J. (2013) Temperature dependent variation in
+respiratory patterns and spiracular control in Rhodnius prolixus. FASEB J. 27:
+1149.6.
+[4] Heinrich, E. C. and Bradley, T. J. (2013) Temperature dependent variation in
+respiratory patterns and spiracular control in Rhodnius prolixus. Integrative and
+Comparative Biology. 53: e89.
+[3] Heinrich, E. C., McHenry, M. J., and Bradley, T. J. (2012) Spiracular activity and
+respiratory airflow in the Madagascar hissing cockroach (Gromphadorhina
+portentosa). Integrative and Comparative Biology. 52: e260.
+[2] Heinrich, E.C., Klok, C.J., Harrison, J.F., Farzin, M., and McKinley, B. (2010)
+Mechanisms of hypoxia effects on body size in Drosophila melanogaster. Integrative
+and Comparative Biology. 50: e72.
+[1] Heinrich, E.C. and Harrison, J.F. (2009) Critical periods for oxygen effects on adult
+size in Drosophila melanogaster. Integrative and Comparative Biology. 49: e242.
+x
+PRESENTATIONS AT SCIENTIFIC MEETINGS
+2015 Oxidative stress during disruption of gas exchange patterns in insects. Annual
+Meeting, Integrative and Comparative Biology, West Palm Beach, FL.
+2014 Post-mortal CO2 release in insects at high temperatures. Annual Meeting,
+Experimental Biology, San Diego, CA.
+2014 Post-mortal CO2 release by insects at high temperatures. Annual Meeting, Integrative
+and Comparative Biology, Austin, TX.
+2013 Temperature dependent variation in respiratory patterns and spiracular control in
+Rhodnius prolixus. Annual Meeting, Experimental Biology, Austin, TX.
+2013 Temperature dependent variation in respiratory patterns and spiracular control in
+Rhodnius prolixus. Annual Meeting, Integrative and Comparative Biology, San
+Francisco, CA.
+2012 Spiracular activity and respiratory airflow in the Madagascar hissing cockroach
+(Gromphadorhina portentosa). Annual Meeting, Integrative and Comparative Biology,
+Charleston, SC.
+2010 The mechanisms of oxygen effects on the fruit fly Drosophila melanogaster.
+American Physiological Society Intersociety Meeting, Westminster, CO.
+2010 Mechanisms of oxygen effects on the vinegar fly, Drosophila melanogaster. ASU
+School of Life Sciences 17th Annual Undergraduate Research Poster Symposium,
+Tempe, AZ.
+2010 Developmental plasticity in the tracheal system of Zophobas morio beetles as
+visualized by synchrotron x-ray phase contrast imaging. Arizona Imaging and
+Microscopy Society Annual Meeting, Tempe, AZ.
+2010 Mechanisms of hypoxia effects on body size in Drosophila melanogaster. Annual
+Meeting, Integrative and Comparative Biology, Seattle, WA.
+2009 Key factors in the hypoxic response of Drosophila melanogaster. Annual Beckman
+Scholar Symposium, Irvine, CA.
+2009 How does hypoxia decrease the adult size of Drosophila melanogaster? ASU School of
+Life Sciences 16th Annual Undergraduate Research Poster Symposium, Tempe, AZ.
+2009 How does hypoxia decrease the adult size of Drosophila melanogaster? 26th Annual
+Physiological Ecology Meeting, Bishop, CA.
+2009 Critical periods for oxygen effects on adult size in Drosophila melanogaster. Annual
+meeting, Integrative and Comparative Biology, Boston, MA.
+2008 Critical periods and mechanisms for oxygen effects on adult size in the fruit
+fly, Drosophila melanogaster. ASU School of Life Sciences 15th Annual Undergraduate
+Research Poster Symposium, Tempe, AZ.
+xi
+TEACHING AND PEDAGOGY
+2015 Foundations of Teaching Certificate Course, Graduate Division, University of
+California, Irvine
+2015 Global Sustainability (BIO 191CW), University of California, Irvine
+Teaching Assistant
+2014-2015 Weekly Seminar in Ecology and Evolutionary Biology Education, University of
+California, Irvine
+2013, 2015 Ecosystem Ecology (E118), University of California, Irvine
+Teaching Assistant
+2014 Physiology Lab (E112L), University of California, Irvine
+Instructor
+2010-2014 Physiology Lab (E112L), University of California, Irvine
+Teaching Assistant
+2012 Human Physiology (E109), University of California, Irvine
+Teaching Assistant
+2012 Physiology Lab (E112L), University of California, Irvine
+T. A. Coordinator
+UNIVERSITY AND PROFESSIONAL SERVICE
+2013-2014 Vice President of Administrative Affairs for the Associated Graduate Students of UCI
+(AGS)
+2013-2014 Chair, AGS Graduate Research Symposium Communications Committee;
+Member, AGS Graduate Research Symposium Steering Committee
+2013-2014 UC Irvine Academic Senate, Representative on the Council on Undergraduate
+Admissions and Relations with Schools
+2014 Session Chair, SICB Annual Meeting, Austin TX
+2013 UC Irvine Biological Sciences Dean Search Committee, graduate student
+representative
+2013 Member of the organizational committee for the Dept. of Ecology and Evolutionary
+Biology Graduate Student Symposium, Univ. of California, Irvine.
+2012-2014 Member, Internal Affairs Committee, UCI Associated Graduate Students
+2012-2014 AGS Council member and representative for the School of Biological Sciences
+2011 Member of the organizational committee for the Dept. of Ecology and Evolutionary
+Biology graduate recruitment. Univ. of California, Irvine
+FIELD WORK AND EXTERNAL LABORATORY PROJECTS
+2011 Mosquito collection at the Salton Sea (Indio, CA) and San Joaquin Marsh Reserve
+(Irvine, CA)
+2009 Argonne National Labs, Advanced Photon Source, X-ray Synchrotron Imaging - GUP
+ID 11942 – Imaging Fossilized Insects in Amber to Develop a Proxy for Paleo-oxygen
+Levels
+xii
+PUBLIC OUTREACH
+2013, 2015 Exhibitor, Expand Your Horizons Conference, Univ. of San Diego
+2015 Science Advisor for the Borrego Springs High School Science Fair, Borrego Springs,
+CA
+2013-2015 Judge, Irvine Unified School District Science Fair
+2012-2014 Ecology and Botany Advisor at the Irvine Unified School District “Ask-A-Scientist
+Night”
+2013-2014 Organizer for the annual Star Wars Reads Day and Robot Expo at Woodcrest
+Library, Riverside, CA
+2009 Guest speaker for SOLUR recruitment. Arizona State University, Tempe, AZ.
+2008 Guest speaker for SOLUR recruitment. Desert Vista High School, Phoenix, AZ.
+JOURNALS SERVED AS MANUSCRIPT REVIEWER
+Journal of Insect Physiology
+European Journal of Entomology
+Journal of Comparative Physiology - B
+MEDIA/PRESS
+2014 Inside JEB: “Rhodnius respiration depends on multiple factors”. The Journal of
+Experimental Biology.
+2011 Inside JEB: “How Hypoxia Affects Drosophila Development”. The Journal of
+Experimental Biology.
+2009 “Fruit Fly Research Could Benefit Humans”. Arizona State University, uResearch.
+MEMBERSHIP IN SCIENTIFIC SOCIETIES
+Sigma Xi
+The American Association for the Advancement of Science
+American Physiological Society
+Society of Integrative and Comparative Biology
+American Association of University Women
+xiii
+ABSTRACT OF THE DISSERTATION
+Ventilatory airflow patterns and control of respiratory gas exchange in insects
+By
+Erica Christine Heinrich
+Doctor of Philosophy in Ecology & Evolutionary Biology
+University of California, Irvine, 2015
+Professor Timothy J. Bradley, Chair
+The insect respiratory system is composed of a network of air-filled tracheal tubes
+that open to the atmosphere via spiracles along the lateral sides of the body. Trachea
+branch throughout the body and deliver oxygen directly to tissues. Insects control
+respiratory gas exchange patterns by modulating the opening and closing of the spiracle
+valves. The function of these respiratory patterns and the complete mechanism by which
+the spiracle valves are controlled is unknown. The work presented here investigates (1)
+the airflow patterns through the tracheal system, (2) the physiological contributors to
+respiratory pattern and possible spiracle control mechanisms, and (3) the adaptive
+significance of discontinuous gas exchange in insects.
+I used flow-through respirometry, video analyses of spiracle and abdominal
+movements, and hyperoxic tracer gases to determine if ventilating insects utilize tidal or
+unidirectional airflow in their respiratory system. I found that Gromphadorhina portentosa
+coordinates spiracular valve movements and abdominal contractions to produce
+unidirectional airflow through the tracheal system, with air entering through the thoracic
+spiracles and exiting through the posterior abdominal spiracles.
+xiv
+Previous studies have determined that the respiratory pattern of insects is a
+function of metabolic rate. However, most studies of ectotherms utilize changes in ambient
+temperature to manipulate metabolic rate. I exposed Rhodnius prolixus to two metabolic
+stimuli, changes in ambient temperature or digestion of a blood meal, and measured
+components of their gas exchange pattern. I found that the volume of carbon dioxide
+released during a spiracle opening decreased with temperature, and that R. prolixus
+abandoned discontinuous gas exchange at a lower metabolic rate when metabolism was
+increased via increased ambient temperature compared to digestion.
+Lastly, I tested the longstanding “oxidative damage hypothesis” regarding the
+adaptive function of discontinuous gas exchange. I exposed Drosophila melanogaster to
+hypercapnic (6% CO2) gas treatments to prevent spiracular closure, and then measured the
+amount of oxidative damage (lipid peroxidation, protein carbonyl content, and superoxide
+dismutase activity) that accumulated in these populations versus a control group. I found
+that acute exposures (3 hours) of hypercapnia increased lipid peroxidation but had no
+effect on protein carbonyl formation or antioxidant enzyme activity. While results suggest
+that the discontinuous gas exchange pattern may not function to prevent excess oxidative
+damage, additional studies are required to investigate the chronic effects of disrupting this
+respiratory pattern.
+1
+INTRODUCTION
+THE INSECT RESPIRATORY SYSTEM
+Insects are the most diverse group of animals and comprise a majority of all known
+animal species. Their evolutionary success is evidenced by low rates of extinction and their
+dominance of most terrestrial ecosystems (Labandeira & Sepkoski 1993). One contributing
+factor to this success may be insect’s unique gas exchange system, which provides high
+oxygen diffusion capacity to support a wide range of metabolic demands.
+Unlike vertebrates and other arthropods, insects have a completely air-based
+respiratory system. An extensive network of air-filled tracheal tubes open along the lateral
+sides of the body, branch throughout the insect, and deliver oxygen directly to tissues (Fig.
+1). Tracheal tubes are formed as invaginations of the integument of the cuticle (Edwards
+1953). The finest branches of the tracheal system are called tracheoles. These are
+sometimes found to be filled with fluid, the function of which remains unknown
+(Wigglesworth 1983). Wigglesworth and Lee (1982) found that nearly every mitochondria
+in insect flight muscle was in direct contact with a tracheole, sometimes resulting in
+invaginations of the cellular membrane around the terminal end of the tracheole tube. As a
+result of the high rate of diffusion of oxygen in air (oxygen diffuses about 106 and CO2
+diffuses 104 times faster in air than water) and the close proximity of mitochondrial cells to
+tracheoles, insect flight muscle is the most metabolically active tissue known (Weis-Fogh
+1964; Krogh 1920).
+The tracheal system allows for efficient oxygen delivery in insects with high
+metabolic demands and large body sizes. This system is especially important since
+cutaneous diffusion has become limited in terrestrial insects as their external cuticle has
+2
+Fig. 1. A schematic diagram of the insect tracheal system.
+adapted to minimize water loss (Wigglesworth 1972). However, some primitive insects
+(Poduridae), and all insect eggs, rely on cutaneous diffusion for gas exchange (Edwards
+1953). Similarly, a majority of CO2 release by aquatic larvae likely occurs via cutaneous
+diffusion. Mosquito larvae are capable of surviving completely submerged in aerated water
+without access to air (Wigglesworth 1933). Some portion of gas exchange may occur via
+cutaneous diffusion in all insects. Thorpe demonstrated cutaneous CO2 release from the
+soft cuticle of larvae, and from the intersegmental cuticle of adult Coleoptera (Thorpe
+3
+1928). While cutaneous diffusion may play an important role in CO2 release, especially in
+aquatic insects, O2 uptake likely occurs primarily via the tracheal system.
+Valves called spiracles occur at tracheal openings along the lateral sides of the body
+and control the exchange of respiratory gases between the tracheal system and the
+environment. The morphology of the spiracles varies across species, but generally consists
+of a valve structure that opens into an internal atrium space which separates the peritreme
+from the tracheal anastomosis (Mill 1998). Insects vary in their number of spiracles,
+typically with 2-4 thoracic spiracle pairs and 7-8 abdominal spiracle pairs (Mill 1998).
+There is also variability in the structure of the closing apparatus (Mill 1998; Wigglesworth
+1972). A lever type apparatus may include an opener and/or closer muscle which pull on a
+cuticular hinge to move a valve plate which closes the spiracle opening (Fig. 2). Sometimes
+the opening muscle is replaced with an elastic element which holds the spiracle open in the
+absence of closer muscle constriction. Another apparatus sometimes found on the interior
+of the spiracle structure involves a closer muscle which pulls on either end of a flexible rod
+to construct a section of trachea.
+4
+Fig. 2. The structure and function of two different spiracle closing mechanisms. (A) Contraction of
+the closer muscle pulls on a cuticular lever which moves to cover the atrium. Upon relaxation of the
+closer muscle, the lever arm is pulled back into the open position by an elastic element. (B) An
+internal valve mechanism. Flexible cuticle surrounds a section of a tracheal tube medially to the
+spiracle atrium. Contraction of the closer muscle pulls the ends of the cuticular segment together,
+causing a pinching of the tube and resulting closure of the spiracle. Figure modified from (Chapman
+et al. 2013).
+VENTILATION
+Due to the high rate of oxygen diffusion in air, the role of ventilation in gas exchange
+has been unclear. Early calculations by Krogh suggest that diffusion alone is sufficient to
+deliver oxygen to metabolically active tissues (Krogh 1920). This diffusion hypothesis is
+supported by studies of tracheal system hypertrophy which demonstrate that the mass-
+specific cross sectional area of the tracheal system increases when insects are reared in
+5
+decreased atmospheric oxygen concentrations (Loudon 1989; Henry & Harrison 2004).
+However, rates of ventilation by abdominal pumping are known to increase with metabolic
+rate (Miller 1981) and with decreased atmospheric oxygen availability (Harrison et al.,
+2006). Ventilation therefore appears to be important for oxygen delivery, yet it is
+unknown how the convective air currents produced by abdominal pumping manifest
+within the tracheal system and contribute to respiratory gas exchange. The first chapter of
+this dissertation aims to identify these patterns of airflow.
+Ventilatory patterns are controlled by the central nervous system. In locusts, a
+central pattern generator (CPG) in the metathoracic ganglion produces two distinct
+patterns of neural output depending on the behavior and metabolic rate of the insect:
+continuous or discontinuous (Bustami & Hustert 2000). During discontinuous ventilation,
+ventilation can occur in 5-6 minute periods, followed by 15-20 minute periods of no
+efferent output from the CPG (Bustami & Hustert 2000). Ventilation frequency has been
+shown to depend on internal PCO2 in locusts (Krolikowski & Harrison 1996) and
+temperature in honeybees (Lighton & Lovegrove 1990). Ventilatory movements have also
+been shown to occur in synchrony with the movement of the pterothorax associated with
+wing beats during flight in locusts. This thoracic pumping is calculated to contribute to a
+large fraction of the total ventilatory airflow (Weis-Fough 1967).
+In addition to abdominal movements resulting from the ventilatory CPG, tracheal
+and airsac compression may also contribute to airflow in the tracheal system. Phase
+contrast x-ray imaging of live insects reveal tracheal tube compression in the head and
+thorax of beetles, crickets, ants, and locusts (Westneat et al. 2003; Socha et al. 2010;
+Greenlee et al. 2013). Airsacs may serve many functions, both respiratory and non-
+6
+respiratory in nature. Non-respiratory functions may include improving flight
+performance by lowering the insect’s specific gravity, reducing the mechanical dampening
+of wing beats during flight, maintaining external dimensions, or maintaining hydrostatic
+equilibrium in aquatic insects (Wigglesworth 1963). Compression of the airsacs or tracheal
+tubes may also function to improve airflow through the major trachea, reducing the volume
+of stale air in the tracheal system and increasing the diffusion gradient for oxygen from the
+major trachea to the tissues.
+CONTROL OF THE SPIRACLES
+The movement of spiracle valves is an important gas exchange regulator in both
+ventilating and non-ventilating insects. Spiracle valves are known to open and close in
+coordination with ventilatory movements, perhaps as the result of control by a similar
+central pattern generator (Heinrich et al., 2013). Spiracles can also open and close as a
+function of intratracheal oxygen and carbon dioxide partial pressures, in the absence of
+ventilation (Förster & Hetz 2010; Schneiderman 1960). The mechanism by which spiracles
+respond to these intratracheal gases remains unknown. Some data suggests that the
+spiracle closer muscle relaxes in the presence of dissolved CO2 (Hoyle 1960; Forster 2010),
+resulting in spiracle opening when internal CO2 partial pressures reach a given threshold.
+If spiracle activity, and therefore the respiratory pattern, is controlled by a
+mechanism similar to that of vertebrates (a function of pH), then this poses a challenge to
+insects as a result of their ectothermy. Increased atmospheric temperature may not only
+increase the metabolic rate, but because increased temperature leads to decreased solution
+pH as a result of the ionization of water, it may also affect the respiratory pattern. Such a
+7
+relationship between temperature and respiratory control would have important
+implications for studies of metabolism in insects where ambient temperature was used as a
+tool to manipulate metabolic rate (Contreras & Bradley 2009). The second chapter of this
+dissertation aims to uncouple the effects of temperature and metabolic rate on respiratory
+pattern. The results from this study also shed light on possible spiracle control
+mechanisms.
+RESPIRATORY GAS EXCHANGE PATTERNS
+As a result of the precise control of the spiracle valves, insects are capable of
+producing distinct patterns of gas exchange. The spiracles cycle between three states: (1)
+the open phase, during which the valve opens wide, a majority of the built up CO2 is
+released from the tracheal system, and intratracheal oxygen values reach atmospheric
+levels, (2) the closed phase, during which the spiracle valves close and gas exchange
+between the tracheal system and the environment can drop to zero, and (3) the flutter
+phase, during which micro-openings of the spiracles allow oxygen to diffuse into the
+tracheal system and only a small proportion of the accumulated CO2 is released. The
+frequency at which the insect cycles through these phases increases with metabolic rate.
+Studies of insect respiratory gas exchange describe three possible patterns (Fig. 3): (1)
+continuous gas exchange, during which CO2 release is detected at a constant rate, (2) cyclic
+gas exchange, during which CO2 release cycles regularly between periods of low and high
+CO2 release, and (3) discontinuous gas exchange, during which CO2 release drops to zero in
+between bursts of CO2 release, sometimes accompanied by a flutter phase detectable as
+8
+Fig. 3. A schematic of the three defined gas exchange patterns in insects. The closed (C), flutter (F),
+and open (O) phases are all observed in the discontinuous pattern. The cyclic and continuous
+patterns are observed during flow-through respirometry recordings as a result of increased cycle
+frequency caused by increased metabolic rate, temperature, or activity. Complete removal of CO2 in
+the chamber between respiratory bursts is not observed when the time constant of the respiratory
+chamber is too low due to insufficient rate of airflow through the system. Modified from (Contreras
+et al. 2014).
+smaller bursts of CO2 release preceding the larger bursts. While these patterns have been
+classified separately in the past, it seems clear that these three patterns are a manifestation
+of the same spiracle control system and differ only in their cycle frequency (Gray & Bradley
+2006).
+9
+Fig. 4. Discontinuous gas exchange observed in a Manduca sexta pupa at 18°C. Baseline recordings
+from an empty chamber are highlighted in grey.
+During low metabolic states, the spiracular closed phase becomes prolonged (Fig.
+4), sometimes with no gas exchange occurring between the insect and the environment for
+up to hours in diapausing pupae. Many hypotheses have emerged to explain the adaptive
+significance of this discontinuous pattern of gas exchange (Table 1). Conflicting evidence
+has led to the conclusion that this pattern may serve multiple functions in insects, but that
+it emerged as the result of the interaction between two physiological feedback loops which
+regulate internal partial pressures of carbon dioxide and oxygen (Contreras et al. 2014).
+Nonetheless, the benefits of this behavior, such as reduced respiratory water loss in some
+insects, cannot be overlooked. These secondary benefits can have implications for insect
+survival (Lighton 1996; Schimpf et al. 2011; Matthews & White 2012).
+10
+The oxidative damage hypothesis suggests that the discontinuous gas exchange
+pattern reduces oxidative damage of tissues by allowing the insect to maintain low PO2
+values in the tracheal system throughout the closed and flutter phases (Bradley 2000; Hetz
+& Bradley 2005). During the closed phase, tracheal oxygen partial pressures drop steadily
+from near atmospheric levels to about 4 kPa (varies in different insects), which then
+triggers the flutter phase to initiate. The micro-openings of the flutter phase allow enough
+oxygen to diffuse into the tracheal system that the intratracheal PO2 remains around 4 kPa
+until the spiracle open phase is initiated by a high PCO2 threshold (Förster & Hetz 2010).
+Table 1. Summary of hypotheses describing the function of the discontinuous gas exchange
+pattern (DGC). Modified from (Contreras et al., 2014).
+Hypothesis Description Proposed by
+Hygric hypothesis Spiracular closure reduces respiratory water loss (Buck et al., 1953)
+Chthonic hypothesis Spiracular closure steepens O2 and CO2 gradients,
+improving gas exchange in subterranean habitats
+(Lighton &
+Berrigan 1995)
+Strolling arthropod
+hypothesis
+Prolonged spiracular closure prevents tracheal mite
+infestation
+(Miller 1974)
+Oxidative damage
+hypothesis
+Spiracular closure reduces amount of O2 reaching
+tissues, therefore decreasing oxidative damage
+(Bradley 2000)
+Metabolic rate
+hypothesis
+Oxygen demand determines the respiratory pattern (Contreras &
+Bradley, 2010)
+Respiratory
+adequacy
+hypothesis
+Oxygen delivery capacity determines the
+respiratory pattern
+(Contreras &
+Bradley, 2009)
+Emergent
+properties
+DGC results from the interaction between two
+feedback loops that respond to internal CO2 and O2
+(Chown & Holter
+2000)
+Neural hypothesis DGC occurs during periods of low brain activity (Matthews & White
+2011a)
+11
+The maintenance of this low PO2 near the tissues may prevent excess exposure to damaging
+oxygen and radical production during periods of low metabolic demand.
+Few studies have tested the oxidative damage hypothesis. Matthews and White
+found that locusts are unable to maintain low intratracheal PO2 values when exposed to
+atmospheric hyperoxia (Matthews et al. 2012). Another study used live cell fluorescence
+microscopy to observe reactive oxygen species (ROS) production and found that ROS
+production did not increase when the tracheal system was shocked with hyperoxic air
+(40% O2) after a period of anoxia which forced spiracular opening (Boardman et al. 2012).
+While these results do not support the oxidative damage hypothesis, they have not directly
+measured tissue damage as a result of prolonged disruption of the discontinuous pattern.
+The third chapter of this dissertation aims to address this gap in the data.
+12
+CHAPTER 1:
+Coordinated ventilation and spiracle activity produce unidirectional airflow
+in the hissing cockroach, Gromphadorhina portentosa
+INTRODUCTION
+The insect respiratory system consists of a network of air-filled tracheal vessels that
+extend from the external surface to the tissues. Early studies demonstrated the importance
+of diffusion in transporting gases within the tracheal system (Krogh 1920; Weis-Fogh
+1964; Wigglesworth 1983). However, insects have additional processes for regulating gas
+exchange, including the use of complex respiratory patterns, active ventilation (Bailey
+1954; Levy & Schneiderman 1966; Slama 1988; Duncan & Byrne 2002; Chown & Nicolson
+2004; Chown et al. 2006; Hetz 2007) and the activity of spiracular valves along the lateral
+sides of the body. Although it is clear that gas exchange patterns within an insect are
+regulated by internal gas partial pressures (PCO2 and PO2) and metabolic rate (Lighton
+1996; Chown & Holter 2000; Hetz & Bradley 2005; Contreras & Bradley 2009; Förster &
+Hetz 2010), there are large variations across species in the amount of time an insect
+maintains spiracular closure, the use of ventilatory movements, and the frequency and
+volume of CO2 released during a spiracular opening (Miller 1960a; Miller 1960b; Slama
+1988; Nation 2002; Marais et al. 2005).
+Considerable attention has been paid to understanding spiracular control
+mechanisms. Studies of internal gas pressures and their effects on spiracle activity have
+enhanced our knowledge of spiracle function (Burkett & Schneiderman 1974; Förster &
+Hetz 2010). Spiracular valves are controlled by interacting feedback loops that trigger
+spiracles to open in response to high internal PCO2 or low PO2, as well as close in response to
+13
+high PO2 (Levy & Schneiderman 1966; Förster & Hetz 2010). The interaction of these
+control mechanisms produces the discontinuous pattern of CO2 release observed in many
+insects during periods of low metabolic demand (Punt 1950; Schneiderman & Williams
+1953; Punt et al. 1957; Burkett & Schneiderman 1974; Chown et al. 2006; Förster & Hetz
+2010). This pattern is characterized by a period of complete spiracular closure followed by
+a series of brief spiracular openings that allows bulk inward flow of oxygen, and finally an
+open phase during which CO2 is released. While the details of discontinuous gas exchange
+have been studied extensively, ventilation and its effect on respiratory patterns and
+spiracular control have received less attention. The goal of our study was to observe
+ventilation, spiracular activity and respiratory patterns to determine: (1) how spiracles
+across the entire body are coordinated and (2) whether coordinated spiracle activity and
+ventilatory movements produce directional airflow through an insect.
+Active ventilation of the respiratory system is a common behavior observed in most
+large or highly active insects, including locusts, cockroaches, beetles and honey bees (Miller
+1960a; Weis-Fough 1967; Duncan & Byrne 2002; Duncan et al. 2010; Groenewald et al.
+2012), as well as lepidopteran and dipteran pupae (Slama 1976; Slama 1984; Slama &
+Rembold 1987; Wasserthal 2001; Lehmann & Schützner 2010). Despite oxygen's high rate
+of diffusion in air, insects utilize multiple methods for ventilation. These methods include
+abdominal pumping (Weis-Fough 1967), thoracic pumping associated with wingbeats, as
+described in locusts and dragonflies (Weis-Fough 1956; Weis-Fough 1967), and the
+compression and expansion of airsacs and tracheae by either body wall movements or
+pressure transmission from the hemolymph (Wigglesworth 1963; Slama 1984; Wasserthal
+2001; Socha et al. 2008; Lehmann & Schützner 2010; Socha et al. 2010; Harrison et al.
+14
+2013; Waters et al. 2013). Ventilatory motions have been shown to produce anterior to
+posterior unidirectional airflow, as well as tidal air flow in locusts (McArthur 1929;
+Fraenkel 1932; Weis-Fough 1967). Conversely, airflow from posterior to anterior has been
+demonstrated in the honey bee (Bailey 1954) and the dung beetle (Duncan & Byrne 2002).
+It remains unclear how spiracular activity is coordinated across the entire insect or
+how the spiracles contribute to the production of airflow patterns through the body.
+Individual spiracles have been examined visually in non-ventilating insects (Levy &
+Schneiderman 1966), and the activity of spiracular motor neurons has been examined
+in Gromphadorhina portentosa, Blaberus discoidalis and Periplaneta americana (Kaars
+1979; Nelson 1979). Based on their neurological observations, Nelson and Kaars suggested
+that air may flow from the anterior to posterior of the body through the coordinated action
+of spiracles in G. portentosa and B. discoidalis. In the present study, we empirically tested
+this hypothesis by visually observing spiracle valve activity and inspecting for anterior–
+posterior movement of respiratory gases in an intact insect.
+We used the Madagascar hissing cockroach [Gromphadorhina portentosa (Schaum
+1853)] to examine spiracular activity and airflow patterns produced during ventilation.
+This cockroach is a well-studied insect, known for the hissing sound it produces. Like most
+cockroaches, this species relies heavily on ventilation, even at low metabolic rates when
+discontinuous gas exchange cycles (DGC) are employed. The hissing cockroach provides an
+additional experimental advantage in that the abdominal spiracles are large and easily
+observed under a macro camera lens. Finally, the neurophysiology of G. portentosa has
+been described in detail by Nelson (Nelson 1979), who studied tracheal morphology and
+spiracular innervation in this species to determine how they produced the hissing sound.
+15
+Because G. portentosa and other cockroaches utilize ventilation while also producing
+discontinuous patterns of CO2 release, we suspect that there may be more complex
+respiratory control systems at work than have been described for the discontinuous cycle
+alone. To better understand the relationship between spiracular control, gas exchange and
+ventilation in this insect, we observed the activity of all abdominal spiracles, measured
+CO2 release using flow-through respirometry, and followed the movement of a tracer gas
+through the insect. We observed and quantified spiracular valve movements in spiracles
+located along the entire length of the body to understand how all spiracle pairs (Fig. 1.1)
+function together in time. Simultaneous video observations of spiracle movements and
+abdominal contractions and recordings of CO2 release provided insight into the
+relationships between CO2 release patterns and spiracular activity in ventilating insects.
+Additionally, we used independent recordings of CO2 release from the abdominal and
+thoracic regions and observations of hyperoxic tracer gas movement to detect the direction
+of airflow.
+16
+Fig. 1.1. To test for directional airflow, the thorax and abdomen of Gromphadorhina
+portentosa were separated into two chambers with a latex diaphragm. The first two pairs of legs
+were restrained within the thoracic chamber and the third pair of legs was restrained along the
+abdomen. The diaphragm was located just anterior to the third spiracle pair and was secured
+tightly around the insect to prevent leaks between chambers. CO2 and O2 content in each chamber
+were recorded simultaneously. One chamber was maintained at 70% oxygen. If the insect moved
+air from thorax to abdomen, then bursts of oxygen would be detected in the abdominal chamber
+while the thoracic chamber was maintained at 70% O2, and vice versa. Spiracle identification
+numbers and locations are provided for reference. Each number refers to a spiracle pair, including
+left and right spiracles on the same segment.
+MATERIALS AND METHODS
+Animals
+Adult G. portentosa were obtained from a laboratory colony maintained at 24°C
+under a 12 h:12 h light:dark cycle. Cockroaches were housed in a 38 l terrarium with a
+coconut husk substrate and clay pots for shelter. They were fed dry rabbit food (ProLab HF
+Rabbit 5P25, Lab Diet, Richmond, IN, USA), fresh fruits and vegetables, and had continuous
+access to water. The enclosure was sprayed with water daily to increase the relative
+humidity. The mean body mass of the cockroaches used for this study was 7.04±0.89 g
+(mean ± 1 s.d., N=7). Six females and one male were examined as a result of availability
+17
+within the colony. Adult cockroaches were chosen because of the larger size of their
+spiracles, because they are easily handled during preparations, and to ensure that effects of
+molting on cuticular and tracheal morphology did not affect the observed spiracular and
+ventilatory activity.
+CO2 release patterns
+We used flow-through respirometry to determine the pattern of CO2 release from G.
+portentosa at rest. CO2 release was measured with a Li-Cor model 6262 infrared
+CO2 analyzer (Lincoln, NE, USA). Data were collected every second with Expedata PRO data
+acquisition software (Release 1.3.4, Sable Systems International, Las Vegas, NV, USA). An
+MFS mass flow system (Sable Systems) pushed air at a rate of 600 ml min−1 through a
+column of silica followed by a column of Ascarite (Thomas Scientific, Swedesboro, NJ, USA)
+and Drierite (W. A. Hammond Drierite Co., Xenia, OH, USA) to remove CO2 and water. The
+air then passed through the experimental chamber containing the insect and finally
+through the CO2 analyzer. To observe resting respiratory patterns, adult cockroaches were
+placed into 25 ml cylindrical plastic chambers (~2.85×4.45 cm) within a temperature-
+controlled cabinet maintained at 20°C by a PELT-5 temperature controller (Sable Systems).
+Recordings were taken from an empty chamber for 5 min before and after each trial to
+obtain baseline CO2 readings.
+Video recordings and analysis of spiracle activity
+We used video recordings of spiracular valves on adult cockroaches (N=7) to
+observe patterns of spiracle activity across the entire body and to relate these movements
+18
+to recorded CO2 release from the whole insect. Individuals had their legs restrained with
+medical tape and were secured to a platform attached to a micromanipulator. Video
+cameras (models Marlin F131B and Pike F032B, Allied Vision Technologies, Newburyport,
+MA, USA) were used to record two spiracles on contralateral sides. The camera fields of
+view were ~0.75×1 mm and 1.5×2 mm, respectively. Video was captured with Fire-i
+software (Unibrain, San Ramon, CA, USA), which triggered both cameras to record
+simultaneously. Videos were recorded as 640×480 pixel grayscale images at 15 frames s−1.
+Video recordings were taken from same-segment pairs 1 through 9, as well as the
+following different-segment pairs: 8–3, 8–4, 8–5, 8–6 and 8–7 (see Fig. 1.1 for spiracle
+identification). As described in the Results, we found that same-segment pairs were
+significantly coordinated in their pattern of opening. Therefore, our findings for different-
+segment pairs from contralateral views may be assumed to apply to different segments on
+the ipsilateral side of the body. For all measurements, a random 20 s segment of video was
+analyzed. Repeated, non-invasive recordings of spiracle pair 9 were not possible because
+the dorsal and ventral cuticle surfaces close tightly around the spiracle opening, obscuring
+the view of the valve underneath. To observe spiracle 3, a small portion of the cuticle on the
+posterior end of segment 3 was clipped to allow a clear field of view during recordings.
+Simultaneous video and CO2 release recordings were collected by placing a
+restrained cockroach in a 25 ml cylindrical glass chamber attached to a micromanipulator,
+which positioned the chamber within the focal range of the cameras. Cameras on both sides
+recorded video of the spiracles while 1 l min−1of dry, CO2-free air was pumped through the
+chamber and CO2 analyzer. Upstream from the insect, air passed through a metal coil that
+was submerged in an ice bath to reduce the temperature of the airstream experienced by
+19
+the insect to ~15°C. This was done to promote discontinuous gas exchange during
+observations. We corrected for the time lag in the CO2 trace caused by the tubing length
+between the glass chamber and the analyzer by recording the latency that followed
+injections of a constant volume of CO2 into the chamber at multiple locations. A lag of
+~2.48±0.84 s (mean ± 1 s.d., N=30) was observed.
+Spiracular activity was quantified manually in ImageJ (version 1.45s, National
+Institutes of Health, Bethesda, MD, USA) by scoring the state of the spiracle as opened or
+closed for each frame of a video recording. Spiracles were considered open when the
+cuticular valve detached from the flexible membrane on the opposite end of the spiracle
+atrium, or in the case that this membrane was not visible, when the valve moved inward
+enough that the inside of the spiracle atrium was visible. Spiracles were considered closed
+if the valve was attached to the membrane or if the entire internal spiracle atrium was
+covered. Periods of abdominal contraction and expansion were also manually identified
+from these recordings in order to correlate abdominal ventilatory movements with
+spiracular activity. Video images of spiracular valves included footage of same-segment
+dorsal and ventral cuticle. The start of abdominal contractions was defined by the frame in
+which the ventral and dorsal cuticular segments first began to move toward one another
+from a stationary resting position, and the end as the frame in which the cuticular segments
+reached their closest point before moving apart again. Abdominal relaxation was defined
+by the first frame in which these cuticular segments began to move apart and the frame in
+which the cuticular segments returned to a stationary position.
+20
+Test for unidirectional airflow
+Gromphadorhina portentosa, like many cockroaches, actively ventilates during the
+open phase of the DGC (Contreras & Bradley 2010). We were interested in determining
+whether unidirectional airflow through the animal occurs during these ventilatory bursts.
+For this purpose, we separated the abdomen and thorax of the insects into two separate
+chambers and used oxygen as a tracer gas to visualize directional airflow. This method has
+been described previously (Duncan & Byrne 2002). CO2 release from the abdomen and
+thorax were recorded separately by gently restraining the cockroach's legs with medical
+tape and placing a latex diaphragm anterior to the first abdominal spiracle to separate the
+abdominal and thoracic segments into two chambers (Fig. 1.1). To secure the diaphragm, a
+small hole was cut in the center of a latex sheet, which was then stretched over the insect.
+The material was flexible enough to allow small movements of the insect without
+producing leaks. The forelegs and midlegs were restrained within the thoracic chamber
+and the hindlegs were pulled down along the abdomen and secured within the abdominal
+chamber. The cockroaches were then placed into a 25 ml cylindrical plastic tube with the
+diaphragm fastened through the center of the chamber to separate the two regions. Dry,
+CO2-free air was pumped at 600 ml min−1 into each region. CO2release and oxygen content
+of the air from each region were recorded simultaneously using two CO2 analyzers and an
+Oxzilla differential oxygen analyzer (Sable Systems), respectively.
+In order to observe active movement of air from one region of the body to another,
+we employed hyperoxic air as a tracer gas. We introduced supplemental oxygen into one
+region and recorded the oxygen concentration in the other, normoxic region. A reservoir of
+hyperoxic air (~70% O2) was created within a large Mylar balloon, from which air was
+21
+pulled by either the thoracic or abdominal chamber pump. An oxygen content of 70% was
+required in order detect small bursts of tracer gas in the normoxic chamber. An increase in
+oxygen above normoxic values in the non-perfused chamber was interpreted as a product
+of directional airflow through the tracheal system. Furthermore, a burst of oxygen that
+coincided with a burst of CO2 was considered to result from a specific spiracular opening
+event. Multiple recordings with the tracer gas on the abdominal or thoracic segments were
+taken on the same cockroach during one 2–3 h session (two 30–45 min observations per
+region). These tests were performed on five of the adult cockroaches used for the spiracle
+recordings after completion of video observations.
+Secondary recordings were also performed after the initial experiments to verify
+that observed tracer gas movements were not produced by pressure variations between
+chambers. In these tests, a PT Series pressure meter (Sable Systems) measured pressure
+differences between the thoracic and abdominal chambers. In addition, high vacuum grease
+(Dow Corning, Midland, MI, USA) was added to the seal between the insect and the
+diaphragm, and Parafilm (Pechiney Plastic Packaging, Chicago, IL, USA) was wrapped
+tightly around the entire chamber to provide extra protection from potential leaks.
+Dissections
+Dissections were performed to determine the internal morphology of the spiracular
+apparatus and trachea leading to the spiracular opening in the thorax. Adult cockroaches
+were anesthetized with CO2 and the heads were removed. Individual thoracic spiracles and
+surrounding tissue were excised. An incision was made through the major tracheal tube
+attached to the spiracle in order to display any internal valve structures medial to the
+22
+spiracular surface opening. Video recordings of the internal tracheal morphology were
+collected during dissections.
+Data analysis
+To analyze flow-through respirometry data, CO2 was recorded at 1 s intervals in
+parts per million and zeroed in Expedata analysis software (Sable Systems) using baseline
+values from empty chambers. Data were exported to Excel 2010 (Microsoft, Redmond, WA,
+USA) and converted to units of microliters per minute.
+Statistical analyses on spiracular activity were performed in RStudio (RStudio,
+Boston, MA, USA). Coordination of spiracle pairs was determined using a Pearson's chi-
+squared test with Yates' continuity correction on four possible states (left and right open,
+left and right closed, left open and right closed, or left closed and right open). This test
+allowed us to determine whether the state of the left spiracle in a pair was independent of
+the state of the right spiracle. Seven cockroaches were observed, with 300 frames analyzed
+per pair, resulting in a total of 2100 observations per test. A final overall test of
+independence including data from all abdominal spiracle pairs was also completed.
+Comparisons were also made of the observed versus expected proportions of time
+that a spiracle pair was found in a particular position (both open, both closed, left open and
+right closed, left closed and right open). Observed proportions were calculated as the total
+number of frames in which a pair was found in a given position divided by the total number
+of observations for that pair (approximately 2100 observations per test). Expected
+proportions for the four possible pair positions were calculated as the product of the
+23
+fraction of time that the left spiracle was in a given position (open or closed) and the
+fraction of time that the right spiracle was in a given position (open or closed).
+RESULTS
+Respiratory pattern in G. portentosa
+At rest, G. portentosa exhibits discontinuous gas exchange (Fig. 1.2). These episodes
+of rhythmic bursts of CO2 release (labeled ‘O’ in Fig. 1.2) are interrupted by 5–10 min
+spiracular closed phases (labeled ‘C’ in Fig. 1.2), in which no CO2 is released. Active
+ventilation causes the rate of CO2 release to rapidly rise and fall throughout the open phase.
+Simultaneous recordings of spiracular activity, ventilatory movements and CO2 release
+demonstrate that individual peaks of CO2 release are often associated with an abdominal
+contraction and spiracular opening (Fig. 1.3).
+Fig. 1.2. An example of discontinuous CO2 release from an unrestrained adult male G. portentosa at
+20°C in normoxia, measured at 600 ml min−1. Periods of ventilation are separated by 5–10 min of
+spiracular closure. The discontinuous pattern consists of a flutter phase (F), in which micro-
+openings of the spiracles allow oxygen to enter the tracheal system by bulk flow while some CO2 is
+released; an open phase (O), in which the spiracles open to release accumulated tracheal CO2; and a
+spiracular closed phase (C). Note that in this species, the open phase is marked by frequent bursts
+of CO2 release associated with active ventilation.
+24
+Fig. 1.3. The position of spiracle 7 (right side) over time, recorded as open (O) or closed (C), is
+associated with ventilatory movements and CO2 release. Data were recorded from a restrained
+female G. portentosa at 15°C. This pattern was typical in individuals utilizing ventilatory
+movements. Spiracles open for a period of time during abdominal contraction and remain closed
+throughout abdominal expansion. CO2 peaks are detected at the same frequency as abdominal
+contractions.
+Dissections and microscopic observations
+Dissections of the first and second thoracic spiracles and underlying tracheae
+revealed no internal valve structure, which would have appeared as either two sclerotized
+regions on either side of the spiracle atrium, or as a fold of the wall of the atrium
+(Snodgrass 1935). Snodgrass described four possible spiracle structures (Snodgrass 1935).
+The thoracic spiracles of G. portentosa resemble what he refers to as an atriate spiracle
+with a lip-type closing apparatus. This morphology is common to thoracic spiracles, while
+internal valves are typical of abdominal spiracles (Snodgrass 1935). Spiracles with a lip-
+type closing apparatus have been described as closing with different degrees of efficiency
+(Snodgrass 1935), indicating that some valves may not hermetically seal the spiracular
+opening during contraction of the closer muscle. As such, we were unable to detect closed
+positions in thoracic spiracles with microscopic observations or video recordings. Although
+25
+the closing apparatus appeared to pulsate in some observations, no complete closures of
+the thoracic valves were observed.
+In contrast, the open and closed positions in the abdominal spiracles were clear
+(see Fig. 1.4). A single internal valve was observed to move from a closed position in which
+the valve rested perpendicular to the wall of the spiracle atrium, to an open position in
+which the valve was pulled inward and the inside of the spiracle atrium was visible. In
+many video observations of abdominal spiracles, a membrane was visible to which the
+valve would connect during closure, presumably to hermetically seal the spiracle.
+Dissections revealed that medial to the spiracular opening, the trachea branches
+immediately into three to four major vessels, which extend in multiple directions. These
+findings are similar to those described by Dailey and Graves (Dailey & Graves 1976).
+Spiracular activity
+Our observations indicate that abdominal spiracles 4–8 on both sides of the insect
+open and close at the same time. Occasionally, variations are observed because of
+incomplete opening of valves or short lags in opening between spiracles in a pair (Fig. 1.5).
+A chi-squared test for independence indicates that there is a significant relationship
+between the position of the left spiracle and the position of the right spiracle across all
+observations (χ21=10443.79, P<0.01 N=23,042), and that the positions of the left and right
+spiracles are not independent of one another. A similar relationship is found within all
+individual spiracle pairs, including same-segment and different-segment pairs (Table 1.1).
+Both same-segment and different-segment pairs were found in concordant states more
+frequently than discordant states. Additionally, all spiracle pairs were found in concordant
+26
+states more frequently than expected by chance and in discordant states less frequently
+than expected by chance (Table 1.1). Both spiracles in any given pair were found closed in
+54.9–75.3% of our observations, both open in 12.8–32.5% of our observations, and in
+discordant states in only 2.6–10.7% of our observations.
+Fig. 1.4. Single frames from video recordings showing closed abdominal spiracles (A,C), open
+abdominal spiracles (B,D), an open thoracic spiracle (E) and the closed first abdominal spiracle
+(hissing spiracle) (F). Bristles are visible on the valve structure of abdominal spiracles (labeled with
+an arrow in A), and an internal membrane is visible in the atria of abdominal spiracles during
+opening (labeled with an arrow in B). Spiracular valves are framed by a circular opening in the
+structural cuticle. During abdominal spiracular closure, the distal portion of the valve moves
+laterally and attaches to the flexible membrane, presumably to hermetically seal the opening.
+During opening, the valve moves inward and pulls away from the membrane, revealing the inside of
+the spiracular atrium.
+27
+Figure 1.5. Data utilized in spiracular synchrony analyses. Random 20 second video samples from
+7 individual cockroaches showing abdominal spiracular activity of two spiracles on right (blue) and
+left (red) sides of the body. Each column includes data for one spiracle pair across 7 individuals.
+Spiracle pair numbers (labeled in gray boxes above each column) refer to spiracles located at the
+positions described in Fig. 1.1 of the manuscript. Each row includes data from 1 individual. Open
+and closed spiracle positions are referred to on the y-axis of each row as “O” and “C” respectively,
+such that an upward deflection of a line graph indicates a spiracle opening event. All videos were
+recorded at different times. As described in our results, some observations of discordant spiracle
+states resulted from short lag periods between opening events across spiracles in a pair, or from
+incomplete opening events (i.e. incomplete detachment from membranous structure in spiracle
+atrium despite small inward deflections of the valve). In most observations, spiracles across the
+entire abdomen appear to open and close together, with the exception of spiracle 3 which only
+opens during sound production.
+28
+Spiracle 3 remained closed throughout all video observations. This was expected as
+this spiracle is specialized for sound production and has been shown to open only during
+hissing (Nelson 1979). Thoracic spiracles sometimes pulsated at frequencies similar to
+observed abdominal spiracular valve movements, but remained open during all
+observations. These pulsations were characterized by incomplete closures and slight valve
+movements while in the open position. For these reasons, spiracles 1 through 3 were not
+included in the chi-squared analyses. Pulsations are not believed to represent ‘fluttering’
+behavior because the valves remained open.
+Airflow patterns
+Unidirectional airflow was demonstrated when a hyperoxic tracer gas introduced
+into the thoracic chamber was detected in the abdominal chamber (Fig. 1.6). Oxygen bursts
+recorded from the abdominal region coincided with spiracular openings and with bursts of
+29
+CO2. However, we did not find evidence of airflow from the abdominal to the thoracic
+region (Fig. 1.7). When a hyperoxic tracer gas was introduced to the abdominal chamber,
+no oxygen bursts were detected in the thoracic chamber. In fact, very little CO2 was
+detected in the thoracic chamber in any recordings. Thoracic CO2 release remained below
+50 μl min−1 compared with bursts of 100–200 μl min−1 from the abdomen (Figs 1.6, 1.7).
+Similar results were obtained regardless of the order in which the thoracic and abdominal
+segments were exposed to the hyperoxic tracer gas.
+The absence of leaks was verified by the lack of movement of tracer gas from one
+chamber to another in the absence of ventilatory behavior. Similarly, possible leaks
+produced during ventilation were not present, as no anterior–posterior movement of
+tracer gas was detected. A leak during ventilation would have resulted in oxygen
+movement in both directions.
+In secondary trials, pressure measurements from each chamber were obtained to
+determine whether the observed airflow patterns were a function of pressure gradients
+between each chamber driving the tracer gas movement. During these tests, we observed
+unidirectional movement of the hyperoxic tracer gas from the thoracic to abdominal
+chamber only. No variation in pressure was detected between these two chambers (Fig.
+1.8).
+On some occasions, particularly after prolonged exposure to the hyperoxic gas,
+unidirectional flow was not detected. These events were characterized by a lack of tracer
+30
+Fig. 1.6. Results from respirometry trials in which a hyperoxic tracer gas was used to detect
+airflow direction in two adult cockroaches (individual 1: A–D; individual 2: E–H). When 70%
+oxygen was profused through the thoracic chamber (D,H), bursts of oxygen were observed in the
+abdominal chamber (C,G) in association with CO2 release from the abdomen (A,E). Minimal
+CO2release was observed from the thoracic region in all recordings (B,F).
+31
+Fig. 1.7. Results from respirometry trials in which a hyperoxic tracer gas was used to detect
+airflow direction in two adult cockroaches (individual 1: A–D; individual 2: E–H). When 70%
+oxygen was profused through the abdominal chamber (C,G), bursts of oxygen were not detected in
+the thoracic chamber (D,H). CO2 release was observed in the abdominal chamber (A,E) but very
+little CO2 was released from the thorax (B,F).
+32
+Fig. 1.8. Recordings of CO2 release and oxygen content in the chambers containing the thorax and
+abdomen of G. portentosa. (A) When hyperoxic air was introduced to the thoracic chamber, bursts
+of oxygen were detected in the abdominal chamber. These oxygen bursts are associated with
+CO2 release from the abdominal segment. (B) When hyperoxic air was introduced to the abdominal
+chamber, there were no distinguishable oxygen bursts detected in the thoracic chamber. In each
+test, there was no difference between the pressures in each chamber. The first minute of each
+recording indicates baseline values measured from empty chambers (CO2 and O2) or from the
+atmosphere (pressure).
+gas movement in any direction. Because we were only able to confirm unidirectional flow
+in the presence of a diaphragm, we also cannot rule out that the absence of unidirectional
+flow in these cases was not due to the diaphragm constricting the cockroach in some
+manner, obstructing the movement of air from thorax to abdomen.
+Spiracle activity was coordinated with abdominal ventilatory movements.
+Abdominal spiracles opened during abdominal contraction and closed during abdominal
+expansion (Fig. 1.9). Between abdominal contractions, the spiracles remained closed in
+58% of observations (spiracles 4–8), and open in 42% of observations (spiracles 4–8).
+33
+Fig. 1.9. Spiracle activity is associated with abdominal ventilatory movements. Spiracle positions
+from two different cockroaches are displayed as line graphs fluctuating between the open and
+closed state, and abdominal ventilatory movements as bars separated into periods of abdominal
+contraction and expansion. Top: data obtained from the same-segment pair number 8 on individual
+1; bottom: data obtained from same-segment pair number 7 on individual 2. Spiracles are open
+during abdominal contraction and closed during abdominal expansion.
+However, regardless of the spiracular position between contractions, the pattern of
+opening during contraction and closing during expansion was observed in most cases (88%
+of observation of spiracles 4–8).
+DISCUSSION
+We analyzed spiracular activity across the entire body of G. portentosa using video
+recordings of spiracles. Openings of the abdominal spiracles coincide with individual
+CO2 bursts and abdominal pumping movements (Figs 1.3, 1.9). By following the movement
+of a hyperoxic tracer gas from the thoracic to abdominal regions, we found evidence for
+unidirectional airflow during ventilation. Our results suggest that synchronized abdominal
+pumping and spiracular movements produce airflow into the thoracic spiracles and out of
+the abdominal spiracles during periods of active ventilation (Figs 1.5, 1.6, 1.7, 1.8 and 1.9,
+34
+1.10, Table 1.1). This is the first study to use simultaneous recordings of CO2 release,
+abdominal contractions and observations of the activity of multiple spiracular valves to
+examine the mechanism by which unidirectional airflow patterns are produced in a
+ventilating insect.
+Spiracle morphology
+Contrary to Nelson (Nelson 1979), who reports three pairs of thoracic spiracles, we
+identified only two pairs of thoracic spiracles and seven pairs of abdominal spiracles in G.
+portentosa. Our observations support the findings of Dailey and Graves (Dailey & Graves
+1976) that the thorax includes only two pairs of spiracles, which is consistent with the
+tracheal anatomy described by Snodgrass (Snodgrass 1935). This may be a result of the
+reduction or loss of the metathoracic spiracles, which is a common occurrence in the
+thoracic tracheal anatomy of insects (Snodgrass 1935). However, although external
+structures may be reduced or missing, the neural structures associated with innervation of
+the third thoracic spiracle may still be present.
+Spiracle coordination in the abdominal segment
+The abdominal spiracles open and close nearly in unison (Table 1.1). The observed
+discordant states were primarily due to very short lags between the opening events of
+spiracles in a pair or a result of incomplete valve movements, which did not meet our
+criteria for an opening event. We suspect that these lags and inadequate valve movements
+were caused by variation in opener muscle tensions of the two spiracles. Coordination of
+same-segment pairs is not surprising because spiracles on the same segment are
+35
+stimulated by transverse nerves that originate from central ganglia (Case 1957; Nelson
+1979). The soma for opener and inhibitory motor neurons are found in the ganglion
+containing the spiracle pair, and closer motor neurons have soma in the ganglion in the
+next anterior segment (Nelson 1979). In P. americana, the spiracles on the posteriormost
+abdominal segments are the only spiracles that are innervated only by a nerve from the
+same segment (Case 1957). This central control would allow same-segment spiracles to
+remain coordinated during ventilation. Case (Case 1957) reports a closing reflex, in which
+stimulation of the mechanoreceptory hairs on one spiracle stimulate both spiracles on a
+segment to close, which provides further evidence for central control of spiracular closure.
+The activity of spiracle valves and ventilatory movements may be controlled by a
+pattern generator in the central nervous system (CNS). Such a control system would
+explain the high degree of coordination observed in the abdominal spiracle pairs. However,
+it remains possible that this central control could be overridden by local effects of CO2 on
+the closer muscle (Hoyle 1960). In particular, CO2 may interfere with the transmission of
+action potentials across the neuromuscular junction (Hoyle 1960). However, if local
+CO2 accumulation has a significant effect on normal spiracular function, it is likely to have
+similar effects on same-segment spiracles because they are in the same anatomical region.
+We found that spiracles on different abdominal segments were also highly
+coordinated with one another. It is possible that a central pattern generator similar to the
+one that controls ventilation in locusts (Bustami & Hustert 2000) or American cockroaches
+(Woodman et al. 2008) may be involved in sending signals to the abdominal ganglia that
+control spiracle pairs on each segment. The ventilatory central pattern generator is located
+in the metathoracic ganglion in locusts, and has been shown to increase its cycle frequency
+36
+as temperature increases, causing an increase in ventilatory frequency and a decrease in
+respiratory burst duration (Newman et al. 2003). Our observations of coordination among
+all abdominal spiracles may be explained by a rhythmic nervous output originating in the
+metathoracic ganglion and traveling posteriorly. As discussed below, we found that spiracle
+activity is correlated with ventilatory movements, suggesting that these activities may be
+controlled by the same central pattern generator.
+Because all of our observations were made in actively ventilating cockroaches, it is
+possible that different patterns of spiracular activity are utilized during non-ventilating
+states, or in insects incapable of active ventilation. Snodgrass (Snodgrass 1935) described
+variation in spiracle functionality, including cases in which insects were capable of utilizing
+all spiracle pairs (holopneustic), only anterior and posterior spiracles (amphipneustic),
+only anterior spiracles (propneustic) or only posterior spiracles (metapneustic).
+Lepidopteran larvae and pupae, for instance, are thought to utilize only one or two of the
+prothoracic spiracles for periodic gas exchange (Slama 1988).
+Unidirectional airflow
+Our results indicate that abdominal spiracles function in concert with abdominal
+ventilatory movements to produce unidirectional airflow from the thoracic to the
+abdominal regions (Fig. 1.10). According to this model, air enters through the thoracic
+spiracles during abdominal expansion, when the abdominal spiracles (4 to 9) are closed.
+Air is then expelled from the abdomen through the opening of abdominal spiracles while
+the abdomen compresses. This model is consistent with the results of Kaars (Kaars 1979)
+and Nelson (Nelson 1979), who inferred anterior to posterior airflow from measurements
+37
+Figure 1.10. A proposed model of ventilatory airflow in G. portentosa based on video analyses of
+spiracle activity, flow-through respirometry observations, and tracer gas movement. (A) Airflow
+directions through all nine spiracles during active ventilation. Spiracle 3 opens only during hissing
+and otherwise remains closed. (B) During abdominal expansion, the abdominal spiracles close and
+air is drawn into the thoracic spiracles. (C) The abdominal spiracles open during abdominal
+contraction and air is pushed out primarily through abdominal spiracles. In G. portentosa, the
+thoracic spiracles remained open, allowing some CO2 release from the thorax. Because thoracic CO2
+release is minimal, backflow from the abdomen to the thorax may be limited by the resistance of the
+tracheal system or by active constriction of the trachea.
+of spiracle motor neuron activity, and post-synaptic action potentials in spiracle opener
+and closer muscle.
+Though we were unable to distinguish closure in videos of thoracic spiracles, very
+little CO2 release was detected from the thoracic region of these insects during dual-
+chamber flow-through respirometry experiments (Figs 1.6, 1.7 and 1.8). Therefore, the
+mechanism by which G. portentosa prevents thoracic CO2release during abdominal
+38
+compression remains unclear. It is possible that the trachea and air sacs in the head and
+thorax prevent posterior to anterior airflow by compressing under the hydrostatic
+pressure generated during abdominal compression. This is consistent with studies that
+have shown compression of tracheal vessels in many insects, including ants and crickets
+(Westneat et al. 2003), beetles (Westneat et al. 2003; Socha et al. 2008; Waters et al. 2013)
+and Manduca sexta caterpillars (Greenlee et al. 2013). This mechanism to prevent backflow
+would also be consistent with the abdominal air sac compression that is correlated with
+abdominal pumping in grasshoppers (Greenlee et al. 2009).
+The pattern of ventilation was observed to change after an insect was exposed to the
+hyperoxic tracer gas for a prolonged period of time. Periods of spiracular closure increased
+in duration, ventilator periods decreased in duration, and volume of CO2 released in each
+burst decreased during prolonged exposure to 70% oxygen. These observations are
+consistent with other studies that indicate that exposure to hyperoxia triggers prolonged
+spiracular closure and leads to an overall reduction in the rate of CO2 uptake ( )
+(Gulinson & Harrison 1996; Lighton et al. 2004).
+Ventilation at rest
+Gromphadorhina portentosa exhibits discontinuous gas exchange patterns at low
+metabolic rates with prolonged periods of active, potentially unidirectional, ventilation
+during the open phase. The prevalence of active ventilation across insect species during
+discontinuous respiration is unclear as many studies have utilized flow rates insufficient to
+differentiate the individual CO2 peaks produced at a high frequency during the open phase
+in ventilating insects (Gray & Bradley 2006). Because our current understanding of
+39
+spiracular control explains tightly regulated spiracular activity associated with
+intratracheal PCO2 and PO2, it seems that there must be an additional overriding control
+mechanism that allows the spiracles to open and close in association with abdominal
+movements during unidirectional airflow when intratracheal gas values would reach
+atmospheric levels. Woodman et al. (Woodman et al. 2008) report combined
+measurements of CO2 bursts, CNS output from the metathoracic ganglion, and abdominal
+pumping in the American cockroach. They argued for the existence of a centralized oxygen
+chemoreceptor, because CNS output and ventilatory activity responded to changes in
+ambient oxygen tension.
+It is important to differentiate between the DGC and the ventilatory pattern
+produced by active, pressure-driven bulk air flow. The patterns of closed, flutter and open
+phases characteristic of DGC are controlled by the partial pressures of O2 and CO2 inside the
+insect (Levy & Schneiderman 1966; Burkett & Schneiderman 1974; Contreras & Bradley
+2009; Förster & Hetz 2010). The active ventilatory pattern exhibited by many insects and
+illustrated in G. portentosa in Figs 1.3 and 1.9 is apparently controlled by a central pattern
+generator that may itself be sensitive to PO2 inside the insect.
+Our data suggest that coordinated patterns of spiracular activity and ventilatory
+movements facilitate unidirectional airflow (Bailey 1954; Duncan & Byrne 2002; Woodman
+et al. 2008) (see Figs 1.6, 1.7). It is clear, at least in insects that actively ventilate, that
+spiracular control is quite complex and provides respiratory control far in excess of simply
+opening and closing connections between the tracheal space and the external atmosphere.
+40
+CHAPTER 2:
+Temperature-dependent variation in gas exchange patterns and
+spiracular control in Rhodnius prolixus
+INTRODUCTION
+The insect respiratory system provides tightly controlled and highly efficient
+mechanisms for oxygen uptake and carbon dioxide release. It is composed of a network of
+air-filled tracheal tubes that open to the atmosphere along the lateral sides of the body and
+branch throughout the insect to deliver oxygen directly to metabolically active tissues.
+Spiracular valves, located at each tracheal opening, control the exchange of gases between
+the atmosphere and the tracheal system. Although much is known about the responses of
+the spiracles to different stimuli, it remains unclear how and where respiratory gases are
+sensed. Understanding these aspects of spiracular control is a challenging problem because
+gas exchange in insects is uncoupled from hemolymph circulation. Insects face additional
+challenges in that they must control their respiratory behavior to account for changes in
+metabolic rate due to activity as well as temperature.
+Insects utilize different patterns of respiratory gas exchange depending on their
+metabolic demands (Contreras and Bradley, 2009). These demands may vary as a result of
+fluctuations in ambient temperature, activity, or other costly processes such as digestion
+and reproduction. The most extensively studied gas exchange pattern is the discontinuous
+gas exchange cycle, which has been described in at least seven different insect orders
+(Lighton 1996; Marais et al. 2005; Gray & Bradley 2006; Chown et al. 2006; Contreras &
+Bradley 2009). This behavior consists of three phases: an open phase in which the spiracles
+open to allow gas exchange to occur, a closed phase in which the spiracular valves remain
+41
+tightly sealed for a prolonged period of time, and a flutter phase in which micro-openings
+of the spiracles allow oxygen to enter the body while a low oxygen partial pressure is
+maintained within the insect.
+In the present study we used Rhodnius prolixus (Stål 1859) to test two current
+models of insect respiratory control, one concerning the effects of metabolic rate and one
+addressing spiracular control. The first is the model proposed by Contreras and Bradley
+(Contreras & Bradley 2009), which suggests that insect gas exchange patterns are
+determined largely by metabolic rate. They propose that the pattern changes from
+discontinuous to continuous as metabolic rate is increased. The second model we have
+tested is Förster and Hetz's dual feedback model of spiracular control. This model indicates
+that spiracle activity is regulated by internal partial pressures of carbon dioxide and
+oxygen (Burkett & Schneiderman 1974; Förster & Hetz 2010). This model proposes that at
+the end of a spiracular closed phase, critically low oxygen content within the insect triggers
+the spiracles to begin fluttering, allowing oxygen to enter the tracheal system. As very little
+CO2 is released by the insect during the flutter period, eventually the increasing internal
+CO2 content triggers a second feedback mechanism to initiate spiracular opening when a
+critically high PCO2 is reached. Chown and Holter (Chown & Holter 2000) referred to this
+mechanism via their emergent properties hypothesis and argue that discontinuous gas
+exchange emerged as a function of this physiological feedback rather than serving any
+adaptive function (Chown et al. 2006). This control system consists of two interacting
+feedback loops that monitor internal PO2 and PCO2 and trigger spiracular opening events
+when critical thresholds are reached.
+42
+The precise mechanism by which the partial pressures of these gases are detected is
+unknown. It is also unclear what triggers the start of the closed phase. It is conceivable that
+spiracular closure may be initiated when sufficient CO2 has been released to reach a
+critically low value, or when diffusion of oxygen to the tracheal system produces a critically
+high oxygen value. Conversely, spiracular openings may be of a constant duration resulting
+from the timing of neural inputs or spiracle-opening muscle contractile properties.
+Based on the Förster and Hetz dual feedback loop model of the discontinuous gas
+exchange pattern, an increase in metabolic rate should lead to an increase in the frequency
+of open phases, as at higher metabolic rates CO2 accumulates in the insect faster during the
+closed and flutter phases. Conversely, the volume of CO2 released per respiratory burst
+should remain unchanged as it reflects the amount of accumulated CO2 required to reach
+the threshold partial pressure that triggers spiracular opening. In contrast to this
+expectation, it has been demonstrated that increasing the metabolic rate by increasing
+temperature leads to a decreased volume of CO2 released by both a silkworm and an ant
+during an open phase (Schneiderman & Williams 1955; Lighton 1988). A decreased volume
+of CO2 release during a burst might indicate a reduction in critical PCO2 required to open the
+spiracles. Consequently, these results might indicate that either the CO2 sensor is itself
+sensitive to temperature or there is an effect of temperature on the PCO2 detected by the
+sensor.
+Rhodnius prolixus provides certain valuable features as a model insect for studying
+respiratory control models. Rhodnius prolixus is a blood-feeding insect. Before each molt,
+the insect ingests and processes a blood meal, which leads to an increase in metabolic rate
+up to 10 times that of the resting individual over 15 days (Bradley et al. 2003; Zwicky &
+43
+Wigglesworth 1956). However, in the absence of an appropriate host in the vicinity, the
+insects remain quite still. Therefore, after a period of acclimation, the insects remain very
+still in a respirometer. Additionally, although Rhodnius breathe discontinuously, they show
+no external signs of active ventilation. Finally, the metabolic rate of Rhodnius can be
+modified in two distinct ways, namely through changes in temperature or by feeding. This
+allows us to test models of respiratory control using two means of adjusting metabolic rate,
+and thus respiratory demand.
+Here, we tested the Contreras and Bradley model (Contreras & Bradley 2009) by
+exposing R. prolixus to two different metabolic stimuli: feeding and temperature
+manipulation. We then characterized and measured different aspects of the gas exchange
+pattern to determine whether metabolic rate alone predicts the gas exchange pattern
+utilized by the insect or whether there are additional factors that contribute to respiratory
+behavior. The Förster and Hetz spiracular control model was tested by comparing
+measurements of burst frequency and volume at different temperatures and metabolic
+rates. This model, as described above, indicates that the volume of CO2 released in a
+respiratory burst should remain constant regardless of metabolic rate as an
+internal PCO2 threshold controls spiracular opening. Elevated metabolic rates should
+therefore be compensated for exclusively by increased burst frequency.
+To further examine the spiracular control model, we recorded CO2 release patterns
+from insects exposed to hyperoxia to determine whether elevated atmospheric oxygen
+affected respiratory control. While the trigger for spiracular opening events appears to be
+tightly linked to intratracheal PCO2, the mechanism responsible for triggering the end of the
+open phase remains unknown. We hypothesized that if a critically high oxygen threshold
+44
+triggers the end of the spiracular open phase, then insects exposed to atmospheric
+hyperoxia would produce decreased CO2 burst volumes compared with insects in normoxic
+environments. An increased partial pressure gradient from the atmosphere to an internal
+oxygen sensor would decrease the time required to reach the oxygen threshold and trigger
+spiracular closure. Combined, these experiments test two models of spiracular control, and
+may provide insight into the molecular mechanism by which insects detect metabolic gases.
+MATERIALS AND METHODS
+Animals
+Fifth instar R. prolixus were obtained from a colony at the University of California,
+Irvine. The colony was maintained at 27°C and 80% relative humidity (RH) with a 12 h:12
+h day:night cycle. Individuals were separated into two treatment groups of six individuals
+each. The mean (±s.d.) mass of individuals was 41.53±13.07 mg in the first group and
+43.08±6.69 mg in the second group. The first group was fed a blood meal to increase the
+metabolic rate, and the second group remained unfed and experienced a range of
+temperatures to induce changes in metabolic rate. Insects in both treatment groups were
+fasted for 3 weeks prior to the start of the experiment. Resting metabolic rates for insects
+in the fed treatment group were recorded 1 day prior to feeding. Insects in the fed
+treatment group then took a blood meal from a rabbit immediately prior to the first
+recordings.
+After the completion of the above experiments, two additional groups of individuals
+were collected. One group of six individuals was used in a second trial of temperature
+45
+experiments and another group of seven individuals was used for oxygen manipulation
+tests (mass 43.15±5.97 mg).
+Procedure for temperature and feeding trials
+CO2 release patterns of individuals in the temperature treatment group were
+recorded at temperatures ranging from 18 to 38°C. To minimize the effects of acclimation
+or heat stress, the order of temperature exposure was determined by creating a semi-
+random sequence in which most temperature transitions did not exceed a change of more
+than 6°C and the highest temperature was experienced either first or last. Temperatures
+were encountered in the following order for the first temperature treatment group, and in
+the reverse order for the second temperature treatment group: 38, 24, 30, 34, 36, 32, 28,
+24, 20, 18, 22, 26°C. The insects experienced each temperature for a total of 48 h, which
+included a 24 h equilibration period followed by another 24 h period in which two 30 min
+recordings were taken from each individual. Experiments were conducted in a
+temperature-controlled room that maintained a programmed temperature within ±0.5°C.
+The insects in the fed treatment group were maintained at 26±0.5°C for the duration of the
+study. Two 30 min recordings were taken daily from each individual for 17 days after
+feeding.
+In both the feeding and temperature treatment groups, insects remained in their
+chambers throughout the duration of the study to reduce handling stress. Each insect was
+placed into a 2 ml cylindrical plastic chamber and provided with a 1 cm2 piece of filter
+paper. Insects were perfused with a slow flow of hydrated room air (80% RH, ~25 ml
+min−1) during periods when measurements were not being taken to prevent desiccation
+46
+and CO2 build-up. Room air was humidified by bubbling through a saturated ammonium
+sulfate solution.
+During flow-through respirometry, a mass flow controller pushed air at a constant
+flow rate of 200 ml min−1 (Sierra Instruments Inc., Monterey, CA, USA) through columns of
+Drierite (W. A. Hammond Drierite Co. Ltd, Xenia, OH, USA) and Ascarite (Thomas Scientific,
+Swedesboro, NJ, USA) to remove water and CO2. Air then passed through an 8-channel
+multiplexer (Sable Systems International, Las Vegas, NV, USA) which was programmed to
+direct the airstream through six channels leading to individual insects for 30 min intervals.
+Between each recording from an insect, the multiplexer directed air through a seventh
+channel containing an empty chamber to obtain a baseline recording. A 90 s pause in data
+recording was issued at the beginning of each channel switch while dry air began flowing
+through the new channel. After the chamber, air passed through a CO2 gas analyzer (model
+6262, Li-Cor Inc., Lincoln, NE, USA).
+CO2 readings were converted from analog to digital signals with a Sable Systems
+Universal Interface II and recorded with Expedata data acquisition software (Sable
+Systems). Data were zeroed in Expedata to account for any baseline drift and values for
+average metabolic rate, burst volume, burst duration and cycle period were recorded.
+These values were obtained from baseline-corrected recordings in Expedata and tabulated
+in Excel, where CO2release rates were converted from ppm to μl h−1 (Microsoft, Redmond,
+WA, USA).
+As indicated in the Introduction, Rhodnius remain quiescent between molts unless a
+blood host is available. Our data collection occurred after 24 h of undisturbed acclimation
+at each temperature. Visual observation of the insects in the chambers during the
+47
+discontinuous gas exchange cycle gave no indication of ventilatory movements of the
+abdomen or locomotor activity. To further verify these observations, we conducted
+simultaneous measurements of CO2 release and activity, and video recordings under low
+(25°C) and high (35°C) temperature conditions to determine whether activity affected the
+gas exchange pattern. The insect was placed in a clear, cylindrical glass chamber housed
+inside a temperature-controlled cabinet (Pelt-5 Temperature Controller, Sable Systems).
+Respirometry plumbing was arranged as previously described. Supplementary
+material Fig. S1 shows data from an infrared AD2 activity detector (Sable Systems)
+recording movement of the insect. The results from these trials indicate that the insects
+breathe discontinuously while quiescent and that no visual evidence of ventilatory
+movements can be seen. Locomotory movements, such as those that occurred immediately
+after a change in temperature, clearly disturb the respiratory rhythms (supplementary
+material Fig. S1). The absence of such disturbed periods in our experimental recordings is
+evidence that activity was not a confounding variable during our measurement of gas
+exchange patterns.
+Oxygen manipulation trials
+Rhodnius prolixus were tested for changes in gas exchange patterns in 21% and 40%
+oxygen environments before and after feeding to determine whether a critically high
+oxygen threshold played a role in triggering spiracular closure. The temperature was
+maintained at 26°C for all oxygen tests. CO2 release patterns were recorded from seven,
+fifth instar individuals using the same flow-through respirometry setup previously
+described excluding the multiplexer, as individuals were tested one at a time. Recordings
+48
+were first taken in 21% oxygen for 1 h, followed by 1 h of recordings at 40% oxygen. A
+reservoir of hyperoxic air was produced by mixing dry room air and 100% oxygen in a
+large Mylar balloon. During the 40% oxygen trials, air was pulled from this reservoir by the
+mass flow meter and re-dried and scrubbed of CO2prior to entering the experimental
+chamber. Oxygen concentrations were verified by flowing air from the balloon through an
+Oxzilla Differential Oxygen Analyzer (Sable Systems). Oxygen percentages for all hyperoxic
+trials were maintained at 40±1%.
+Data collection and analysis
+One goal of the present study was to analyze the volume of CO2 released per burst,
+or spiracular open phase, as a function of metabolic rate. The burst volume in unfed R.
+prolixus is fairly straightforward to measure from a flow-through respirometry recording.
+It represents the amount of CO2 released during an open phase relative to the zero baseline
+(see Fig. 6). We used Expedata to measure these volumes (volume/s × s=volume).
+However, the burst volume in fed R. prolixus can be considered in two different ways. As in
+the unfed insects, one can consider the volume of a burst to be the amount of CO2 released
+during the open phase over and above a zero rate of release. Alternatively, as fed
+individuals display an elevated rate of release in the interburst periods as a result of
+greater spiracular activity during the flutter phase, the volume of a burst can also be
+interpreted as the CO2 release volume over and above the interburst release rate.
+CO2 accumulates during the interburst periods until it reaches the critical partial pressure
+required to initiate a burst. Following the burst, the closed phase is very short in fed
+individuals as a result of the elevated metabolic rate, and therefore the rate of CO2 release
+49
+rapidly returns to the elevated flutter rate. The burst volume consequently can be viewed
+as the volume of CO2 released at intervals, over and above this steady-state release rate
+(Fig. 4). We quantified burst volume in fed R. prolixus using both approaches, i.e. by
+measuring the volume released relative to zero rates of release, and relative to the rates
+observed during the interburst flutter phase.
+To determine the average burst volume for an individual, a maximum of six
+individual bursts were measured per 30 min recording at each temperature or each day
+post-feeding. At the lowest metabolic rates, at least two bursts per recording were available
+for measurement. The beginning of a peak was defined as the point at which the
+CO2 recording became greater than the average CO2 value in the interburst period. The end
+of a burst was determined as the point at which the CO2 recording returned to the average
+interburst period level. The rate of CO2 release during a respiratory burst was calculated as
+the burst volume divided by the burst duration. Cycle periods were defined as being from
+the start of one open phase to the start of the next open phase. An average cycle period for
+each 30 min recording was found by measuring the time between the start of the first peak
+and the start of the last peak in the recording, and dividing this time by the number of
+peaks that occurred during that time period.
+Statistical tests were performed in RStudio (rstudio.com). Averages were taken of
+all measurements for one individual at a given temperature, or day after feeding, for use in
+analyses. Data from temperature trials were combined to produce a sample size of 12
+individuals per temperature. Data from feeding trials were evaluated via regression
+analyses with metabolic rate as a continuous variable. Temperature trial data were
+50
+analyzed via one-way ANOVA. Oxygen manipulation trials were analyzed using two-way
+ANOVA with feeding status and oxygen treatment as grouping variables.
+RESULTS
+Metabolic variation in feeding and temperature manipulation trials
+Fed individuals displayed a progressive increase in metabolic rate after feeding until
+about day 10, when metabolic rate began to decrease (Fig. 2.1A). The mean (±s.d.) peak
+metabolic rate for fed individuals (37.938±5.098 μl h−1) was 13.9 times higher than the
+mean resting metabolic rate (2.732±0.597 μl CO2 h−1) for these insects at 26°C, the normal
+rearing temperature. When unfed individuals were exposed to a range of temperatures
+from 18 to 38°C, mean metabolic rate increased with temperature
+(ANOVA, F10,108=24.05, P<0.001;Fig. 2.1B) and peak metabolic rates at 38°C were on
+average 3.5 times higher than the resting rate. There was no significant difference between
+the mean metabolic rate at 26°C across the two temperature trials
+(t9.841=−0.5574,P=0.5897). Near the rearing temperature for these individuals, metabolic
+rate remained fairly constant, but decreased at temperatures below 26°C and increased at
+temperatures greater than 32°C. Metabolic rates of individuals in the temperature
+treatment and feeding treatment overlapped only during the first measurements made
+immediately after feeding, after which, metabolic rates of fed individuals surpassed the
+highest metabolic rates observed in temperature trials.
+51
+Fig. 2.1 Metabolic variation in temperature and feeding trials. (A) The rate of CO2release over time
+(days post-feeding) in seven, fifth instar Rhodnius prolixus. (B) The rate of CO2 release as a function
+of ambient temperature in 14 unfed, fifth instar R. prolixus. Error bars represent 95% confidence
+intervals. Different letters indicate a significant difference between values.
+Unfed Rhodnius exhibit discontinuous gas exchange with discrete bursts of
+CO2 release and intervening periods of very low CO2 release, often indistinguishable from
+zero. Traditionally, the discontinuous gas exchange cycle has been characterized by the
+presence of three periods, the closed period, followed by the flutter period, followed by the
+open period. During flutter, the spiracles open briefly to allow oxygen into the tracheal
+system and to regulate the tracheal PO2. During this phase, the volume of CO2 released is
+much smaller than the volume of oxygen taken up because of the larger partial pressure
+gradient for oxygen. As a result, only a very limited release of CO2occurs during spiracular
+flutter. CO2 release during flutter is further limited in unfed Rhodnius, as a result of the
+notably low oxygen demand (Bradley et al. 2003). The difficulty in distinguishing the closed
+from the flutter phase on the basis of the amount of CO2 released has caused many
+investigators to treat these two phases as a single interburst phase (Chappell & Rogowitz
+2000; Shelton & Appel 2001; Duncan et al. 2010). However, in our experiments,
+52
+Fig. 2.2. Examples of respiratory patterns observed in fed and unfed R. prolixus. Each set of graphs
+displays the rate of CO2 release over time from a single individual from each treatment. Shaded
+regions indicate baseline recordings. (A–D) Sample respiratory patterns for fed R. prolixus as
+metabolic rate increases at 0, 2, 6 and 10 days post-feeding, respectively. (E–H) Sample respiratory
+patterns for unfed R. prolixus at 18, 24, 30 and 36°C, respectively. Recordings were shortened at
+very high temperatures (H) as the high burst frequency allowed the appropriate measurements to
+be made over a shorter time period.
+particularly at higher temperatures, a flutter phase is discernible, in that the rate of
+CO2 release in the closed phase was distinctly lower than that in the flutter phase (Fig.
+2.2H; Fig. 2.3).
+When insects were equilibrated to higher temperatures, the time interval between
+bursts was shortened, reflecting the higher metabolic rate of the insects. When the time
+between bursts becomes shorter than the time constant of the chamber, observed
+CO2 release appears continuous (Gray & Bradley 2006). As such, one out of six individuals
+53
+Fig. 2.3. Activity and CO2 release in an unacclimated Rhodnius over time at a low (25˚C) and high
+(35˚C) temperature. Overall activity patterns did not differ across the two temperatures. (A)
+Periods of activity detected by an infrared activity detector result in a disruption of the
+discontinuous gas exchange pattern and elevated rate of CO2 release at both temperatures. One
+disruption of the pattern was not associated with activity. (B) periods of intense movement
+observed visually from video recordings (e.g. escape behavior, indicated with asterisks) resulted in
+a disruption of the discontinuous pattern in one case, but the pattern was maintained in another.
+Other periods of minimal movement (grooming, adjusting body position) had similar effects in that
+they only occasionally disrupted the discontinuous pattern. After the 24 h acclimation period
+utilized in our study, lengthy periods of discontinuous gas exchange were observed with no
+apparent effects of locomotion.
+54
+in the first temperature treatment group and three out of six individuals in the second
+treatment group ceased to produce detectable discontinuous bursting patterns at 38°C
+with a flow rate of 200 ml min−1. As a result, the recorded CO2 release was continuous and
+characteristics of the gas exchange pattern were no longer examined at this temperature
+and above.
+When Rhodnius were allowed to take blood meals to repletion, metabolic rate
+increased substantially over a period of several days (Fig. 2.1A), resulting in a CO2 release
+pattern with more frequent bursts and an elevated rate of interburst CO2 release (Fig.
+2.2A–D). More O2 is required between bursts in order to support the higher aerobic
+metabolic rate. This oxygen is supplied by increasing the duration and/or frequency of
+spiracular micro-openings during the interburst period. The increased uptake of oxygen
+therefore results in an increased rate of CO2 release during flutter (Fig. 2.2D). In some
+traces, the rate of CO2 release immediately after an open phase is lower than later in the
+interburst period (Fig. 2.2C,D). We interpret this to mean that there is a short closed phase
+after the open phase, but the high metabolic rate dictates a rapid transition to the flutter
+phase in fed individuals.
+Respiratory characteristics in feeding trials
+When fed a bloodmeal, R. prolixus maintained a discontinuous pattern of CO2 release
+even as the metabolic rate increased. However, variations in the characteristics of the
+discontinuous pattern were observed. When burst volume (BV) was measured as the
+increase over the interburst release rate, the volume increased with an increase in
+55
+Fig. 2.4. Effects of feeding-induced changes in metabolic rate on measured respiratory
+characteristics. The change in burst volume (A), burst duration (B), discontinuous gas exchange
+cycle (DGC) period (C) and open phase CO2 release rate (D) as a function of metabolic rate in fed R.
+prolixus. A slight increase in burst volume was observed as metabolic rate increased. This increase
+was more pronounced if burst volume measurements included the steady-state CO2 release rate
+during interburst periods. An increase in burst volume and a decrease in burst duration resulted in
+a significant increase in the rate of CO2 release during a spiracular opening period. The cycle period
+decreased initially and leveled off near 150 s per cycle. Blue lines are linear regressions in A, B and
+D and a logarithmic regression in C. For A–D, P<0.001.
+metabolic rate (MR) (Fig. 2.4A; BV=0.003MR+0.266,R2=0.217, F1,75=22.03, P<0.001). When
+the burst volume was measured as the increase relative to a zero baseline (see Fig. 2.5,
+volume measurement 2), this relationship became more pronounced (BV=0.015MR+0.261,
+R2=0.838). Respiratory bursts became shorter in duration as metabolic rate increased
+56
+Fig. 2.5. Methods of data collection during different metabolic states. Two examples are shown.
+Burst volumes were collected as the volume of CO2released above the steady-state release during
+flutter (1), or as the total CO2 release during an opening event (2). Twelve bursts were sampled
+from each individual to find an average burst volume for each treatment. Cycle periods were
+defined as the time between the start of one burst and the start of the next consecutive burst. Burst
+durations were defined as the time from the start of the burst to the point at which CO2 release
+returns to the steady-state value.
+(Fig.2.4B; duration=−0.549MR+76.132, R2=0.401, F1,75=51.82, P<0.001). The average cycle
+period displayed an initial decrease with increasing metabolic rate but began to reach a
+plateau at an intermediate metabolic state (Fig. 2.4C; period=−138.5lnMR+649.27, R2=0.75,
+F1,75=225.27, P<0.001). A decrease in burst duration and an increase in the volume of
+CO2 released in a burst resulted in a significant increase in the calculated CO2 release rate
+(burst volume/burst duration) (Fig. 2.4D; rate=0.00009MR+0.003, R2=0.673,F1,75=157.2,
+P<0.001).
+57
+Respiratory characteristics in temperature trials
+Unlike the increase in burst volume that occurred with increased metabolic rate
+following feeding, burst volume decreased with an increase in temperature (T) (Fig. 2.6A,
+ANOVA, F10,108=24.51, P<0.001; BV=−0.024T+0.980 above 27°C). Burst duration and cycle
+period also decreased with increasing temperature (Fig. 2.6B,
+ANOVA, F10,108=122.4, P<0.001; Fig. 2.6C, F10,108=51.63, P<0.001). A one-way ANOVA also
+indicated a significant relationship between the burst phase CO2 release rate and
+temperature (Fig. 2.6D, F10,108=4.694, P<0.001), with a Tukey HSD test demonstrating that
+all rates were similar with the exception of the rate measured at 38°C, which was
+significantly lower than rates at all temperatures except for 18 and 22°C.
+58
+Fig. 2.6. Effects of temperature-induced changes in metabolic rate on measured respiratory
+characteristics. The change in burst volume (A), burst duration (B), discontinuous gas exchange
+cycle (DGC) period (C) and open phase CO2 release rate (D) as a function of metabolic rate in
+unfed R. prolixus at temperatures ranging from 18 to 38°C. Increases in temperature led to
+decreases in burst volume, burst duration and cycle period. There was no significant change in the
+rate of CO2release during a burst over the range of 18 to 34°C. Error bars represent 95% confidence
+intervals.
+Effects of hyperoxia on discontinuous gas exchange pattern characteristics
+Table 2.1 provides results of two-way ANOVA tests performed on fed and unfed R.
+prolixus in 21% and 40% oxygen treatments. There was no significant effect of oxygen
+concentration on the metabolic rates of the unfed or fed groups. The volume of
+CO2 released in a respiratory burst was not affected by feeding, but increased significantly
+in fed individuals exposed to hyperoxia (Fig. 2.7A). There was no effect of oxygen
+concentration on the burst duration (Fig. 2.7B). However, feeding had a significant effect on
+59
+burst duration, with fed individuals displaying significantly longer bursts. The cycle period
+was significantly increased in fed compared with unfed individuals at 21% and 40%
+oxygen (Table 2.1). There was a significant effect of oxygen concentration on the rate of
+CO2 release during a burst in fed individuals (Table 2.1), with the rate being higher in 40%
+oxygen. There was also a higher rate of CO2 release during a burst in unfed individuals
+compared with fed individuals at 21% oxygen.
+60
+Fig. 2.7. Effects of oxygen content and feeding status on respiratory pattern. Respiratory burst
+volumes (A) and burst durations (B) for fifth instar R. prolixus under two treatments (unfed or fed a
+complete bloodmeal) following exposure to normoxic air (21% O2) or acute exposure to hyperoxic
+(40% O2) air. Error bars indicate 95% confidence intervals. See Table 2.1 for ANOVA results on all
+measured variables.
+DISCUSSION
+The dual feedback model of insect respiratory control (Levy & Schneiderman 1966;
+Chown & Holter 2000; Förster & Hetz 2010) proposes that spiracular activity is controlled
+via two feedback mechanisms that regulate internal partial pressures of oxygen and CO2.
+Spiracles initiate a fluttering response when tracheal PO2 reaches a critically low threshold
+and spiracles open when tracheal PCO2 reaches a critically high threshold. The interaction
+between these two sensory systems produces a pattern of respiratory CO2release in which
+large bursts of CO2 are separated by prolonged periods of spiracular closure or low
+CO2 release rates.
+The presence of a critical PCO2 threshold dictates that the amount of CO2released in a
+single respiratory burst, or spiracular open period, would remain constant as long as the
+threshold value does not change. However, many studies have demonstrated that the
+61
+respiratory burst volume decreases with increased temperature in ants (Lighton 1988;
+Quinlan & Lighton 1999; Vogt & Appel 2000), beetles (Duncan & Dickman 2001) and the
+cecropia silkworm (Schneiderman & Williams 1955). Others have found no change in burst
+volume with increasing temperature (Davis et al. 1999; Klok & Chown 2005), or even an
+increase in burst volume (Shelton & Appel 2001; Basson & Terblanche 2011). Our results
+from temperature manipulation experiments in R. prolixus show a decrease in burst
+volume with increasing temperature (Fig. 2.6). Above the rearing temperature of 27°C,
+burst volume decreased linearly with temperature (BV=−0.024T+0.980). These results are
+inconsistent with expectations based on the dual feedback model, unless the critical
+CO2 threshold changes with temperature.
+To determine whether these changes in gas exchange pattern were due to a direct
+effect of temperature or an indirect effect on metabolic rate, we also measured these
+characteristics in gas exchange patterns obtained from R. prolixus during digestion of a
+blood meal. Throughout the duration of meal processing, R. prolixus experiences a range of
+metabolic rates up to 13 times their resting metabolic rate. In contrast to our observations
+from temperature trials, we found that burst volumes within the population did not
+decrease with increased metabolic rate but actually increased slightly (Fig. 2.4), regardless
+of whether burst volume was measured as the increase over flutter release rates or
+baseline zero values. However, these volume increases are much smaller in scale than the
+decreases observed in temperature trials. As a result, we conclude that the dual feedback
+model of spiracular control adequately describes respiratory behavior and can
+accommodate metabolic variation at a single temperature. The conundrum remains,
+however, that some aspect of the respiratory control mechanism is temperature sensitive
+62
+and that the respiratory control model becomes more complex if changes in temperature
+are considered.
+Effects of temperature on gas exchange patterns
+There was a 3.5-fold increase in the average metabolic rate of R. prolixus over the
+temperature range of 18 to 38°C (Fig. 2.1). In addition to these changes in metabolism, the
+increase in temperature also induced changes in the gas exchange pattern. As temperature
+increased there was a significant decrease in the volume of CO2 released during a burst as
+well as a decrease in burst duration (Fig. 2.6). We found no change in the rate of release of
+CO2 during a burst with the exception of a decrease in rate at 38°C (Fig. 2.6D). Cycle period
+decreased with increased temperature. In some insects, bursts became so frequent that
+they were no longer distinguishable via flow-through respirometry, and the pattern
+therefore appeared as continuous gas exchange. Overall, the results of the temperature
+experiments are consistent with the findings of Contreras and Bradley (Contreras &
+Bradley 2009), in that CO2release patterns transitioned from discontinuous to continuous
+as metabolic rate increased with temperature.
+Effects of feeding on gas exchange patterns
+Fed insects experienced a much larger range of metabolic rates compared with
+temperature trial rates. Throughout the duration of meal processing, average peak
+metabolic rates increased up to 13.9 times the average resting value. However, despite the
+larger increase in metabolism, fed insects continued to produce discontinuous patterns of
+CO2 release throughout the experiment. In contrast to the gas exchange pattern changes
+63
+observed in temperature trials, burst volumes increased slightly and burst durations
+decreased with metabolic rate in fed insects (Fig. 2.4). As a result, CO2 release rates
+(volume/duration) during a burst increased with metabolic rate. Fed insects produced
+more frequent bursts as their metabolic rate increased, but cycle period leveled off at about
+150 s per cycle, allowing the maintenance of discontinuous CO2 release patterns.
+Contreras and Bradley (Contreras & Bradley 2009) proposed that an insect's
+metabolic rate determines its gas exchange pattern. In the present study, the differences in
+gas exchange patterns between insects exposed to temperature or feeding treatments
+indicate that metabolic rate is not the only factor determining respiratory behavior in
+insects. At a constant temperature, gas exchange patterns can be predicted by metabolic
+rate and are explained by the dual feedback loop model of spiracular control (Levy &
+Schneiderman 1966; Förster & Hetz 2010). We found that temperature also has strong
+effects on gas exchange pattern independent of its effect on metabolic rate. These effects
+are not accommodated by the model put forward by Contreras and Bradley (Contreras &
+Bradley 2009) or by the dual feedback loop model in its simplest form.
+Analysis of temperature effects on gas exchange pattern characteristics
+We found in R. prolixus that increased temperature led to decreased burst volume
+during spiracular openings. As the presence of a constant CO2 trigger threshold for
+spiracular opening at a given temperature has been well described (Levy & Schneiderman
+1966; Harrison et al. 1995; Förster & Hetz 2010), and seems to be verified in this insect
+(present study), a decrease in the amount of CO2 released in a respiratory burst could be
+64
+the result of premature initiation of the open phase or premature initiation of the closed
+phase.
+It may be informative to consider the results presented here in the context of the
+process of CO2 sensing. In vertebrates, CO2 is sensed as pH in the brain, a site separated
+from the blood, which is highly buffered, by the blood–brain barrier (Guyton & Hall 2006).
+The sensors in the brain are sensitive to pH and in this location the pH of the solution is
+directly proportional to PCO2in the blood. Premature spiracular opening in insects might
+also be explained by the physical properties of CO2 or an effect of temperature on the
+respiratory control system. As temperature increases from 18 to 38°C, the solubility
+coefficient of CO2 in water decreases from 4.149×10−2 to 2.474×10−2 mol l−1atm−1 (Weiss
+1974). As a result, for any given quantity of CO2 produced, less will become dissolved in the
+aqueous portions of the body, resulting in a higher PCO2 in the tracheal system. As PCO2 is in
+equilibrium throughout the body, this results in a higher PCO2 at the sensor location,
+wherever it may be. As such, a smaller quantity of CO2 is required to initiate spiracular
+opening, resulting in smaller volumes of CO2 released per burst. Congruently, Levy and
+Schneiderman (Levy & Schneiderman 1966) and Förster and Hetz (Förster & Hetz 2010)
+note a positive relationship between temperature and the tracheal PCO2 at the threshold for
+spiracle opening.
+However, the observation that burst volume decreases with increasing temperature
+is also compatible with an alternative explanation. PCO2 may be detected via pH in an
+isolated sensory organ, as in vertebrates. If so, then as temperature increases, an additional
+pH reduction is experienced in the sensory organ as a result of increased water ionization,
+causing the pH triggering threshold to be reached prematurely and the open phase to be
+65
+initiated at a lower PCO2 than expected. Hemolymph pH in grasshoppers decreases above
+25°C (Harrison 1988), but does not change significantly throughout the respiratory cycle in
+grasshoppers (Harrison et al. 1990; Harrison et al. 1995) or cockroaches (Matthews &
+White 2011b). However, in vertebrates the CO2-sensing neurons are separated from the
+blood by the blood–brain barrier. This allows the neurons to respond to PCO2 through a
+change in pH of the cerebrospinal fluid while being insensitive to blood pH. Perhaps in
+insects, neurons are also sensing the pH of the perineural fluid, which is similarly isolated
+from the hemolymph (Treherne & Pichon 1972). A two-layer barrier protects the brain,
+ganglia and major nerves from direct contact with the hemolymph, which is well buffered
+(Nation 2002). This barrier consists of an outer acellular layer, which functions as a barrier
+to ions and osmolites in the hemolymph, and a second layer composed of perineural cells.
+The perineural cell layer is largely impermeable as a result of an abundance of tight and
+gap junctions (Lane & Skaer 1980).
+The effects of CO2 on spiracular function have been described (Hazelhoff 1926;
+Hoyle 1960; Wigglesworth 1935), but the mechanism by which this signal is detected
+remains unknown. Case (Case 1957) argued that spiracles open either in response to CO2-
+induced acidity or as a result of the release of bound CO2 by other acids. In other studies,
+Case found that hypoxia increased the sensitivity of the spiracles to CO2 (Case 1954; Case
+1956). He (Case 1957) concluded that spiracular opening is therefore produced directly
+through the action of CO2 on the spiracle muscle or another receptor cell that is permeable
+to CO2 but not to hydrogen ions. Similarly, Hoyle (Hoyle 1960) found that CO2 plays a direct
+role in the relaxation of the spiracular closure muscle, even under continued nervous
+excitation, through interference with the transmission of action potentials across the
+66
+neuromuscular junction. Badre et al. (Badre et al. 2005) provide evidence for direct
+inhibition of glutamate receptors of insect skeletal muscle by CO2.
+Based on this evidence, Förster (Forster 2010) proposed two possible mechanisms
+by which this direct action of CO2 may take place: (1) direct inhibition of glutamate
+receptors by CO2 or (2) CO2 diffusion into the post-synaptic cell causing a pH disturbance
+that inactivates the receptor. Our results support the second of these proposed models.
+Increased temperatures would reduce intracellular pH in addition to the pH disturbance
+caused by accumulated dissolved CO2, causing premature receptor inactivation and
+spiracular opening events, which occur before the CO2 threshold would have been reached
+based on CO2-induced pH changes alone. These premature openings would explain the
+reduced CO2 emission volumes during the spiracular open phase detected at high
+temperatures.
+Effects of hyperoxia
+The dual feedback model of insect respiratory control attributes the initiation of the
+flutter phase to a critically low PO2 threshold, and the initiation of the open phase to a
+threshold high CO2 concentration. It is silent with regard to the factors that cause the
+cessation of the open phase, i.e. the initiation of the closed phase.
+One can hypothesize that the cessation of the open phase could be controlled by the
+oxygen concentration in the insects reaching a threshold high level, or by the
+CO2 concentration in the insect reaching a threshold low level. Alternatively, cessation of
+the open phase could be simply a timing event such that the open phase had a specific
+temporal duration. We can rule out this last explanation based on the data in
+67
+Figs 2.4 and 2.6. Regardless of how metabolic rate is increased, the duration of the open
+phase decreases with increasing metabolic rate.
+We chose to test the oxygen threshold hypothesis by examining the duration of the
+open phase in 21% and 40% oxygen environments. We found that the duration of the open
+phase did not change significantly under these two oxygen regimes. We are left with the
+conclusion that the rate at which oxygen enters the insect during the open phase does not
+control the temporal length of the open phase.
+The experiments we have described here are unable to either confirm or falsify the
+hypothesis that the open phase is terminated when PCO2 reaches a threshold low level. It is
+clear that the amount of CO2 released in a burst declines with increasing temperature.
+However, we are unable to determine on the basis of our results whether this is due to
+decreased solubility of CO2 in water at elevated temperatures or to a shift in pH in cells
+responsible for spiracular control. Either process could explain the observed changes in
+burst volume.
+Physiological and ecological implications
+As small ectotherms, insects are subject to substantial temperature fluctuations on
+both a daily and a seasonal basis. The respiratory control system of R. prolixus is sensitive
+to temperature, resulting in different gas exchange patterns in response to both metabolic
+rate and ambient temperature. Increased temperature results in reduced CO2 release
+during the open phase of the discontinuous gas exchange cycle and premature
+abandonment of the discontinuous pattern at metabolic rates lower than those reached by
+fed individuals who maintained this pattern.
+68
+Many researchers have argued that the discontinuous gas exchange cycle provides
+adaptive advantages to insects. Unmatched metabolic rate and oxygen supply may lead to
+excess oxidative damage (Hetz & Bradley 2005), and an inability to produce prolonged
+spiracular closures may have detrimental effects on water balance (Chown & Davis 2003).
+Oxidative damage and water loss would both increase with increasing temperature. The
+maintenance of the discontinuous respiratory cycle even at higher metabolic rates may
+have important physiological implications for the fed insects, which are experiencing high
+metabolic rates and rapid tissue growth. Alternatively, perhaps the discontinuous gas
+exchange cycle has no adaptive value and is simply a result of cycling partial pressures of
+respiratory gases (Chown & Holter 2000).
+Furthermore, researchers have often utilized temperature as a means of inducing
+changes in metabolic rate to examine the effects of different metabolic states on various
+physiological parameters. We have shown that the effects of temperature on respiratory
+behavior are significant and can overshadow the effects of metabolic rate alone. As a result,
+caution should be exercised when investigating physiological responses to metabolic rates
+induced via temperature. Interactions between effects of temperature and metabolism
+must be considered. When possible, researchers should attempt to include multiple
+sources of metabolic manipulation, such as temperature, feeding or activity, to gain a better
+idea of the variation in physiological responses to metabolic changes.
+The fact that respiratory controls are temperature sensitive may provide new
+techniques for determining the sites and mechanisms by which insects sense the partial
+pressures of respiratory gases. Localized temperature manipulation, for example of the
+head or of a specific spiracle, could allow us to make predictions about the molecular
+69
+mechanisms and specific tissues with which an insect senses respiratory gases.
+Additionally, localized tests of pH sensitivity, for instance in spiracular motor neurons, may
+provide supporting evidence for Hoyle (Hoyle 1960) and Case's (Case 1957) ideas about
+CO2 sensing via pH changes at the neuromuscular junction. Future studies may also look
+more closely at the intratracheal PO2and PCO2 threshold values for spiracular activity across
+a range of different temperatures to verify how tracheal gas partial pressure thresholds
+change with temperature.
+Understanding the details of this control system will provide insight into how
+animals with vastly different respiratory physiologies – that is, vertebrates and insects –
+evolved strategies to solve the same basic problem of controlling the exchange of
+respiratory gases. Furthermore, these results display the importance of understanding the
+interactive effects of different metabolic stressors in ectothermic animals, and their effects
+on respiration.
+70
+CHAPTER 3:
+The effect of respiratory pattern on oxidative damage in insects
+INTRODUCTION
+Insects are capable of precisely controlling the movement of respiratory valves,
+called spiracles, which modulate gas exchange between the tracheal system and the
+environment. Spiracles typically cycle between three phases, the “open phase” during
+which the valves are open and gas exchange occurs freely between the tracheal system and
+the environment, the “flutter phase” during which micro-openings of the spiracles allow
+oxygen to diffuse into the tracheal system while internal PCO2 continues to rise, and the
+“closed phase” during which the valves remain shut and no gas exchange occurs (see
+figures 3, 4, and 1.2). During periods of low metabolic demand, the closed phases can
+become prolonged and the resulting respiratory pattern is referred to as discontinuous gas
+exchange.
+The adaptive significance of the discontinuous gas exchange pattern has been
+debated extensively (see Table 1; Contreras et al. 2014; Chown et al. 2006). It has been
+proposed, based on a literature analysis of studies using flow-through respirometry to
+measure respiratory patterns, that the behavior independently evolved at least 5 times in
+insects (Marais et al. 2005). However, the ability to detect discontinuous gas exchange
+with flow through spirometry depends on certain aspects of the study’s methodology. In
+flow-through respirometry, a constant stream of air is pushed through a chamber housing
+an insect and the CO2 released by the insect is detected downstream of the chamber.
+Therefore, a sufficiently high air flow rate must be used to produce a high enough time
+constant within the chamber housing the insect to detect spiracle closed phases (Gray &
+71
+Bradley 2006). While faster air flow rates allow you to detect shorter closed phases, they
+also result in lower signals and increased risk of desiccation stress on the insect. Therefore
+the absence of recorded closed phases under most experimental conditions does not serve
+as sufficient evidence to suggest that an insect is incapable of producing a discontinuous
+gas exchange pattern.
+Studies of spiracle control indicate that the spiracles will cycle through the close,
+flutter, and open phases with increased frequency as metabolic rate increases as a result of
+two interacting feedback loops involved in the detection and response to tracheal PO2 and
+PCO2 (Förster & Hetz 2010; Schneiderman 1960). Fluttering is initiated when a low
+intratracheal O2 threshold is reached, and opening is initiated when a high CO2 threshold is
+reached. While the longstanding debate about the function of the discontinuous gas
+exchange pattern was focused on finding the one adaptive benefit that supports the
+evolution of this behavior, it seems clear that this pattern is an emergent property of this
+respiratory control system, which must maintain internal PCO2 and PO2 values at
+homeostatic levels. Furthermore, it is likely that the resulting prolonged spiracle closure
+provides multiple benefits to insects, including the reduction of respiratory water loss
+(Schimpf et al. 2009; Matthews & White 2012).
+Hetz and Bradley (2005) proposed that the discontinuous gas exchange pattern
+prevents excess oxidative damage in insects. This hypothesis is based on the observation
+that intratracheal PO2 values are maintained at low levels (~4 kPa, depending on the insect)
+during the closed and flutter phases. Without this control of internal oxygen content, the
+insect may be exposed to excessive oxidative damage as a result of the high rate of diffusion
+of oxygen through the air-based gas exchange system (O2 diffuses 106 times, and CO2 104
+72
+times, faster in air than water) (Krogh 1920). High tissue PO2 values may result in high
+levels of oxidative damage as a result of increased production of reactive oxygen species
+(ROS). These ROS can damage lipids, proteins, DNA, and biomembranes within cells.
+To date, evidence supporting this hypothesis includes the maintenance of low
+internal PO2 values during the flutter phase of the gas exchange cycle (Hetz & Bradley 2005;
+Förster & Hetz 2010) and the observation that the duration of spiracle closure will often
+increase when insects are exposed to atmospheric hyperoxia (Harrison et al. 2006; Lighton
+et al. 2004). Conversely, Matthews et al. (2012) used fiber optic oxygen probes to measure
+intratracheal oxygen content and reported that internal PO2 values were not maintained at
+sufficiently low values when insects were exposed to atmospheric hyperoxia. These results
+suggest that the primary function of the discontinuous pattern is to maintain the internal
+PO2 above a minimal level and not to defend the tissues from oxidative damage. Another
+study used live cell fluorescence microscopy to observe reactive oxygen species (ROS)
+production and found that ROS production did not increase when the tracheal system was
+shocked with hyperoxic air (40% O2) after a period of anoxia which forced spiracular
+opening (Boardman et al. 2012). While these results do not support the oxidative damage
+hypothesis, they have not directly measured tissue damage as a result of prolonged
+disruption of the discontinuous pattern.
+Our study provides a different direct test of the oxidative damage hypothesis based
+on 3 hour acute exposure to varied O2 and CO2 gas treatments. Insects open their spiracles
+in hypercapnia (CO2 > ~6%) as a result of the relaxation of the valve closer muscle (Hoyle
+1960; Förster & Hetz 2010). We can therefore use hypercapnia to prevent prolonged
+spiracle closure and fluttering and as a result induce a more continuous pattern of gas
+73
+exchange. In addition to a hypercapnic treatment, we also exposed insects to hyperoxia,
+and a combination of hypercapnia and hyperoxia to increase the diffusion gradient for
+oxygen into the insect during forced spiracle opening. We then quantified lipid and protein
+oxidative damage (lipid peroxidation and protein carbonyl formation) and the amount of
+antioxidant enzyme activity (superoxide dismutase) in insects exposed to these treatments.
+We hypothesized that exposure to hypercapnia would increase the amount of oxidative
+damage across the whole body as a result of the inability to maintain low internal PO2
+values. We also hypothesized that exposure to hypercapnic hyperoxia would result in
+increased oxidative damage above that of the hypercapnic treatment as a result of
+increased atmospheric oxygen availability during forced spiracle opening.
+METHODS
+Animals
+Drosophila melanogaster were obtained from the B line in the Rose lab at the
+University of California, Irvine. Flies were reared at room temperature on a 24 hour light
+cycle in plexiglass rearing chambers with a cloth lid apparatus. Populations were
+maintained at a density of about 1000 flies per chamber. Eggs were collected weekly by
+placing petri dishes with banana-based medium and yeast paste into rearing boxes. Eggs
+were collected in groups of 60 by hand and placed into cylindrical plastic vials with 5 mL of
+banana-based medium to develop. Prior to the start of the gas treatments, 5-7 day old
+adult flies were transferred to new plastic vials (approximately 120 adults per vial)
+containing 5 mL of a new cornmeal-based medium. Flies remained in these new vials for
+24 hours before the onset of the gas treatments. During this time, a subgroup of flies in a
+74
+positive control treatment were also transferred to new glass vials (approximately 120
+adults per vial) containing 5 mL of cornmeal medium containing 10 mM Paraquat
+dehydrate (see Paraquat treatment” below).
+Due to the large number of flies required for the biochemistry assays, replicate
+populations from the same D. melanogaster line were tested each week for 16 weeks,
+resulting in a final maximum sample size of 16 for each treatment. A second round of flies
+were reared under the same conditions and exposed to the same treatments approximately
+6 months after the completion of the first trials in order to conduct an additional protein
+carbonyl ELISA assay and determine the effect of handling and transport on oxidative
+damage (comparing a “no-treatment” group to the standard “control” group). For this
+second protein carbonyl assay, 7 samples of 15 flies were taken from each treatment group,
+resulting in a final sample size of 7 per treatment.
+Paraquat treatment
+Flies were fed the insecticide Paraquat (1,1’ dimethyl-4-4’-bipyridynium dichloride)
+as a positive control for our biochemistry assays. Paraquat is known to induce oxidative
+damage by producing superoxide anions which results in the synthesis of ROS (Bonilla et
+al., 2006). Flies were kept in the vials with a cornmeal-based medium containing 10 mM
+Paraquat dichloride hydrate (Fluka Analytical, Sigma-Aldrich, St. Louis, MO, USA) for 24
+hours. The 10 mM concentration was chosen because previous studies have demonstrated
+that this is the minimum concentration of Paraquat required to produce maximal
+superoxide dismutase antioxidant enzyme activity (Rzezniczak et al. 2011).
+75
+Surviving flies were flash frozen in liquid nitrogen and stored at -80˚C. Dead flies
+become trapped in the medium and are therefore lost from the sample during transfer
+from the vial to liquid nitrogen by inversion of the vial. Paraquat exposure began about 1
+day prior to the onset of the gas treatments. This ensured that the Paraquat-fed flies were
+exposed to the cornmeal medium for approximately the same duration as the gas-treated
+flies and could be flash frozen at the same age as the gas-treated flies.
+Gas treatments
+Acute (3 hour) gas exposure treatments took place over two days. Two treatments
+were administered on day one and two treatments were administered on day two. The
+order of administration was chosen at random each week. Flies were exposed to 3 hours of
+each gas treatment because reactive oxygen species have been shown to accumulate over
+timescales of seconds (Boardman et al. 2012). Furthermore, preliminary studies indicated
+that there was no long term difference in the death rate between flies in normal air vs.
+hypercapnia (Helenius et al. 2009), suggesting no advantage to using a longer exposure
+time and risking interactive effects of desiccation stress.
+The gas treatments included: (1) 21% O2 and 0.4% CO2 (control); (2) 21% O2 and
+6% CO2 (hypercapnic); (3) 40% O2 and 0.4% CO2 (hyperoxic); and (4) 40% O2 and 6% CO2
+(mixed, hypercapnic hyperoxia). The hypercapnic treatment results in spiracle opening
+and was predicted to increase oxidative damage of lipids and proteins. The hyperoxic
+treatment was predicted to result in no increase in oxidative damage since the flies are still
+able to utilize the discontinuous gas exchange pattern. The mixed treatment was predicted
+76
+to result in the highest rates of oxidative damage since hypercapnia triggers spiracle
+opening while atmospheric oxygen content is increased.
+Tests were conducted at sea level at the University of California, Irvine (~101.325
+kPa). Gas mixtures were created by combining O2, CO2, and dry room air inside of a mylar
+balloon. Mixtures were accurate within ± 0.3%.
+The purpose of the hypercapnic gas treatments was to stimulate spiracular opening
+and prevent the insects from properly utilizing the discontinuous gas exchange pattern. To
+verify that hypercapnic exposure induced spiracular opening, water release measurements
+were made from populations of D. melanogaster exposed to the hypercapnic and mixed gas
+treatments. For these tests, air was pulled from the mylar balloon at 100 ml min-1 by a
+hydrostatic pump set (Sable Systems, Las Vegas, NV, USA). The pump then pushed the air
+past a column of silica gel and a column of Drierite (W. A. Hammond Drierite Co. Ltd., Xenia,
+OH, USA) to remove any traces of water vapor. Air then flowed through a vial containing a
+population of flies (approximately 250-300 flies per population). The flies had no access to
+food or water during these tests. Air then passed through a CO2/H2O analyzer (LiCor Inc.,
+Lincoln, NE, USA). Voltage outputs from this device were transformed to a digital signal by
+a UI-2 Universal Interface (Sable Systems) and sent to a laptop for data collection (Acer,
+San Jose, CA, USA). Expedata software was used to collect and analyze water release
+measurements (Sable Systems). Data was collected at 1 sample sec-1 intervals. Two
+populations of flies were tested, with each population exposed to either the hypercapnic
+(1) or mixed gas treatment (2). The average steady-state water release for an
+approximately 30 minute period was determined after a 15 minute equilibration time in
+each treatment using Expedata (Sable Systems). The water analyzer was calibrated
+77
+manually by correlating untransformed voltage measurements with known volumes of
+deionized water introduced into a small glass chamber downstream from the analyzer via a
+micropipette.
+During the gas mixture treatments, fly populations from eight vials were combined
+in four vials (about 240 flies per vial) with 5 mL of cornmeal medium each to prevent
+effects of desiccation and starvation on oxidative damage measurements. Vials were then
+capped with rubber stoppers containing glass tubes for the entry and exit of air. The
+hydrostatic pump (Sable Systems) pulled air from the mylar balloon and pushed it at 200
+mL per minute through the four vials which were connected in sequence by rubber tubing.
+Air exited the last vial and entered a carbon dioxide analyzer followed by an oxygen
+analyzer (Oxzilla, Sable Systems) for secondary verification of the gas concentrations which
+the flies were exposed to. After exposure to the gas treatment for 3 hours, the flies were
+flash frozen in liquid nitrogen and stored at -80˚C until assayed.
+Quantification of oxidative damage and stress
+Lipid peroxidation:
+Tissue samples for the lipid peroxidation assay were prepared by measuring out 25
+mg of flies (about 20-25 flies, both male and female) and sonicating in 250 μl RIPA buffer 4
+times for 15 seconds at 40V with 30 second intervals between pulses. The sample was then
+centrifuged at 1600 x g for 10 minutes at 4˚C. The supernatant was removed and either
+tested immediately or frozen at -80˚C until the next day. The eye pigment of D.
+melanogaster is known to absorb light at the same wavelength as the compound of interest
+78
+for this assay, however the red pigment precipitated out of the sample upon centrifugation
+and the remaining sample was extremely diluted throughout the assay procedure.
+Lipid peroxidation in the samples was measured using a Cayman Chemical TBARS
+Assay Kit (Ann Arbor, MI, USA; Item No. 10009055). This assay quantifies
+malondialdehydes (MDA), a product of the decomposition of lipid hydroperoxides. During
+the assay, MDA reacts calorimetrically with thiobarbituric acid at high temperature to
+produce a color change in the sample. After the reaction was completed, the absorbance of
+each sample was measured in a microplate at 535 nm. The concentration of MDA in each
+sample was calculated from a standard curve.
+Protein carbonylation:
+(1) Calorimetric Assay
+Two assays were performed to measure protein oxidative damage (protein carbonyl
+formation) in the flies during each treatment. The first is a protein carbonyl calorimetric
+assay (Cayman Chemical) in which protein carbonyls in the sample react with 2,4-
+dinitrophenylhydrazine (DNPH) to produce a Schiff base and corresponding hydrazone.
+This product is then measured spectrophotometrically. To prepare the samples, 100 mg of
+flies were homogenized in 500 μl of cold buffer (50 mM phosphate buffer, pH 6.7, 1 mM
+EDTA). The sample was then centrifuged at 10,000 x g for 15 minutes at 4°C and the
+supernatant was removed and stored at -80°C. The 280/260 nm absorbance ratio of the
+supernatant was measured to verify that there were no contaminating nucleic acids.
+The assay was run according to the instructions provided in the Cayman Chemical
+kit (Item No. 10005020). Samples were separated into two parts, one part was reacted
+79
+with DNPH and 2.5 M HCl was added to the other as a control. Each tube was incubated in
+the dark at room temperature for 1 hour and vortexed every 15 minutes. After incubation,
+20% TCA was added to each tube and the samples were placed on ice for 5 minutes the
+centrifuged at 10,000 x g for 10 minutes at 4°C. The pellet was resuspended in 10% TCA,
+left on ice for 5 minutes, and re-centrifuged. Each sample then went through three washes
+with a 1:1 mixture of Ethanol:Ethyl Acetate and the final pellet was resuspended in
+guanidine hydrochloride and absorbance measured in a microplate at a spectrum of 360-
+385 nm wavelengths. The absorbance of the control sample was subtracted from the
+absorbance of the DNPH-reacted sample to calculate total reacted protein carbonyls. The
+following equation was used to find the protein carbonyl content from the corrected
+absorbance:
+𝑃𝑟𝑜𝑡𝑒𝑖𝑛 𝐶𝑎𝑟𝑏𝑜𝑛𝑦𝑙 (𝑛𝑚𝑜𝑙
+𝑚𝑙 ) = [𝐶𝑜𝑟𝑟𝑒𝑐𝑡𝑒𝑑 𝑎𝑏𝑠𝑜𝑟𝑏𝑎𝑛𝑐𝑒
+0.011 μ𝑀−1 ] × 500 μ𝑙
+200 μ𝑙
+(2) ELISA Assay
+An additional test for protein carbonyl content was conducted because no difference
+in protein carbonyl content was observed in any of the treatments in the calorimetric
+assay. To verify that the experimental manipulations themselves were not causing large
+baseline oxidative damage values and preventing the detection of variation across
+treatments, a new experiment was conducted in which all parameters were the same but a
+new control was added. A subset of flies was flash frozen in liquid nitrogen directly from
+their original vials containing banana-based medium on day 6 after eclosion. This is
+referred to as the “No Treatment” group.
+80
+An enzyme-linked immunosorbent assay (ELISA) (BioCell Corp., Papatoetoe, New
+Zealand) was used to measure protein carbonyl content of these new fly populations. This
+assay has been used successfully in past studies to determine protein carbonyl formation in
+flies exposed to hyperoxic stress throughout their whole lifetime (Rascón & Harrison
+2010). 15 male flies were homogenized in 800 μL of cold buffer (50 mmol sodium
+phosphate buffer, pH 7.4, 1% Triton X-100 and protease inhibitors) (Sigma Aldrich, St.
+Louis, MO, USA) . This resulted in samples with approximately 1.443 ± 0.08 mg ml-1 (M ±
+SD) protein. The samples were then centrifuged at 10,000 x g for 15 minutes and the
+supernatant was stored at -80°C until assayed. The assay was conducted in accordance
+with the kit instructions for the standard procedure (BioCell, batch P117). Samples were
+thawed and reacted with DNPH. Protein was then bound nonspecifically to a 96-well ELISA
+plate and a biotinylated anti-DNP antibody and streptavidin-linked horseradish peroxidase
+are added and bind to DNP-reacted proteins. Finally, a chromatin reagent containing
+peroxide is added to catalyze the oxidation of TMB, causing a color change in the well, and
+the absorbance is measured at 450 nm.
+A standard absorbance curve was produced from samples containing known
+concentrations of protein carbonyls. The protein carbonyl content of each sample was
+calculated from this standard curve.
+Superoxide dismutase activity:
+Since the accumulation of oxidative damage is dependent on the activity of
+antioxidant enzymes, we also quantified superoxide dismutase activity to determine if the
+treatments caused oxidative stress and upregulation of antioxidant enzymes. 25 mg of flies
+81
+were homogenized in 125 μL of cold buffer (20 mM HEPES, pH 7.2, 1 mM EGTA, 210 mM
+Mannitol, 70 mM Sucrose) and stored at -80°C until assayed. The assay was conducted in
+accordance with the kit instructions (Cayman Chemical, Item No. 706002). 200 μL of
+sample or standard per well was added to a 96-well plate along with a tetrazolium salt-
+based superoxide radical detector. Xanthine oxidase was added to each well to initiate
+superoxide radical production. The plate was incubated on a shaker at room temperature
+for 30 minutes and the absorbance was read at 450 nm. A standard curve of the linearized
+rate (LR) was produced from the standard measurements, and the SOD activity was
+determined from the following equation:
+𝑆𝑂𝐷 ( 𝑈
+𝑚𝑙) = [(𝑠𝑎𝑚𝑝𝑙𝑒 𝐿𝑅 − 𝑦 𝑖𝑛𝑡𝑒𝑟𝑐𝑒𝑝𝑡
+𝑠𝑙𝑜𝑝𝑒 ) × 0.23 𝑚𝑙
+0.01 𝑚𝑙] × 𝑠𝑎𝑚𝑝𝑙𝑒 𝑑𝑖𝑙𝑢𝑡𝑖𝑜𝑛
+Data analysis and statistics
+All respirometry data were collected in Expedata (Sable Systems). Data analysis
+from biochemical assays were conducted in Excel (Microsoft, Redmond, WA, USA). T-tests
+were used to compare each treatment group to the control. For each such comparison, a
+Bonferroni correction was made to account for multiple hypothesis testing. For the first
+protein carbonyl assay (calorimetric), there was a significant effect of replicate on the
+measured protein carbonyl content. Therefore, for this assay I ran an analysis of
+covariance in Statistica 7 (StatSoft, Tulsa, OK, USA) with replicate as a covariate. An ANOVA
+was run in Statistica 7 on the second protein carbonyl dataset (ELISA) because an
+additional control was added to the experimental design.
+82
+RESULTS
+Disruption of spiracular control
+Two populations (250-300 individuals each) were exposed to hypercapnic or mixed
+gas treatments to determine the effect of the treatment on the extent of spiracle opening as
+observed by the water release rate. Population 1 was exposed to a control and hypercapnic
+treatment (21% O2, 6% CO2) and population 2 was exposed to the control and mixed gas
+treatment (40% O2, 6% CO2). The average water release rate over a 30 minute period
+increased in hypercapnia and decreased in the mixed gas treatment compared to their
+controls (Fig. 3.1). Absolute volumes of water release cannot be compared across trials
+using different populations because population size was large and could not be precisely
+controlled. Since the respiratory system is the primary source of water release, these
+results indicate that hypercapnia induced an increased overall duration of spiracle opening
+and therefore a successful disruption of spiracular control. Similarly, the reduced water
+release rate in the mixed gas treatment indicates that the duration of spiracle closure
+increased.
+83
+Fig. 3.1. Water release rates from populations of flies exposed to normal, hypercapnic, and mixed
+gas treatments. Bars represent mean ± standard deviation of the total water release by the whole
+population over a 30 minute period following 15 minutes of acclimation at each treatment.
+Quantification of oxidative damage
+Whole body levels of lipid hydroperoxides were quantified by determining the
+concentration of malondialdehyde (MDA), a product of lipid hydroperoxide decomposition.
+Flies fed a diet containing 10 mM Paraquat dichloride hydrate and flies exposed to the
+hypercapnic gas treatment displayed significantly higher levels of MDA compared to
+0
+5
+10
+15
+20
+25
+30
+35
+1 2
+H2O Release (μl/hr) Population 1
+Control
+(21% O2, 0.04% CO2)
+Hypercapnia
+(21% O2, 6% CO2)
+21.99 ± 3.22 26.12 ± 3.87
+0
+2
+4
+6
+8
+10
+12
+1 2
+H2O Release (μl/hr)
+Population 2
+Control
+(21% O2, 0.04% CO2)
+Mixed
+(40% O2, 6% CO2)
+9.24 ± 2.18 4.56 ± 1.73
+84
+control groups (paraquat: t(30) = -2.87, p = 0.007; hypercapnia: t(30) = -2.42, p = 0.022;
+Fig. 3.2). No other treatment groups demonstrated significant changes in whole body lipid
+peroxidation levels.
+Protein carbonyl formation was quantified via a calorimetric reaction with DNPH.
+There were no differences detected between any of the treatment groups using this method
+(ANOVA: F(4, 38) = 0.342, p = 0.848; Fig. 3.3). An additional ELISA assay was conducted to
+verify this result. In the second assay, there was still no differences in protein carbonyl
+content between any of the original treatment groups. However, there was significantly
+higher protein carbonyl content in flies that did not experience any of the treatments
+compared to the flies in hypercapnic and hyperoxic treatments (Fig. 3.4).
+Increased activity by superoxide dismutase was observed in flies exposed to media
+containing 10 nM Paraquat dihydrate for 24 hours (t(29) = -2.19, p = 0.037; Fig. 3.5). One
+control sample was removed from this analysis due to well contamination causing
+significantly high absorbance readings outside the normal range of the assay. There was no
+effect of any gas treatment on superoxide dismutase activity levels in whole body samples.
+85
+Fig. 3.2. Malondialdehyde (MDA) content in whole-body tissue samples of D. melanogaster. Bars
+represent mean ± 95% confidence intervals. Asterisks indicate significant differences from the
+control group based on a Bonferroni-corrected t-test.
+Fig. 3.3. Protein carbonyl content in whole-body tissue samples of D. melanogaster. Bars represent
+mean ± 95% confidence intervals. ANCOVA results include replicate as a covariate.
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+Control Paraquat O2 CO2 CO2/O2
+MDA (uM)
+* *
+Hyperoxia
+(40% O2)
+Hypercapnia
+(6% CO2)
+Mixed
+(40% O2,
+6% CO2)
+86
+Fig. 3.4. Protein carbonyl content in whole-body tissue samples of D. melanogaster measured with
+the ELISA method. Tissue samples were more dilute than those used in the previous protein
+carbonyl assay. Bars represent 95% confidence intervals.
+Fig. 3.5. Superoxide dismutase activity in whole-body tissue samples of D. melanogaster. Bars
+represent mean ± 95% confidence intervals. Asterisks indicate significant differences from the
+control group based on a Bonferroni-corrected t-test.
+0
+2
+4
+6
+8
+10
+12
+Control PQ CO2 O2 C/O
+SOD Activity (U/ml)
+Paraquat Hypercapnia
+(6% CO2)
+Hyperoxia
+(40% O2)
+Mixed
+(40% O2,
+6% CO2)
+*
+87
+DISCUSSION
+Discontinuous gas exchange may provide a number of benefits to insects. These
+may include reduced respiratory water loss, prevention of tracheal parasite infections, or
+the ability to colonize hypercapnic subterranean environments (all existing hypotheses
+regarding the function of discontinuous gas exchange are provided in Table 1). To date,
+few studies have examined the hypothesis that discontinuous gas exchange reduces tissue
+oxidative damage. We tested this hypothesis by measuring whole-body lipid peroxidation
+and protein carbonyl levels, as well as superoxide dismutase activity in populations of adult
+D. melanogaster exposed to various acute atmospheric gas treatments which disrupt
+patterns of spiracular activity and prevent the use of discontinuous gas exchange.
+We found that acute exposure to mild hypercapnia disrupts the discontinuous gas
+exchange pattern by preventing prolonged spiracle closure. This is evidenced by an
+increase in the population-level water release rate in flies exposed to dry air with 6% CO2
+compared to their release rate in normal dry air (Fig. 3.1). We also found that exposure to
+a mixed gas treatment of hypercapnic hyperoxia (6% CO2, 40% O2) decreased water
+release rates in D. melanogaster. This result is in accordance with previous findings that
+increased atmospheric oxygen levels lead to: (1) decreased ventilation in grasshoppers
+(Harrison et al. 2006; Bustami et al. 2002; Greenlee & Harrison 1998) and (2) a transient
+reduction in CO2 and water release rates (up to a 90% reduction from the continuous rate)
+in D. melanogaster and two ant species during exposure to 100% O2 (Lighton et al. 2004).
+Interestingly, the increased oxygen content in the mixed gas treatment appeared to
+override any signal to open the spiracles in response to hypercapnia. The duration of this
+88
+effect is unclear since these values represent average water release rates during a 30
+minute period after exposure.
+However, despite verifying that prolonged spiracle closure was reduced in
+hypercapnia, we did not find strong evidence that this acute disruption of the respiratory
+pattern resulted in increased oxidative damage in D. melanogaster. While lipid
+peroxidation increased moderately after exposure to hypercapnia (Fig. 3.2), there was no
+indication that protein oxidation increased in hypercapnia (Fig. 3.3; Fig. 3.4) or that the
+antioxidant response was increased in any of the treatment groups during a three hour
+exposure (Fig. 3.5). The slight increase in protein carbonyl content in flies which didn’t
+experience any of the original treatment regimens may have resulted from increased
+antioxidant activity in all treatment groups (Fig. 3.4). It is possible that the extra handling
+and stress associated with the original experimental treatments (e.g. vial transfer, new
+media, increased population density) resulted in acute upregulation of antioxidant enzyme
+activity and therefore a reduced accumulation of oxidative damage in all treatments.
+There are multiple factors that may have contributed to these results. Firstly, a 3
+hour exposure time may have been insufficient for the accumulation of significant tissue
+oxidative damage to take place. Some studies in vertebrates give us an idea of the
+timescale of oxidative damage. In vertebrate muscle, acute bouts of exercise are known to
+cause increased lipid peroxidation and protein carbonylation via increased radical
+production by the electron transport chain of the mitochondria, as a result of muscle
+damage, or as the result of catecholamine production (Reznick et al. 1992). Protein
+oxidation has also been shown to increase significantly in muscle tissues 8 hours after cecal
+ligation (Fagan et al. 1996), or up to 1 hour after injection of Escherichia coli
+89
+lipopolysaccharides in mice (Barreiro et al. 2005), as a result of sepsis. However, the
+timescales of oxidative damage accumulation are presumably highly variable across
+systems since damage accumulation is a function of the rate of formation, the breakdown of
+damaged molecules, and the production and availability of antioxidants, which all vary at
+the tissue and individual level. As a result, it is difficult to determine if the levels of damage
+we detected in whole insects after 3 hours of exposure to each treatment are
+representative of the possible treatment effects over a longer period of time or in a specific
+tissue.
+A second possibility is that damage accumulated at different rates in different
+tissues. If so, we may not have been able to detect these different responses using
+measurements from whole-body homogenates. Previous studies have found significant
+variation in whole-body protein carbonyl content after much longer periods of exposure to
+hyperoxia than utilized in our experiments (Rascón & Harrison 2010). In Rascón and
+Harrison’s work, adult flies were reared in 1, 10, 21, and 100 kPa O2 for 7-28 days
+depending on the population’s median lifespan in each treatment. Future studies should
+therefore utilize longer treatment regimens or measure damage in isolated tissue samples.
+Flight muscle samples may be particularly useful since they have a high density of
+tracheoles and mitochondria (Wigglesworth & Lee 1982; Snelling et al. 2012).
+Longer treatment regimens can be considered since there is no effect of constant
+mild hypercapnia (7 or 13%) on the lifespan of D. melanogaster (Helenius et al. 2009).
+Interestingly, in the Helenius et al. (2009) study, the mild hypercapnic treatments did have
+a significant effect on the ability of flies to survive bacterial infections, suggesting that there
+are other physiological effects of mildly elevated CO2 not related to longevity. While it is
+90
+possible that larger amounts of oxidative damage were not detected in populations of flies
+exposed to 3 hour gas treatment because the duration of treatment was too short, it is
+reasonable to predict reduced survival times in fly populations exposed to hypercapnia
+throughout adulthood if discontinuous gas exchange safeguards against oxidative damage.
+This prediction is based on the oxidative damage hypothesis for aging which postulates
+that oxidative damage, by various metabolic or environmental sources, is a universal
+contributor to aging (Martin et al. 1996; Nilanjana et al. 2001). Previous studies have
+demonstrated that both atmospheric hyperoxia and severe hypoxia reduce the adult
+lifespan of D. melanogaster and increase levels of oxidative damage (Rascón & Harrison
+2010; Nilanjana et al. 2001). If tissue PO2 values are increased significantly in insects
+unable to utilize normal discontinuous gas exchange, then according to the oxidative theory
+of aging, we should see reduced lifespans in insects exposed to hypercapnia. However,
+since we did not find evidence to support this prediction, we cannot say with confidence
+that discontinuous gas exchange functions to reduce oxidative damage.
+Similarly, if hyperoxia has been shown to increase internal tracheal PO2 values
+(Matthews et al. 2012) as well as reduce insect lifespans (Rascón & Harrison 2010), then it
+is more likely that insects utilize their respiratory control system to safeguard against low
+tissue PO2 and lack the ability to protect against increased oxygen tension. However, this
+would not explain the increased duration of spiracle closure observed when insects are
+exposed to hyperoxia. It is possible that these prolonged closed periods are an acute reflex
+induced by transient increases in ROS prior to upregulation of antioxidant enzymes. ROS
+are known to interact with a number of cellular processes and molecular targets, including
+membrane lipid bilayers and ion channels (Dean et al. 2004). These interactions can result
+91
+in changes in neuron excitability and synaptic transmission. In humans, exposure to
+hyperoxia at normobaric pressure often results in a short period of reduced ventilation
+followed by “hyperoxic hyperventilation”, or rates of ventilation that exceed baseline levels
+(Georgopoulos et al. 1989). Clearly, the relationship between oxygen, ROS, and respiratory
+control systems are complex. While the intricacies of vertebrate respiratory control have
+been investigated in detail, we are just scratching the surface in terms of understanding the
+molecular physiology of insects respiratory control systems.
+92
+CONCLUSION
+In recent decades, much progress has been made to our understanding of insect
+respiratory physiology. Today, we know that insects control their spiracle valves through
+multiple physiological feedback loops which regulate internal partial pressures of CO2 and
+O2. We also know that insects have a high capacity for oxygen delivery as a result of
+bypassing the circulatory system and delivering oxygen directly to tissues in the gas phase.
+While diffusion alone may be sufficient to deliver oxygen through the tracheal system to
+some insects, many other insects utilize abdominal pumping, or other mechanisms to
+ventilate the tracheal system. These ventilatory movements are controlled by a central
+pattern generator which is sensitive to temperature and PO2.
+However, despite these advancements in our understanding, many aspects of insect
+respiratory control and function remain unexplored. I have verified that coordinated
+movement of spiracle valves and abdominal pumping can result in unidirectional airflow
+through the tracheal system. Possible benefits of this strategy should be explored. This
+behavior may result in reduced oxygen diffusion distances in the smaller tracheoles and
+therefore provide increased oxygen delivery capacities to insects with larger body sizes or
+metabolic rates. Furthermore, the mechanism by which spiracle function and abdominal
+muscle contraction remain synchronized to produce this pattern is unknown. While
+spiracles may be controlled locally by internal gas partial pressures, there may be a higher
+level control mechanism which integrates spiracle movement with abdominal contractions
+triggered by the central pattern generator.
+I have also demonstrated that respiratory patterns and spiracle movements are
+differentially sensitive to temperature and metabolic rate. Previously, it was thought that
+93
+metabolic rate alone determined an insect’s respiratory pattern. However, since studies of
+insect metabolism typically use atmospheric temperature variation as a tool to manipulate
+metabolic rate, it has not been possible to tease apart the effects of metabolism versus
+temperature on respiratory patterns or other physiological function. Rhodnius prolixus was
+used as a model in this study to uncouple these factors because their metabolic rate can be
+increased up to 7 times resting levels during digestion of a large blood meal. In these
+experiments, we found that increases in temperature lead to increases in discontinuous gas
+exchange cycle frequency and decreases in open phase CO2 release volumes that were
+much greater than the changes observed at the same metabolic rate in fed insects at room
+temperature. These results indicate that respiratory patterns are not determined by
+metabolic rate alone and that the mechanism which controls spiracle activity is
+temperature sensitive. We should be careful to consider the interaction between
+temperature and physiological processes in ectotherms when using temperature as a tool
+to manipulate metabolic rate. As observed in this study, different metabolic stimuli may
+produce very different responses as a result of interacting physiological processes. The
+same metabolic rate may result in a very different physiological state depending on if the
+metabolism is stimulated by digestion, body temperature, pregnancy, or activity. In studies
+where the link between metabolism and another physiological process are being
+considered, it would benefit physiologists to manipulate metabolic rate in multiple ways to
+observe these interactive effects.
+The data from my experiments with Rhodnius also support one possible hypothesis
+about the control mechanism used to couple PO2 and PCO2 sensing and spiracle muscle
+contraction. Like vertebrates, insects may use changes in pH to control patterns of
+94
+ventilation and spiracle movement. Both increased PCO2 and temperature lead to
+decreased pH in solutions, including insect hemolymph above 25˚C. The precise location
+and mechanism used to sense these pH changes remains unknown. Future studies may
+examine the role of perineural fluid and glial cells in generating pH sensitivity in
+respiratory neurons. Insect respiratory physiologists should collaborate with
+neurobiologists to investigate this hypothesis and determine how spiracle activity is linked
+to ventilatory control.
+While the precise spiracle control mechanism is unknown, we know that these
+valves respond to internal CO2 and O2 partial pressures through two interacting feedback
+loops which create tri-phasic patterns of valve movement. This discontinuous gas
+exchange pattern has been hypothesized to serve many functions, including reducing
+oxidative damage of tissues. Some of the results obtained in this study support an
+alternative hypothesis – that this gas exchange pattern functions not to defend against high
+oxygen concentrations, but to maintain internal PO2 above a low threshold level while
+prioritizing the reduction of respiratory water loss. However, the insect respiratory system
+and the molecular cascade of oxidative damage are complex and specific tissue level effects
+may not have been detected in our studies at the whole body level. Future studies may
+examine the oxidative damage hypothesis in further detail by disrupting the gas exchange
+cycle for longer periods of time or measuring oxidative damage in isolated flight muscle.
+95
+REFERENCES
+Badre, N.H., Martin, M.E. & Cooper, R.L., 2005. The physiological and behavioral effects of
+carbon dioxide on Drosophila melanogaster larvae. Comparative Biochemistry and
+Physiology, Part A, 140, pp.363–376.
+Bailey, L., 1954. The respiratory currents in the tracheal system of the adult honey-bee. The
+Journal of Experimental Biology, 31, pp.589–593.
+Barreiro, E. et al., 2005. Protein carbonyl formation in the diaphragm. American Journal of
+Respiratory Cell and Molecular Biology, 32, pp.9–17.
+Basson, C.H. & Terblanche, J.S., 2011. Respiratory pattern transitions in three species of
+Glossina (Diptera, Glossinidae). Journal of Insect Physiology, 57, pp.433–443.
+Boardman, L. et al., 2012. Reactive oxygen species production and discontinuous gas
+exchange in insects. Proceedings of the Royal Society B: Biological Sciences, 279(1730),
+pp.893–901.
+Bradley, T.J. et al., 2003. Changes in the rate of CO2 release following feeding in the insect
+Rhodnius prolixus. Physiological and Biochemical Zoology: PBZ, 76(3), pp.302–309.
+Bradley, T.J., 2000. The discontinuous gas exchange cycle in insects may serve to reduce
+oxygen supply to the tissues. American Zoologist, 40, p.952.
+Buck, J., Keister, M. & Specht, H., 1953. Discontinuous respiration in diapausing Agapema
+pupae. The Anatomical Record, 117, p.541.
+Burkett, B.N. & Schneiderman, H.A., 1974. Roles of oxygen and carbon dioxide in the control
+of spiracular function in Cecropia pupae. Biological Bulletin, 147(2), pp.274–293.
+Bustami, H.P., Harrison, J.F. & Hustert, R., 2002. Evidence for oxygen and carbon dioxide
+receptors in insect CNS influencing ventilation. Comparative Biochemistry and
+Physiology Part A, 133, pp.595–604.
+Bustami, H.P. & Hustert, R., 2000. Typical ventilatory pattern of the intact locust is
+produced by the isolated CNS. Journal of Insect Physiology, 46, pp.1285–1293.
+Case, J.F., 1956. Carbon dioxide and oxygen effects on the spiracles of flies. Physiological
+Zoology, 29(2), pp.163–171.
+Case, J.F., 1954. Sensory mechanisms of insect spiracles. Journal of Cellular and Comparative
+Physiology, 44(2), p.338.
+96
+Case, J.F., 1957. The median nerves and cockroach spiracular function. The Journal of Insect
+Physiology, 1, pp.85–94.
+Chapman, R.F., Simpson, S.J. & Douglas, A.E., 2013. The Insects: Structure and Function 5th
+ed., New York, NY: Cambridge University Press.
+Chappell, M.A. & Rogowitz, G.L., 2000. Mass, temperature and metabolic effects on
+discontinuous gas exchange cycles in eucalyptus-boring beetles (Coleoptera:
+cerambycidae). The Journal of Experimental Biology, 203, pp.3809–3820.
+Chown, S.L. et al., 2006. Discontinuous gas exchange in insects: a clarification of hypotheses
+and approaches. Physiological and Biochemical Zoology, 79(2), pp.333–343.
+Chown, S.L. & Davis, A.L. V, 2003. Discontinuous gas exchange and the significance of
+respiratory water loss in Scarabaeine beetles. The Journal of Experimental Biology, 206,
+pp.3547–3556.
+Chown, S.L. & Holter, P., 2000. Discontinuous gas exchange cycles in Aphodius fossor
+(Scarabaeidae): a test of hypotheses concerning origins and mechanisms. The Journal
+of Experimental Biology, 203, pp.397–403.
+Chown, S.L. & Nicolson, S.W., 2004. Insect Physiological Ecology, Oxford University Press.
+Contreras, H.L. & Bradley, T.J., 2009. Metabolic rate controls respiratory pattern in insects.
+Journal of Experimental Biology, 212, pp.424–428.
+Contreras, H.L. & Bradley, T.J., 2010. Transitions in insect respiratory patterns are
+controlled by changes in metabolic rate. Journal of Insect Physiology, 56, pp.522–528.
+Contreras, H.L., Heinrich, E.C. & Bradley, T.J., 2014. Hypotheses regarding the discontinuous
+gas exchange cycle (DGC) of insects. Current Opinion in Insect Science, 4, pp.48–53.
+Dailey, P.J. & Graves, R.C., 1976. Exoskeletal anatomy of the Madagascar hissing cockroach
+Gromphadorhina portentosa. Annals of the Entomological Society of America, 69(4),
+pp.589–603.
+Davis, A.L. V., Chown, S.L. & Scholtz, C.H., 1999. Discontinuous gas-exchange cycles in
+Scarabaeus dung beetles (Coleoptera: Scarabaeidae): mass-scaling and temperature
+dependence. Physiological and Biochemical Zoology, 72(5), pp.555–565.
+Dean, J.B. et al., 2004. Hyperoxia, reactive oxygen species, and hyperventilation: oxygen
+sensitivity of brain stem neurons. Journal of Applied Physiology, 96, pp.784–791.
+Duncan, F.D. & Byrne, M.J., 2002. Respiratory airflow in a wingless dung beetle. The Journal
+of Experimental Biology, 205, pp.2489–2497.
+97
+Duncan, F.D. & Dickman, C.R., 2001. Respiratory patterns and metabolism in tenebrionid
+and carabid beetles from the Simpson Desert, Australia. Oecologia, 129, pp.509–517.
+Duncan, F.D., Förster, T.D. & Hetz, S.K., 2010. Pump out the volume--The effect of tracheal
+and subelytral pressure pulses on convective gas exchange in a dung beetle, Circellium
+bacchus (Fabricus). Journal of Insect Physiology, 56, pp.551–558.
+Edwards, G.A., 1953. Respiratory Mechanisms. In K. D. Roeder, ed. Insect Physiology. New
+York, NY: John Wiley & Sons, Inc., pp. 55–95.
+Fagan, J.M. et al., 1996. Sepsis Increases Oxidatively Damaged Proteins in Skeletal Muscle.
+Archives of Surgery, 131(12), pp.1326–1332.
+Förster, T., 2010. Spiracular control in moth pupae. Humboldt University of Berlin,
+Germany.
+Förster, T.D. & Hetz, S.K., 2010. Spiracle activity in moth pupae--the role of oxygen and
+carbon dioxide revisited. Journal of Insect Physiology, 56, pp.492–501.
+Fraenkel, G., 1932. Untersuchungen über die Koordination von Reflexen und automatisch-
+nervösen Rhythmen bei Insekten. Zeitschrift für vergleichende Physiologie, 16(2),
+pp.371–393.
+Georgopoulos, D. et al., 1989. Aminophylline effects on ventilatory response to hypoxia and
+hyperoxia in normal adults. Journal of Applied Physiology, 67, pp.1150–1156.
+Gray, E.M. & Bradley, T.J., 2006. Evidence from mosquitoes suggests that cyclic gas
+exchange and discontinuous gas exchange are two manifestations of a single
+respiratory pattern. The Journal of Experimental Biology, 209, pp.1603–1611.
+Greenlee, K.J. et al., 2013. Hypoxia-induced compression in the tracheal system of the
+tobacco hornworm caterpillar, Manduca sexta. The Journal of Experimental Biology,
+216, pp.2293–301.
+Greenlee, K.J. et al., 2009. Synchrotron imaging of the grasshopper tracheal system:
+morphological and physiological components of tracheal hypermetry. American
+Journal of Physiology - Regulatory, Integrative and Comparative physiology, 297,
+pp.R1343–R1350.
+Greenlee, K.J. & Harrison, J.F., 1998. Acid-base and respiratory responses to hypoxia in the
+grasshopper Schistocerca americana. Journal of Experimental Biology, 201, pp.2843–
+2855.
+Groenewald, B. et al., 2012. Respiratory dynamics of discontinuous gas exchange in the
+tracheal system of the desert locust, Schistocerca gregaria. Journal of Experimental
+Biology, 215(13), pp.2301–2307.
+98
+Gulinson, S. & Harrison, J., 1996. Control of resting ventilation rate in grasshoppers. The
+Journal of Experimental Biology, 199, pp.379–89.
+Guyton, A. & Hall, J., 2006. Textbook of Medical Physiology 11th ed., Elsevier.
+Harrison, J. et al., 2006. Responses of terrestrial insects to hypoxia or hyperoxia.
+Respiratory Physiology and Neurobiology, 154, pp.4–17.
+Harrison, J.F. et al., 2013. How locusts breathe. Physiology, 28, pp.18–27.
+Harrison, J.F., Hadley, N.F. & Quinlan, M.C., 1995. Acid-base status and spiracular control
+during discontinuous ventilation in grasshoppers. Journal of Experimental Biology,
+198, pp.1755–1763.
+Harrison, J.F., Wong, C.J.H. & Phillips, J.E., 1990. Hemolymph buffering in the locust
+Schistocerca gregaria. Journal of Experimental Biology, 154, pp.573–579.
+Harrison, J.M., 1988. Temperature effects on haemolymph acid-base status in vivo and in
+vitro in the two-striped grasshopper Melanoplus bivittatus. Journal of Experimental
+Biology, 140, pp.421–435.
+Hazelhoff, E.H., 1926. On a new form of breathing regulation (regulation of diffusion) in
+Insects and Arachnida. Proceedings of the Section of Sciences, Koninklijke (Nederlandse)
+Akademie van Wetenschappen te Amsterdam, 29, pp.492–496.
+Heinrich, E.C., McHenry, M.J. & Bradley, T.J., 2013. Coordinated ventilation and spiracle
+activity produce unidirectional airflow in the hissing cockroach, Gromphadorhina
+portentosa. The Journal of Experimental Biology, 216, pp.4473–82.
+Helenius, I.T. et al., 2009. Elevated CO2 suppresses specific Drosophila innate immune
+responses and resistance to bacterial infection. Proceedings of the National Academy of
+Sciences of the United States of America, 106(44), pp.18710–18715.
+Henry, J.R. & Harrison, J.F., 2004. Plastic and evolved responses of larval tracheae and mass
+to varying atmospheric oxygen content in Drosophila melanogaster. The Journal of
+Experimental Biology, 207, pp.3559–3567.
+Hetz, S.K., 2007. The role of the spiracles in gas exchange during development of Samia
+cynthia (Lepidoptera, Saturniidae). Comparative Biochemistry and Physiology, Part A,
+148, pp.743–754.
+Hetz, S.K. & Bradley, T.J., 2005. Insects breathe discontinuously to avoid oxygen toxicity.
+Nature, 433, pp.516–519.
+Hoyle, G., 1960. The action of carbon dioxide gas on an insect spiracular muscle. Journal of
+Insect Physiology, 4, pp.63–79.
+99
+Kaars, C., 1979. Neural control of homologous behaviour patterns in two blaberid
+cockroaches. The Journal of Insect Physiology, 25, pp.209–218.
+Klok, C.J. & Chown, S.L., 2005. Temperature- and body mass-related variation in cyclic gas
+exchange characteristics and metabolic rate of seven weevil species: Broader
+implications. Journal of Insect Physiology, 51, pp.789–801.
+Krogh, A., 1920. Studien über Tracheenrespiration. Pflüger’s Archiv für die gesamte
+Physiologie des Menschen und der Tiere, 179(1), pp.95–112.
+Krolikowski, K. & Harrison, J., 1996. Haemolymph acid-base status, tracheal gas levels and
+the control of post-exercise ventilation rate in grasshoppers. The Journal of
+Experimental Biology, 199, pp.391–399.
+Labandeira, C.C. & Sepkoski, J.J., 1993. Insect diversity in the fossil record. Science,
+261(5119), pp.310–315.
+Lane, N.J. & Skaer, H.I., 1980. Intercellular Junctions in Insect Tissues. In Advances in Insect
+Physiology, vol. 15. New York, NY: Academic Press, pp. 35–213.
+Lehmann, F. & Schützner, P., 2010. The respiratory basis of locomotion in Drosophila.
+Journal of Insect Physiology, 56, pp.543–550.
+Levy, R.I. & Schneiderman, H.A., 1966. Discontinuous respiration in insects. II. The direct
+measurement and significance of changes in tracheal gas composition during the
+respiratory cycle of silkworm pupae. Journal of Insect Physiology, 12, pp.83–104.
+Lighton, J. & Berrigan, D., 1995. Questioning paradigms: caste-specific ventilation in
+harvester ants, Messor pergandei and M. julianus (Hymenoptera: Formicidae). The
+Journal of Experimental Biology, 198, pp.5215–530.
+Lighton, J.R.B., 1988. Discontinuous CO2 emission in a small insect, the Formicine ant
+Campoxotus Vicixus. Journal of Experimental Biology, 376, pp.363–376.
+Lighton, J.R.B., 1996. Discontinuous gas exchange in insects. Annual Review of Entomology,
+41, pp.309–324.
+Lighton, J.R.B. & Lovegrove, B.G., 1990. A temperature-induced switch from diffusive to
+convecttve ventilation in the honeybee. Journal of Experimental Biology, 516, pp.509–
+516.
+Lighton, J.R.B., Schilman, P.E. & Holway, D.A., 2004. The hyperoxic switch: assessing
+respiratory water loss rates in tracheate arthropods with continuous gas exchange.
+The Journal of Experimental Biology, 207, pp.4463–4471.
+100
+Loudon, C., 1989. Tracheal hypertrophy in mealworms: design and plasticity in oxygen
+supply systems. Journal of Experimental Biology, 147, pp.217–235.
+Marais, E. et al., 2005. Insect gas exchange patterns: a phylogenetic perspective. The Journal
+of Experimental Biology, 208, pp.4495–4507.
+Martin, G.M., Austad, S.N. & Johnson, T.E., 1996. Genetic analysis of ageing: role of oxidative
+damage and environmental stresses. Nature Genetics, 13, pp.25–34.
+Matthews, P.G.D. et al., 2012. A test of the oxidative damage hypothesis for discontinuous
+gas exchange in the locust Locusta migratoria. Biology Letters, 8, pp.682–684.
+Matthews, P.G.D. & White, C.R., 2011a. Discontinuous gas exchange in insects: is it all in
+their heads? The American Naturalist, 177(1), pp.130–134.
+Matthews, P.G.D. & White, C.R., 2012. Discontinuous gas exchange, water loss, and
+metabolism in Protaetia cretica (Cetoniinae, Scarabaeidae). Physiological and
+Biochemical Zoology, 85(2), pp.174–182.
+Matthews, P.G.D. & White, C.R., 2011b. Regulation of gas exchange and haemolymph pH in
+the cockroach Nauphoeta cinerea. The Journal of Experimental Biology, 214, pp.3062–
+3073.
+McArthur, J.M., 1929. An experimental study of the functions of the different spiracles in
+certain orthoptera. Journal of Experimental Zoology, 53, pp.117–128.
+Mill, P.J., 1998. Tracheae and Tracheoles. In F. W. Harrison & M. Locke, eds. Microscopic
+Anatomy of Invertebrates. New York, NY: Wiley-Liss, Inc., pp. 303–336.
+Miller, P.L., 1960a. Respiration in the desert locust I. The control of ventilation. The Journal
+of Experimental Biology, 37, pp.224–236.
+Miller, P.L., 1960b. Respiration in the desert locust II . The control of the spiracles. The
+Journal of Experimental Biology, 37, pp.237–263.
+Miller, P.L., 1974. Respiration: aerial gas transport. In Rockstein, ed. Physiology of Insecta.
+New York, NY: Academic Press, pp. 345–402.
+Miller, P.L., 1981. Ventilation in active and inactive insects. In C. F. Herreid II & C. R.
+Fourtner, eds. Locomotion and Energetics in Arthropods. New York, NY: Springer US,
+pp. 367–390.
+Nation, J., 2002. Insect Physiology and Biochemistry, Boca Raton, FL: CRC.
+Nelson, M.C., 1979. Sound production in the cockroach,Gromphadorhina portentosa: The
+sound-producing apparatus. Journal of Comparative Physiology A, 132, pp.27–38.
+101
+Newman, A.E.M. et al., 2003. Stress-induced thermotolerance of ventilatory motor pattern
+generation in the locust, Locusta migratoria. Journal of Insect Physiology, 49, pp.1039–
+1047.
+Nilanjana, D.A.S. et al., 2001. Selectivity of protein oxidative damage during aging in
+Drosophila melanogaster. The Biochemical Journal, 360, pp.209–216.
+Punt, A., 1950. The respiration of insects. Physiol. Comp. Oecol., 2, pp.59–74.
+Punt, A., Parser, W.J. & Kuchlein, J., 1957. Oxygen uptake in insects with cyclic CO2 release.
+The Biological Bulletin, 112, pp.108–119.
+Quinlan, M. & Lighton, J.R.B., 1999. Respiratory physiology and water relations of three
+species of Pogonomyrmex harvester ants (Hymenoptera: Formicidae). Physiological
+Entomology, 24, pp.293–302.
+Rascón, B. & Harrison, J.F., 2010. Lifespan and oxidative stress show a non-linear response
+to atmospheric oxygen in Drosophila. The Journal of Experimental Biology, 213,
+pp.3441–8.
+Reznick, A.Z. et al., 1992. Vitamin E inhibits protein oxidation in skeletal muscle of resting
+and exercising rats. Biochemical and Biophysical Research Communications, 189(2),
+pp.801–806.
+Rzezniczak, T.Z. et al., 2011. Paraquat administration in Drosophila for use in metabolic
+studies of oxidative stress. Analytical Biochemistry, 419, pp.345–347.
+Schimpf, N.G. et al., 2009. Cockroaches breathe discontinuously to reduce respiratory water
+loss. The Journal of Experimental Biology, 212(17), pp.2773–2780.
+Schimpf, N.G., Matthews, P.G.D. & White, C.R., 2011. Cockroaches that exchange respiratory
+gases discontinuously survive food and water restriction. Evolution, 66(2), pp.597–
+604.
+Schneiderman, H.A., 1960. Discontinuous respiration in insects: role of the spiracles.
+Biological Bulletin, 119(3), pp.494–528.
+Schneiderman, H.A. & Williams, C.M., 1955. An experimental analysis of the discontinuous
+respiration of the cecropia silkworm. The Biological Bulletin, 109(1), pp.123–143.
+Schneiderman, H.A. & Williams, C.M., 1953. The physiology of insect diapause. VII. The
+respiratory metabolism of the Cecropia silkworm during diapause and development.
+The Biological Bulletin, 105(2), pp.320–334.
+102
+Shelton, T.G. & Appel, A.G., 2001. Cyclic CO2 release in Cryptotermes cavifrons Banks,
+Incisitermes tabogae (Snyder) and I. minor (Hagen) (Isoptera: Kalotermitidae).
+Comparative Biochemistry and Physiology Part A, 129, pp.681–693.
+Slama, K., 1988. A new look at insect respiration. Biological Bulletin, 175, pp.289–300.
+Slama, K., 1976. Insect haemolymph pressure and its determination. Acta Entomologica
+Bohemoslovaca, 73, pp.65–75.
+Slama, K., 1984. Recording of haemolymph pressure pulsations from the insect body
+surface. Journal of Comparative Physiology B, 154, pp.635–643.
+Slama, K. & Rembold, H., 1987. Communication by infrasonic pulsations in the honey bee. In
+F. Eder & H. Rembold, eds. Cheistry and Biology of Social Insects. Munchen: J. Peperny,
+p. 225.
+Snelling, E.P. et al., 2012. Symmorphosis and the insect respiratory system: a comparison
+between flight and hopping muscle. The Journal of Experimental Biology, 215, pp.3324–
+3333.
+Snodgrass, R.E., 1935. The respiratory system. In Principals of Insect Morphology. New York,
+NY: McGraw-Hill Book Company, Inc., pp. 422–463.
+Socha, J.J. et al., 2008. Correlated patterns of tracheal compression and convective gas
+exchange in a carabid beetle. The Journal of Experimental Biology, 211, pp.3409–3420.
+Socha, J.J., Förster, T.D. & Greenlee, K.J., 2010. Issues of convection in insect respiration:
+insights from synchrotron X-ray imaging and beyond. Respiratory Physiology &
+Neurobiology, 173S, pp.S65–S73.
+Thorpe, W.H., 1928. The elimination of carbon dioxide in the insecta. Science, 68(1766),
+pp.433–434.
+Treherne, J.E. & Pichon, Y., 1972. The insect blood-brain barrier. Advances in Insect
+Physiology, 9, pp.257–313.
+Vogt, J.T. & Appel, A.G., 2000. Discontinuous gas exchange in the fire ant, Solenopsos invicta
+Buren: Caste differences and temperature effects. Journal of Insect Physiology, 46(4),
+pp.403–416.
+Wasserthal, L.T., 2001. Flight-motor-driven respiratory air flow in the hawkmoth Manduca
+sexta. The Journal of Experimental Biology, 204, pp.2209–2220.
+Waters, J.S. et al., 2013. Dynamics of tracheal compression in the horned passalus beetle.
+American Journal of Physiology - Regulatory, Integrative and Comparative Physiology,
+304(8), pp.R621–R627.
+103
+Weis-Fogh, T., 1964. Diffusion in insect wing muscle, the most active tissue known. The
+Journal of Experimental Biology, 41, pp.229–256.
+Weis-Fough, T., 1967. Respiration and tracheal ventilation in locusts and other flying
+insects. Journal of Experimental Biology, 47, pp.561–587.
+Weis-Fough, T., 1956. The ventilatory mechanisms during flight of insects in relation to the
+call for oxygen. Proc. XIV Int. Congr. Zool., 1953, pp.283–285.
+Weiss, R.F., 1974. Carbon dioxide in water and seawater: the solubility of a non-ideal gas.
+Marine Chemistry, 2(3), pp.203–215.
+Westneat, M.W. et al., 2003. Tracheal respiration in insects visualized with synchrotron x-
+ray imaging. Science, 299, pp.558–60.
+Wigglesworth, V.B., 1963. A further function of the air sacs in some insects. Nature, 198,
+p.106.
+Wigglesworth, V.B., 1933. The function of the anal gills of the mosquito larva. Journal of
+Experimental Biology, 10, pp.16–26.
+Wigglesworth, V.B., 1983. The physiology of insect tracheoles. Advances in Insect
+Physiology, 17, pp.85–148.
+Wigglesworth, V.B., 1972. The Principals of Insect Physiology Seventh., New York, NY:
+Halsted Press.
+Wigglesworth, V.B., 1935. The regulation of respiration in the Flea, Xenopsylla cheopis,
+Roths. (Pulicidae). Proceedings of the Royal Society of London. Series B, Biological
+Sciences, 118(810), pp.397–419.
+Wigglesworth, V.B. & Lee, W.M., 1982. The supply of oxygen to the flight muscles of insects:
+A theory of tracheole physiology. Tissue and Cell, 14(3), pp.501–518.
+Woodman, J.D., Cooper, P.D. & Haritos, V.S., 2008. Neural regulation of discontinuous gas
+exchange in Periplaneta americana. Journal of Insect Physiology, 54, pp.472–80.
+Zwicky, K. & Wigglesworth, V.B., 1956. The course of oxygen consumption during the
+moulting cycle of Rhodnius prolixus Stal (Hemiptera). Proceedings of the Royal
+Entomological Society of London. Series A, General Entomology, 31, pp.153–160.

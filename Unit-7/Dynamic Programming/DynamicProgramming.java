@@ -52,7 +52,7 @@ public class DynamicProgramming {
     }
 
     public static int maxReward(int[] times, int[] points, int index, HashMap<Integer, Integer> stored) {
-        System.out.println("Index: " + index);
+        // System.out.println("Index: " + index);
         if (index >= times.length) {
             return 0;
         }
@@ -66,7 +66,7 @@ public class DynamicProgramming {
         int pointsofindex = points[index];
         for (int i = index + 1; i < times.length; i++) {
             if (times[i] >= 5 + times[index]) {
-                System.out.println("Considering item at index " + i + " (time: " + times[i] + ")");
+                // System.out.println("Considering item at index " + i + " (time: " + times[i] + ")");
                 tempIndex = i;
                 break;
             }
@@ -76,7 +76,7 @@ public class DynamicProgramming {
         }
         int result = Math.max(maximum, pointsofindex);
         stored.put(index, result);
-        System.out.println("Max points at index " + index + ": " + result);
+        // System.out.println("Max points at index " + index + ": " + result);
 
         return result;
     }
